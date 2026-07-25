@@ -1,5 +1,7 @@
 package Controller;
 
+import javafx.event.ActionEvent;
+
 public class CareerCounselorDashboardController {
     @javafx.fxml.FXML
     public void handleCareerGuidanceButton(ActionEvent actionEvent) {

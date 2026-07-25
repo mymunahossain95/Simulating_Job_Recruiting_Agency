@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SkillAssesmentOfficerDashboardViewController">
+   <children>
+      <Button layoutX="57.0" layoutY="41.0" mnemonicParsing="false" onAction="#createAssessmentTestbtnOA" text="Create Assessment Test" />
+      <Button layoutX="57.0" layoutY="84.0" mnemonicParsing="false" onAction="#assignSkillTestBtnOA" text="Assign Skill Test" />
+      <Button layoutX="57.0" layoutY="127.0" mnemonicParsing="false" onAction="#evaluateCandidateAnsBtnOA" text="Evaluate Candidate Answers" />
+      <Button layoutX="57.0" layoutY="167.0" mnemonicParsing="false" onAction="#generateSkillScorebtnOA" text="Generate Skill Score" />
+      <Button layoutX="57.0" layoutY="209.0" mnemonicParsing="false" onAction="#publishAssessmentResultbtnOA" text="Publish Assessment Result" />
+      <Button layoutX="57.0" layoutY="247.0" mnemonicParsing="false" onAction="#viewPerformanceReportsbtnOA" text="View Performance Reports" />
+      <Button layoutX="57.0" layoutY="291.0" mnemonicParsing="false" onAction="#updateAssessmentCriteriabtnOA" text="Update Assessment Criteria" />
+      <Button layoutX="57.0" layoutY="334.0" mnemonicParsing="false" onAction="#recommendTrainingProgrambtnOA" text="Recommend Training Program" />
+   </children>
+</AnchorPane>

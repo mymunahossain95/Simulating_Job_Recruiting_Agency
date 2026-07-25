@@ -1,5 +1,8 @@
 package Controller;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.TextField;
+
 public class CandidateProfileManagementViewController {
     @javafx.fxml.FXML
     private TextField phoneTF;

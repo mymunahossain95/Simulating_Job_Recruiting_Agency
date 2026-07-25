@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SystemSettingsController">
+   <children>
+      <ComboBox layoutX="23.0" layoutY="47.0" onAction="#settingTypeCombo" prefWidth="150.0" />
+      <TextField fx:id="settingValueField" layoutX="226.0" layoutY="47.0" />
+      <Button layoutX="23.0" layoutY="126.0" mnemonicParsing="false" onAction="#onSaveSettings" text="Save" />
+      <Text layoutX="24.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting Type" />
+      <Text layoutX="226.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" />
+   </children>
+</AnchorPane>

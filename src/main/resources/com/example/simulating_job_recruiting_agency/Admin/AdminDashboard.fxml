@@ -6,11 +6,11 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminDashboardController">
    <children>
-      <Button layoutX="44.0" layoutY="51.0" mnemonicParsing="false" onAction="#onManageUsers" text="Manage User Accounts" />
+      <Button layoutX="43.0" layoutY="44.0" mnemonicParsing="false" onAction="#onManageUsers" text="Manage User Accounts" />
       <Button layoutX="44.0" layoutY="295.0" mnemonicParsing="false" onAction="#onBackup" text="Backup System Data" />
       <Button layoutX="44.0" layoutY="258.0" mnemonicParsing="false" onAction="#onActivityLogs" text="Activity Logs" />
       <Button layoutX="44.0" layoutY="221.0" mnemonicParsing="false" onAction="#onSettings" text="System Settings" />
-      <Button layoutX="44.0" layoutY="85.0" mnemonicParsing="false" onAction="#onPendingRegistrations" text="Pending Registrations" />
+      <Button layoutX="46.0" layoutY="79.0" mnemonicParsing="false" onAction="#onPendingRegistrations" text="Pending Registrations" />
       <Button layoutX="44.0" layoutY="187.0" mnemonicParsing="false" onAction="#onComplaints" text="Handle Complaint" />
       <Button layoutX="44.0" layoutY="151.0" mnemonicParsing="false" onAction="#onReports" text="View Reports" />
       <Button layoutX="44.0" layoutY="116.0" mnemonicParsing="false" onAction="#onManageCategories" text="Manage Job Categories" />

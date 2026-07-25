@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="433.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ActivityLogsController">
+   <children>
+      <DatePicker fx:id="fromDate" layoutX="16.0" layoutY="46.0" />
+      <DatePicker fx:id="toDate" layoutX="236.0" layoutY="46.0" />
+      <TextField fx:id="userIdField" layoutX="14.0" layoutY="131.0" />
+      <Button layoutX="236.0" layoutY="127.0" mnemonicParsing="false" onAction="#onFilter" text="Filter" />
+      <Text layoutX="16.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" />
+      <Text layoutX="236.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+      <Text layoutX="16.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" />
+      <TableView fx:id="activityTable" layoutX="16.0" layoutY="219.0" prefHeight="200.0" prefWidth="718.0">
+        <columns>
+          <TableColumn fx:id="activityIdTableColumn" prefWidth="102.39999580383301" text="Activity ID" />
+          <TableColumn fx:id="userIdTableColumn" prefWidth="79.20000457763672" text="User ID" />
+            <TableColumn fx:id="userNameTableColumn" prefWidth="99.199951171875" text="User Name" />
+            <TableColumn fx:id="activityTableColumn" prefWidth="96.0" text="Activity" />
+            <TableColumn fx:id="dateTableColumn" prefWidth="95.99993896484375" text="Date" />
+            <TableColumn fx:id="timeTableColumn" prefWidth="113.59994506835938" text="Time" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="133.5999755859375" text="Status" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

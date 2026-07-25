@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-
 
 <AnchorPane prefHeight="716.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageUserAccountsController">
    <children>
@@ -19,9 +19,10 @@
         </columns>
       </TableView>
       <Button layoutX="14.0" layoutY="238.0" mnemonicParsing="false" onAction="#onCreate" text="Create" />
-      <Button layoutX="14.0" layoutY="306.0" mnemonicParsing="false" onAction="#onDelete" text="Delete" />
+      <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" onAction="#onDelete" text="Delete" />
       <Button layoutX="14.0" layoutY="272.0" mnemonicParsing="false" onAction="#onUpdate" text="Update" />
-      <Button layoutX="13.0" layoutY="342.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
-      <TextField layoutX="111.0" layoutY="238.0" text="search" />
+      <Button layoutX="16.0" layoutY="308.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
+      <TextField fx:id="searchTextField" layoutX="111.0" layoutY="239.0" text="search" />
+      <ComboBox fx:id="roleComboBox" layoutX="111.0" layoutY="272.0" prefWidth="150.0" promptText="role" />
    </children>
 </AnchorPane>

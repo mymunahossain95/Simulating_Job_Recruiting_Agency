@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CareerCounselorCandidateTrackingController">
+   <children>
+      <Label fx:id="candidateTrackingCandidateTrackingLabel" layoutX="220.0" layoutY="23.0" text="Candidate Tracking" />
+      <TableView fx:id="trackingInformationTableView" layoutX="48.0" layoutY="107.0" prefHeight="126.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="trackingInformationCandidateIDCol1" prefWidth="108.66665649414062" text="Candidate ID" />
+          <TableColumn fx:id="trackingInformationCandidateNameCol2" prefWidth="108.66668701171875" text="Candidate Name" />
+            <TableColumn fx:id="trackingInformationApplicationStatusCol3" prefWidth="108.66668701171875" text="Application Status" />
+            <TableColumn fx:id="trackingInformationInterviewStatusCol4" prefWidth="108.66668701171875" text="Interview Status" />
+            <TableColumn fx:id="trackingInformationIPlacementStatusCol5" prefWidth="108.66668701171875" text="Placement Status" />
+        </columns>
+      </TableView>
+      <Text layoutX="48.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Tracking Information:" />
+      <Button layoutX="92.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleUpdateStatusButtonOnAction" text="Update Status" />
+      <Button layoutX="200.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleTrackProgressButtonOnAction" text="Track Progress" />
+      <Button layoutX="307.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleSaveUpdateButtonOnAction" text="Save Update" />
+      <Button layoutX="422.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleBackButtonOnAction" text="Back" />
+   </children>
+</AnchorPane>

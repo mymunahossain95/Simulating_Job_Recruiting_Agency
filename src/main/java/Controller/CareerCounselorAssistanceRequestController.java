@@ -1,5 +1,11 @@
 package Controller;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
 public class CareerCounselorAssistanceRequestController {
     @javafx.fxml.FXML
     private Label careerCAssistanceRequestsLabel;
@@ -18,19 +24,35 @@ public class CareerCounselorAssistanceRequestController {
     @javafx.fxml.FXML
     private ComboBox assistanceReqRequestTypeComboBox;
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleassistanceReqBackonAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleassistanceReqViewRequestonAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleassistanceReqSubmitResponseonAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleassistanceReqProcessReqonAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleassistanceReqViewRequestButtononAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleassistanceReqSubmitResponseButtononAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleassistanceReqBackButtononAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleassistanceReqProcessReqButtononAction(ActionEvent actionEvent) {
     }
 }

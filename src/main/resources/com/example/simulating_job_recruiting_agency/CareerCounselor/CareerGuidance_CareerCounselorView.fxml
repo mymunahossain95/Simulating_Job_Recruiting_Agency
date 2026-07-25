@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="459.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CareerCounselorCareerGuidanceController">
+   <children>
+      <Label fx:id="careerGuideLabel" layoutX="243.0" layoutY="14.0" text="Career Guidance" />
+      <TextField fx:id="careerGuidesearchCandidateTextField" layoutX="137.0" layoutY="57.0" />
+      <TableView fx:id="careerguidanceTableView" layoutX="27.0" layoutY="116.0" prefHeight="142.0" prefWidth="519.0">
+        <columns>
+          <TableColumn fx:id="careerGuidanceCandidateIDCol1" prefWidth="94.0" text="Candidate ID" />
+          <TableColumn fx:id="careerGuidanceCandidateNameCol2" prefWidth="97.99996948242188" text="Candidate Name" />
+            <TableColumn fx:id="careerGuidanceSkillsCol4" prefWidth="97.99996948242188" text="Skills" />
+            <TableColumn fx:id="careerGuidanceExperienceCol5111" prefWidth="130.00002034505212" text="Experience" />
+            <TableColumn fx:id="careerGuidanceEducationCol3" prefWidth="97.99996948242188" text="Education" />
+        </columns>
+      </TableView>
+      <Text layoutX="32.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate:" />
+      <Button layoutX="243.0" layoutY="271.0" mnemonicParsing="false" onAction="#handlecareerguideSearchButton" text="Search" />
+      <Button layoutX="243.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleViewProfilecareerguideButton" text="View Profile" />
+      <Button layoutX="243.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleSaveGuidancecareerguideButton" text="Save Guidance" />
+      <Button layoutX="243.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleSaveBackcareerguideButton" text="Back" />
+      <Label fx:id="careerguidecandidateInformationLabel" layoutX="366.0" layoutY="275.0" text="Candidate Information" />
+      <Label fx:id="careerguidesearchCandidateLabel" layoutX="371.0" layoutY="299.0" text="Search Candidate" />
+      <Label fx:id="careerguideEducationDetailsLabel" layoutX="371.0" layoutY="324.0" text="Education Details" />
+      <Label fx:id="careerguideskillInfoDetailsLabel" layoutX="373.0" layoutY="354.0" text="Skills Information" />
+      <Label fx:id="careerguideExperiencehistorLabel" layoutX="370.0" layoutY="377.0" text="Experience History" />
+      <Label fx:id="careerguideGuidanceSummaryhistorLabel" layoutX="370.0" layoutY="402.0" text="Guidance Summary" />
+   </children>
+</AnchorPane>

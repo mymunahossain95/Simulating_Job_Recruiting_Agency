@@ -27,10 +27,10 @@
             <TableColumn fx:id="jobMatchingLocationCol4" prefWidth="118.66671752929688" text="Location" />
         </columns>
       </TableView>
-      <Button layoutX="50.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMtachinAnalyzeMatchOA" text="Analyze Match" />
+      <Button layoutX="50.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchinAnalyzeMatchOA" text="Analyze Match" />
       <Line endX="310.33331298828125" layoutX="265.0" layoutY="266.0" startX="-243.66665649414062" />
-      <Button layoutX="165.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMtachinAnalyzeMatchOA" text="Button" />
-      <Button layoutX="283.0" layoutY="413.0" mnemonicParsing="false" text="Button" />
-      <Button layoutX="445.0" layoutY="413.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="165.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchinRecommendJobOA" text="Recommend Job" />
+      <Button layoutX="283.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchinSendRecommendationOA" text="Send Recommendation" />
+      <Button layoutX="445.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchingBackOA" text="Back" />
    </children>
 </AnchorPane>

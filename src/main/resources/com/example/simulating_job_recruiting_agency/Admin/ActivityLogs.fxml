@@ -8,16 +8,15 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="433.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ActivityLogsController">
+<AnchorPane prefHeight="483.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ActivityLogsController">
    <children>
-      <DatePicker fx:id="fromDate" layoutX="16.0" layoutY="46.0" />
-      <DatePicker fx:id="toDate" layoutX="236.0" layoutY="46.0" />
-      <TextField fx:id="userIdField" layoutX="14.0" layoutY="131.0" />
-      <Button layoutX="236.0" layoutY="127.0" mnemonicParsing="false" onAction="#onFilter" text="Filter" />
-      <Text layoutX="16.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" />
-      <Text layoutX="236.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
-      <Text layoutX="16.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" />
+      <DatePicker fx:id="fromDate" layoutX="16.0" layoutY="91.0" />
+      <DatePicker fx:id="toDate" layoutX="236.0" layoutY="91.0" />
+      <TextField fx:id="userIdField" layoutX="14.0" layoutY="176.0" />
+      <Button layoutX="236.0" layoutY="175.0" mnemonicParsing="false" onAction="#onFilter" text="Filter" />
+      <Text layoutX="16.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" />
+      <Text layoutX="236.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+      <Text layoutX="16.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" />
       <TableView fx:id="activityTable" layoutX="16.0" layoutY="219.0" prefHeight="200.0" prefWidth="718.0">
         <columns>
           <TableColumn fx:id="activityIdTableColumn" prefWidth="102.39999580383301" text="Activity ID" />
@@ -29,5 +28,7 @@
             <TableColumn fx:id="statusTableColumn" prefWidth="133.5999755859375" text="Status" />
         </columns>
       </TableView>
+      <Button layoutX="687.0" layoutY="444.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="41.0" text="Back" />
+      <Text layoutX="330.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" ACTIVITY LOGS " />
    </children>
 </AnchorPane>

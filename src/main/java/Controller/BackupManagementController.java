@@ -14,4 +14,8 @@ public class BackupManagementController {
     @javafx.fxml.FXML
     public void onDownloadBackup(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

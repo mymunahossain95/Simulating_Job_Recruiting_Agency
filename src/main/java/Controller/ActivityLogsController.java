@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 public class ActivityLogsController {
     @javafx.fxml.FXML
@@ -31,5 +32,9 @@ public class ActivityLogsController {
 
     @javafx.fxml.FXML
     public void onFilter(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
     }
 }

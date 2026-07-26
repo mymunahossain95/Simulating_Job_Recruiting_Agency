@@ -29,4 +29,8 @@ public class PendingRegistrationsController {
     @javafx.fxml.FXML
     public void onApprove(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

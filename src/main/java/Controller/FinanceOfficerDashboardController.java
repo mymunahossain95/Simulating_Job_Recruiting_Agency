@@ -4,8 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 
 public class FinanceOfficerDashboardController {
+
     @javafx.fxml.FXML
-    private Label titleLabel;
+    private Label welcomeLabel;
 
     @javafx.fxml.FXML
     public void onCompliance(ActionEvent actionEvent) {
@@ -19,7 +20,7 @@ public class FinanceOfficerDashboardController {
     public void onTransactions(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void onPaymentHistory(ActionEvent actionEvent) {
     }
 

@@ -14,4 +14,8 @@ public class SystemSettingsController {
     @javafx.fxml.FXML
     public void settingTypeCombo(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

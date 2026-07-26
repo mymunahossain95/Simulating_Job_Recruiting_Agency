@@ -34,4 +34,8 @@ public class AdminDashboardController {
     @javafx.fxml.FXML
     public void onManageUsers(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

@@ -39,4 +39,8 @@ public class ManageUserAccountsController {
     @javafx.fxml.FXML
     public void onUpdate(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

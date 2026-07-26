@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="CONTROLLER_NAME"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RefundRequestsController">
+   <children>
+      <Text layoutX="237.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" REFUND REQUESTS" />
+      <TableView fx:id="refundTable" layoutX="14.0" layoutY="75.0" prefHeight="200.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="refundIdColumn" prefWidth="123.20001220703125" text="Refund ID" />
+          <TableColumn fx:id="candidateColumn" prefWidth="92.79998779296875" text="Candidate" />
+            <TableColumn fx:id="amountColumn" prefWidth="113.59991455078125" text="Amount" />
+            <TableColumn fx:id="reasonColumn" prefWidth="100.7999267578125" text="Reason" />
+            <TableColumn fx:id="statusColumn" prefWidth="141.5999755859375" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="148.0" layoutY="289.0" mnemonicParsing="false" onAction="#onApproveRefund" text="Approve Refund" />
+      <Button layoutX="547.0" layoutY="360.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <Button layoutX="325.0" layoutY="289.0" mnemonicParsing="false" onAction="#onRejectRefund" text="Reject Refund" />
+      <Label layoutX="7.0" layoutY="328.0" prefHeight="18.0" prefWidth="78.0" text="Refund Status:" />
+      <Label fx:id="refundStatusLabel" layoutX="103.0" layoutY="327.0" prefHeight="18.0" prefWidth="115.0" />
+   </children>
 </AnchorPane>

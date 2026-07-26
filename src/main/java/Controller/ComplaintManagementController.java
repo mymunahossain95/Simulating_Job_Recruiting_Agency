@@ -24,4 +24,8 @@ public class ComplaintManagementController {
     @javafx.fxml.FXML
     public void onResolve(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

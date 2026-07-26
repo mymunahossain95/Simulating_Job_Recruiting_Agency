@@ -6,10 +6,11 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="716.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageUserAccountsController">
+<AnchorPane prefHeight="498.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageUserAccountsController">
    <children>
-      <TableView fx:id="userTable" layoutX="12.0" layoutY="14.0" prefHeight="200.0" prefWidth="826.0">
+      <TableView fx:id="userTable" layoutX="12.0" layoutY="143.0" prefHeight="200.0" prefWidth="826.0">
         <columns>
           <TableColumn fx:id="userIdColum" prefWidth="177.60000038146973" text="User ID" />
           <TableColumn fx:id="nameColumn" prefWidth="152.0" text="Name" />
@@ -18,11 +19,14 @@
             <TableColumn fx:id="statusColumn" prefWidth="157.60003662109375" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="14.0" layoutY="238.0" mnemonicParsing="false" onAction="#onCreate" text="Create" />
-      <Button layoutX="14.0" layoutY="341.0" mnemonicParsing="false" onAction="#onDelete" text="Delete" />
-      <Button layoutX="14.0" layoutY="272.0" mnemonicParsing="false" onAction="#onUpdate" text="Update" />
-      <Button layoutX="16.0" layoutY="308.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
-      <TextField fx:id="searchTextField" layoutX="111.0" layoutY="239.0" text="search" />
-      <ComboBox fx:id="roleComboBox" layoutX="111.0" layoutY="272.0" prefWidth="150.0" promptText="role" />
+      <Button layoutX="79.0" layoutY="365.0" mnemonicParsing="false" onAction="#onCreate" text="Create" />
+      <Button layoutX="402.0" layoutY="397.0" mnemonicParsing="false" onAction="#onDelete" text="Delete" />
+      <Button layoutX="221.0" layoutY="365.0" mnemonicParsing="false" onAction="#onUpdate" text="Update" />
+      <Button layoutX="767.0" layoutY="102.0" mnemonicParsing="false" onAction="#onSearch" text="Search" />
+      <TextField fx:id="searchTextField" layoutX="617.0" layoutY="102.0" text="search" />
+      <ComboBox fx:id="roleComboBox" layoutX="29.0" layoutY="102.0" prefWidth="150.0" promptText="role" />
+      <Text layoutX="351.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" MANAGE USER ACCOUNTS" />
+      <Text layoutX="386.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" User Accounts" />
+      <Button layoutX="799.0" layoutY="458.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
    </children>
 </AnchorPane>

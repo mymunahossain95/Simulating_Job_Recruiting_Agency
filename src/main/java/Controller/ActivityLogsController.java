@@ -32,4 +32,8 @@ public class ActivityLogsController {
     @javafx.fxml.FXML
     public void onFilter(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

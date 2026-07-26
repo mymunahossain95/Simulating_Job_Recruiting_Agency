@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="707.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PendingRegistrationsController">
+<AnchorPane prefHeight="489.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PendingRegistrationsController">
    <children>
-      <TableView fx:id="registrationTable" layoutX="19.0" layoutY="23.0" prefHeight="200.0" prefWidth="898.0">
+      <TableView fx:id="registrationTable" layoutX="29.0" layoutY="134.0" prefHeight="200.0" prefWidth="915.0">
         <columns>
           <TableColumn fx:id="applicantIdColumn" prefWidth="150.3999900817871" text="Applicant ID" />
           <TableColumn fx:id="nameColumn" minWidth="0.0" prefWidth="199.19996643066406" text="Name" />
@@ -18,9 +17,10 @@
             <TableColumn fx:id="statusColumn" prefWidth="197.59991455078125" text="Status" />
         </columns>
       </TableView>
-      <Button layoutX="19.0" layoutY="252.0" mnemonicParsing="false" onAction="#onApprove" text="Approve" />
-      <Button layoutX="175.0" layoutY="252.0" mnemonicParsing="false" onAction="#onViewDocument" text="View Documents" />
-      <Button layoutX="99.0" layoutY="252.0" mnemonicParsing="false" onAction="#onReject" text="Reject" />
-      <Text layoutX="99.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button layoutX="425.0" layoutY="368.0" mnemonicParsing="false" onAction="#onApprove" text="Approve" />
+      <Button layoutX="196.0" layoutY="368.0" mnemonicParsing="false" onAction="#onViewDocument" text="View Documents" />
+      <Button layoutX="626.0" layoutY="368.0" mnemonicParsing="false" onAction="#onReject" text="Reject" />
+      <Text layoutX="374.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" PENDING REGISTRATIONS" wrappingWidth="177.60003662109375" />
+      <Button layoutX="894.0" layoutY="446.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
    </children>
 </AnchorPane>

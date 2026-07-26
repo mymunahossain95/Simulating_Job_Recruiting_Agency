@@ -21,4 +21,8 @@ public class ReportsController {
     @javafx.fxml.FXML
     public void onGenerateReport(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

@@ -6,13 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SystemSettingsController">
+<AnchorPane prefHeight="322.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SystemSettingsController">
    <children>
-      <ComboBox layoutX="23.0" layoutY="47.0" onAction="#settingTypeCombo" prefWidth="150.0" />
-      <TextField fx:id="settingValueField" layoutX="226.0" layoutY="47.0" />
-      <Button layoutX="23.0" layoutY="126.0" mnemonicParsing="false" onAction="#onSaveSettings" text="Save" />
-      <Text layoutX="24.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting Type" />
-      <Text layoutX="226.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" />
+      <ComboBox layoutX="24.0" layoutY="108.0" onAction="#settingTypeCombo" prefWidth="150.0" />
+      <TextField fx:id="settingValueField" layoutX="300.0" layoutY="108.0" />
+      <Button layoutX="256.0" layoutY="200.0" mnemonicParsing="false" onAction="#onSaveSettings" text="Save" />
+      <Text layoutX="24.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Setting Type" />
+      <Text layoutX="300.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Value" />
+      <Button layoutX="526.0" layoutY="279.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="41.0" text="Back" />
+      <Text layoutX="224.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" SYSTEM SETTINGS " />
    </children>
 </AnchorPane>

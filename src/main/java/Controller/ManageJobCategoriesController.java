@@ -26,4 +26,8 @@ public class ManageJobCategoriesController {
     @javafx.fxml.FXML
     public void onAdd(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
+    }
 }

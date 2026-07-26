@@ -9,7 +9,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierIdentityVerificationController">
    <children>
       <Text layoutX="23.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDENTITY VERIFICATION:" />
@@ -25,5 +24,6 @@
       <Button layoutX="108.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleOpenDocumentButtonOA" text="Open Document" />
       <Button layoutX="319.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleVerifyDocumentButtonOA" text="Verify Document" />
       <Label fx:id="identityVerificationVerificationStatusResultLabel" layoutX="212.0" layoutY="307.0" prefHeight="49.0" prefWidth="156.0" text="Verification Status Result" />
+      <Button layoutX="453.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleBackButtonOA" text="Back" />
    </children>
 </AnchorPane>

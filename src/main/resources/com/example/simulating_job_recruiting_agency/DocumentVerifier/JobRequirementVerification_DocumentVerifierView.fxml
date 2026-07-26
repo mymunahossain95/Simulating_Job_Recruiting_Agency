@@ -8,7 +8,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierJobRequirementVerificationController">
    <children>
       <Text layoutX="37.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Requirement Verification:" />
@@ -22,5 +21,6 @@
       <Label fx:id="jobRequirmentVerificationEligibilityStatusLabel" layoutX="186.0" layoutY="272.0" prefHeight="73.0" prefWidth="147.0" text="Eligibility Status" />
       <Button layoutX="101.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleCheckEligibilityButtonOA" text="Check Eligibility" />
       <Button layoutX="268.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleVerifyRequirementsButtonOA" text="Verify Requirements" />
+      <Button layoutX="438.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleBackButtonOA" text="Back" />
    </children>
 </AnchorPane>

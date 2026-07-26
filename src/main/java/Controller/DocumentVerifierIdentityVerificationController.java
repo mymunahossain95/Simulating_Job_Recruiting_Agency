@@ -25,4 +25,8 @@ public class DocumentVerifierIdentityVerificationController {
     @javafx.fxml.FXML
     public void handleVerifyDocumentButtonOA(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void handleBackButtonOA(ActionEvent actionEvent) {
+    }
 }

@@ -23,4 +23,8 @@ public class DocumentVerificationEducationVerificationController {
     @javafx.fxml.FXML
     public void educationVerificationViewCertificateButtonOnAction(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void educationVerificationBackButtonOnAction(ActionEvent actionEvent) {
+    }
 }

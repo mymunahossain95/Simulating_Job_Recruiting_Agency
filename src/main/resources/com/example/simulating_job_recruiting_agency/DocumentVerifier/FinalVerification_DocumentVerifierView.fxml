@@ -8,7 +8,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierFileVerificationController">
    <children>
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILE VERIFICATION:" wrappingWidth="118.94793701171875" />
@@ -24,5 +23,6 @@
       <Button layoutX="422.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleMarkNotEligibleButtonOA" text="Mark Not Eligible" />
       <Button layoutX="422.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleSaveDecisionButtonOA" text="Save Decision" />
       <Label fx:id="fileVerificationFinalStatusLabel" layoutX="235.0" layoutY="284.0" prefHeight="43.0" prefWidth="89.0" text="Final Status" />
+      <Button layoutX="425.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleBackButtonOA" text="Back" />
    </children>
 </AnchorPane>

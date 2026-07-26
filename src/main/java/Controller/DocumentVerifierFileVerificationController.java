@@ -30,4 +30,8 @@ public class DocumentVerifierFileVerificationController {
     @javafx.fxml.FXML
     public void handleMarkEligibleButtonOA(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void handleBackButtonOA(ActionEvent actionEvent) {
+    }
 }

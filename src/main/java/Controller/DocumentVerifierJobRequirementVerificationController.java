@@ -22,4 +22,8 @@ public class DocumentVerifierJobRequirementVerificationController {
     @javafx.fxml.FXML
     public void handleCheckEligibilityButtonOA(ActionEvent actionEvent) {
     }
+
+    @javafx.fxml.FXML
+    public void handleBackButtonOA(ActionEvent actionEvent) {
+    }
 }

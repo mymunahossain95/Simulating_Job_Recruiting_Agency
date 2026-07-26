@@ -9,7 +9,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="455.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierCandidateProfileView">
    <children>
       <Label layoutX="27.0" layoutY="23.0" text="CANDIDATE PROFILE:" />
@@ -29,5 +28,6 @@
       <Label layoutX="14.0" layoutY="168.0" text="CANDIDATE LIST:" />
       <Button layoutX="80.0" layoutY="340.0" mnemonicParsing="false" onAction="#candidateListViewButtonButtonOA" text="View Profile" />
       <Button layoutX="199.0" layoutY="340.0" mnemonicParsing="false" onAction="#candidateListProceedButtonOA" text="Proceed" />
+      <Button layoutX="295.0" layoutY="340.0" mnemonicParsing="false" onAction="#candidateListGoBackButtonOA" text="Go Back" />
    </children>
 </AnchorPane>

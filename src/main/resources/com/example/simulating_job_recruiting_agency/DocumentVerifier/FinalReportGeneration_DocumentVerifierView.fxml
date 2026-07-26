@@ -8,7 +8,6 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierReportGenerationController">
    <children>
       <Text layoutX="25.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORT GENERATION:" />
@@ -25,5 +24,6 @@
       <Button layoutX="285.0" layoutY="242.0" mnemonicParsing="false" onAction="#reportGenerationDownloadReportButtonOA" text="Download Report" />
       <Button layoutX="285.0" layoutY="274.0" mnemonicParsing="false" onAction="#reportGenerationPrintReportButtonOA" text="Print  Report" />
       <Label fx:id="reportGenerationReportGeneratedSuccessfullyLabel" layoutX="192.0" layoutY="330.0" prefHeight="45.0" prefWidth="226.0" text="Report Generated Successfully" />
+      <Button layoutX="502.0" layoutY="353.0" mnemonicParsing="false" onAction="#reportGenerationBackButtonOA" text="Back" />
    </children>
 </AnchorPane>

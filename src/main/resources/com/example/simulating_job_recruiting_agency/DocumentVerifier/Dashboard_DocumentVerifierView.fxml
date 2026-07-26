@@ -15,7 +15,7 @@
       <Button layoutX="88.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleIdentityVerificationButtonOnAction" text="Identity Verification" />
       <Button layoutX="88.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleJobRequirementVerificationButtonOnAction" text="Job Requirement Verification" />
       <Button layoutX="88.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleFinalVerificationButtonOnAction" text="Final Verification" />
-      <Button layoutX="88.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleGenerateFinalReportButtonOnAction" text="Generate Final Report" />
+      <Button layoutX="88.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleFinalGenerateReportButtonOnAction" text="Final Generate Report" />
       <Line endX="85.0" endY="-12.000005722045898" layoutX="59.0" layoutY="35.0" startX="-50.0000114440918" startY="-12.000005722045898" />
    </children>
 </AnchorPane>

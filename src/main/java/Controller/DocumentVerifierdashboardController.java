@@ -11,7 +11,7 @@ public class DocumentVerifierdashboardController {
     public void handleVerificationRequestsButtonOnAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleGenerateFinalReportButtonOnAction(ActionEvent actionEvent) {
     }
 
@@ -37,5 +37,9 @@ public class DocumentVerifierdashboardController {
 
     @javafx.fxml.FXML
     public void handleCandidateProfileButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleFinalGenerateReportButtonOnAction(ActionEvent actionEvent) {
     }
 }

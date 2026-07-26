@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="521.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.AssignCandidatesController">
+   <children>
+      <TextField fx:id="searchCandidateTextField" layoutX="122.0" layoutY="33.0" />
+      <ComboBox fx:id="trainingProgramComboBox" layoutX="122.0" layoutY="73.0" prefWidth="150.0" />
+      <Button layoutX="63.0" layoutY="123.0" mnemonicParsing="false" onAction="#loadCandidatesButton" text="Load Candidates" />
+      <Text layoutX="21.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate:" />
+      <Text layoutX="21.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training Program:" />
+      <TableView fx:id="assignCandidatesTableView" layoutX="82.0" layoutY="172.0" prefHeight="200.0" prefWidth="437.0">
+        <columns>
+          <TableColumn fx:id="candidateIdTableColumn" prefWidth="87.0" text="Candidate ID" />
+          <TableColumn fx:id="candidateNameTableColumn" prefWidth="99.0" text="Candidate Name" />
+            <TableColumn fx:id="skillsTableColumn" prefWidth="65.0" text="Skills" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="76.0" text="Status" />
+            <TableColumn fx:id="availableSeatsTableColumn" prefWidth="109.0" text="Available Seats" />
+        </columns>
+      </TableView>
+      <Label fx:id="selectedCandidateLable" layoutX="373.0" layoutY="384.0" prefHeight="25.0" prefWidth="213.0" text="Selected Candidate" />
+      <Label fx:id="selectedProgramLable" layoutX="373.0" layoutY="409.0" prefHeight="25.0" prefWidth="138.0" text="Selected Program" />
+      <Label fx:id="remainingSeatsLable" layoutX="373.0" layoutY="434.0" prefHeight="25.0" prefWidth="116.0" text="Remaining Seats" />
+      <Button layoutX="30.0" layoutY="397.0" mnemonicParsing="false" onAction="#assignCandidateButton" text="Assign Candidate" />
+      <Button layoutX="534.0" layoutY="482.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="578.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.IssueTrainingCertificatesController">
+   <children>
+      <TextField fx:id="searchCandidateTextField" layoutX="437.0" layoutY="28.0" />
+      <TextField fx:id="certificateIdTextField" layoutX="437.0" layoutY="69.0" />
+      <Text layoutX="37.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Date" />
+      <Text layoutX="331.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Certificate ID" />
+      <DatePicker layoutX="96.0" layoutY="28.0" />
+      <TextArea fx:id="remarksTextArea" layoutX="96.0" layoutY="73.0" prefHeight="133.0" prefWidth="174.0" />
+      <Text layoutX="331.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate" />
+      <Text layoutX="37.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks" />
+      <TableView fx:id="certificateTableView" layoutX="11.0" layoutY="217.0" prefHeight="200.0" prefWidth="608.0">
+        <columns>
+          <TableColumn fx:id="certificateIdTableColumn" prefWidth="97.0" text="Certificate ID" />
+          <TableColumn fx:id="candidateIdTableColumn" prefWidth="85.0" text="Candidate ID" />
+            <TableColumn fx:id="candidateNameTableColumn" prefWidth="107.0" text="Candidate Name" />
+            <TableColumn fx:id="trainingProgramTableColumn" prefWidth="113.0" text="Training Program" />
+            <TableColumn fx:id="completionStatusTableColumn" prefWidth="115.0" text="Completion Status" />
+            <TableColumn fx:id="issueDateTableColumn" prefWidth="90.0" text="Issue Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="11.0" layoutY="430.0" mnemonicParsing="false" onAction="#issueCertificateButton" text="Issue Certificate" />
+      <Button layoutX="490.0" layoutY="430.0" mnemonicParsing="false" onAction="#downloadButton" text="Download Certificate" />
+      <Button layoutX="519.0" layoutY="468.0" mnemonicParsing="false" onAction="#printButton" text="Print Certificate" />
+      <Button layoutX="559.0" layoutY="539.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+      <Button layoutX="553.0" layoutY="181.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
+   </children>
+</AnchorPane>

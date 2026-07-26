@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.EvaluateTrainingEffectivenessController">
+   <children>
+      <ComboBox fx:id="trainigProgramComboBox" layoutX="124.0" layoutY="29.0" prefWidth="150.0" />
+      <DatePicker fx:id="evaluationDateDatePicker" layoutX="124.0" layoutY="66.0" prefHeight="25.0" prefWidth="150.0" />
+      <Button layoutX="62.0" layoutY="108.0" mnemonicParsing="false" onAction="#generateEvaluationButton" text="Generate Evaluation" />
+      <Text layoutX="16.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training Program" />
+      <Text layoutX="16.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluation Date" />
+      <TableView fx:id="trainingEvaluationTableView" layoutX="120.0" layoutY="145.0" prefHeight="200.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="programTableColumn" prefWidth="75.0" text="Program" />
+          <TableColumn fx:id="participantsTableColumn" prefWidth="75.0" text="Participants" />
+            <TableColumn fx:id="averageScoreTableColumn" prefWidth="104.0" text="Average Score" />
+            <TableColumn fx:id="completionRateTableColumn" prefWidth="105.0" text="Completion Rate" />
+        </columns>
+      </TableView>
+      <Button layoutX="545.0" layoutY="395.0" mnemonicParsing="false" onAction="#backButton" text="Back" />
+   </children>
+</AnchorPane>

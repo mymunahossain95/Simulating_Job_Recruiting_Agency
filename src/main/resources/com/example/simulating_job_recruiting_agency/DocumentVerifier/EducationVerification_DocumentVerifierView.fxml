@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerificationEducationVerificationController">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDUCATION VERIFICATION:" />
+      <Line endX="45.912109375" endY="-5.7220458984375E-6" layoutX="115.0" layoutY="31.0" startX="-100.0" />
+      <TableView fx:id="educationVerificationTableView" layoutX="14.0" layoutY="46.0" prefHeight="127.0" prefWidth="229.0">
+        <columns>
+          <TableColumn prefWidth="114.6666259765625" text="Education Records" />
+          <TableColumn fx:id="educationVerificationDegreeCertificatesCol2" prefWidth="122.0" text="Degree Certificates" />
+        </columns>
+      </TableView>
+      <TextField fx:id="educationVerificatiomRemarksTextField" layoutX="75.0" layoutY="188.0" />
+      <Text layoutX="14.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks:" />
+      <Button layoutX="79.0" layoutY="247.0" mnemonicParsing="false" onAction="#educationVerificationViewCertificateButtonOnAction" text="View Certificate" />
+      <Button layoutX="79.0" layoutY="279.0" mnemonicParsing="false" onAction="#educationVerificationVerifyQualificationButtonOnAction" text="Verify Qualification" />
+      <Label fx:id="educationVerificationQualificationStatusLabel" layoutX="323.0" layoutY="244.0" prefHeight="95.0" prefWidth="195.0" text="Qualification Status" />
+      <Button layoutX="79.0" layoutY="313.0" mnemonicParsing="false" onAction="#educationVerificationBackButtonOnAction" text="Back" />
+   </children>
+</AnchorPane>

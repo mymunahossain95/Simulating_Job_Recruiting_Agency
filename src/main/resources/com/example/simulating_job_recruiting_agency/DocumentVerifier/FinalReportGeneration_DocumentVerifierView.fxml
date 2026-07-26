@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierReportGenerationController">
+   <children>
+      <Text layoutX="25.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORT GENERATION:" />
+      <Line endX="19.140625" endY="-1.0000057220458984" layoutX="126.0" layoutY="32.0" startX="-101.0" startY="-1.0000057220458984" />
+      <TableView fx:id="reportGenerationTableView" layoutX="85.0" layoutY="56.0" prefHeight="172.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="reportGenerationCandidateRecordsCol1" prefWidth="116.6666259765625" text="Candidate Records" />
+          <TableColumn fx:id="reportGenerationVerificationDataCol2" prefWidth="142.0" text="Verification Data" />
+            <TableColumn fx:id="reportGenerationEligibilityReportCol3" prefWidth="142.0" text="Eligibility Report" />
+        </columns>
+      </TableView>
+      <Button layoutX="85.0" layoutY="242.0" mnemonicParsing="false" onAction="#reportGenerationSelectRecordButtonOA" text="Select Record" />
+      <Button layoutX="85.0" layoutY="274.0" mnemonicParsing="false" onAction="#reportGenerationGenerateReportButtonOA" text="Generate Report" />
+      <Button layoutX="285.0" layoutY="242.0" mnemonicParsing="false" onAction="#reportGenerationDownloadReportButtonOA" text="Download Report" />
+      <Button layoutX="285.0" layoutY="274.0" mnemonicParsing="false" onAction="#reportGenerationPrintReportButtonOA" text="Print  Report" />
+      <Label fx:id="reportGenerationReportGeneratedSuccessfullyLabel" layoutX="192.0" layoutY="330.0" prefHeight="45.0" prefWidth="226.0" text="Report Generated Successfully" />
+      <Button layoutX="502.0" layoutY="353.0" mnemonicParsing="false" onAction="#reportGenerationBackButtonOA" text="Back" />
+   </children>
+</AnchorPane>

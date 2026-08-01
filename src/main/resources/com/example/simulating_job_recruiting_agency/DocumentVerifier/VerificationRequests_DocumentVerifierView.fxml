@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="487.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierVerificationRequestsController">
+<AnchorPane prefHeight="487.0" prefWidth="627.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierVerificationRequestsController">
    <children>
       <Label fx:id="vaerificationreqVerificationRequestDashboardLabel" layoutX="215.0" layoutY="23.0" text="VERIFICATION REQUEST DASHBOARD" />
       <TextField fx:id="verificationRequestSearchForCandidateTextField" layoutX="150.0" layoutY="67.0" />

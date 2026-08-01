@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="484.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CareerCounselorCounselingSessionController">
+<AnchorPane prefHeight="484.0" prefWidth="638.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorCounselingSessionController">
    <children>
       <Label fx:id="careercounselingSessionCounselingSessionsLabel" layoutX="240.0" layoutY="23.0" text="Counseling Sessions" />
       <Label fx:id="counselingSessionCandidateInformationLabel" layoutX="240.0" layoutY="47.0" text="Candidate Information" />

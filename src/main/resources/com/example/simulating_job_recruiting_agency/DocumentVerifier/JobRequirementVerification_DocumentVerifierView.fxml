@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DocumentVerifierJobRequirementVerificationController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierJobRequirementVerificationController">
    <children>
       <Text layoutX="37.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Requirement Verification:" />
       <Line endX="88.33331298828125" endY="-5.7220458984375E-6" layoutX="115.0" layoutY="31.0" startX="-89.66665649414062" startY="-5.7220458984375E-6" />

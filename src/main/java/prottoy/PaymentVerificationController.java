@@ -1,15 +1,18 @@
-package Controller;
+package prottoy;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-public class ProcessPaymentsController {
+public class PaymentVerificationController {
     @javafx.fxml.FXML
-    private TableColumn methodColumn;
+    private TextField remarksField;
     @javafx.fxml.FXML
-    private TableView approvedPaymentTable;
+    private TableView paymentInfoTable;
+    @javafx.fxml.FXML
+    private TableColumn paymentTypeColumn;
     @javafx.fxml.FXML
     private TableColumn statusColumn;
     @javafx.fxml.FXML
@@ -19,13 +22,13 @@ public class ProcessPaymentsController {
     @javafx.fxml.FXML
     private TableColumn paymentIdColumn;
     @javafx.fxml.FXML
-    private Label paymentStatusLabel;
+    private Label verificationStatusLabel;
 
     @javafx.fxml.FXML
     public void onBack(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onProcessPayment(ActionEvent actionEvent) {
+    public void onVerify(ActionEvent actionEvent) {
     }
 }

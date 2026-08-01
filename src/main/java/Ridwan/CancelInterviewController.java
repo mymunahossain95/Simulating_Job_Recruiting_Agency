@@ -1,18 +1,21 @@
-package Controller;
+package Ridwan;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-public class RecordInterviewAttendanceController {
+public class CancelInterviewController {
+    @javafx.fxml.FXML
+    private TableView interviewTable;
     @javafx.fxml.FXML
     private TableColumn interviewIdColumn;
     @javafx.fxml.FXML
     private TableColumn candidateColumn;
     @javafx.fxml.FXML
-    private TableColumn attendanceColumn;
+    private TableColumn dateColumn;
     @javafx.fxml.FXML
-    private ComboBox attendanceComboBox;
+    private TextField reasonField;
 
     @javafx.fxml.FXML
     public void clearBtnOnAction(ActionEvent actionEvent) {
@@ -23,6 +26,6 @@ public class RecordInterviewAttendanceController {
     }
 
     @javafx.fxml.FXML
-    public void saveBtnOnAction(ActionEvent actionEvent) {
+    public void cancelBtnOnAction(ActionEvent actionEvent) {
     }
 }

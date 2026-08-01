@@ -1,26 +1,27 @@
-package Controller;
+package Ridwan;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class GenerateFinalInterviewOutcomeController {
+public class RescheduleInterviewController {
     @javafx.fxml.FXML
-    private TableColumn remarksColumn;
+    private TableColumn interviewIdColumn;
     @javafx.fxml.FXML
-    private TableColumn decisionColumn;
-    @javafx.fxml.FXML
-    private TableColumn scoreColumn;
-    @javafx.fxml.FXML
-    private TableView outcomeTable;
+    private DatePicker newDatePicker;
     @javafx.fxml.FXML
     private TableColumn candidateColumn;
     @javafx.fxml.FXML
-    private ComboBox interviewComboBox;
+    private TableColumn dateColumn;
+    @javafx.fxml.FXML
+    private ComboBox newTimeComboBox;
+    @javafx.fxml.FXML
+    private TableView interviewTable;
 
     @javafx.fxml.FXML
-    public void generateOutcomeBtnOnAction(ActionEvent actionEvent) {
+    public void updateBtnOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

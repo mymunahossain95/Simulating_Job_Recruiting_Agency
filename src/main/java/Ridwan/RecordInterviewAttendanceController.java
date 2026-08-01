@@ -1,26 +1,18 @@
-package Controller;
+package Ridwan;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 
-public class SendInterviewNotificationController {
-    @javafx.fxml.FXML
-    private TextField messageField;
+public class RecordInterviewAttendanceController {
     @javafx.fxml.FXML
     private TableColumn interviewIdColumn;
     @javafx.fxml.FXML
-    private TableColumn statusColumn;
-    @javafx.fxml.FXML
-    private TableColumn messageColumn;
-    @javafx.fxml.FXML
     private TableColumn candidateColumn;
     @javafx.fxml.FXML
-    private ComboBox interviewComboBox;
+    private TableColumn attendanceColumn;
     @javafx.fxml.FXML
-    private TableView notificationTableView;
+    private ComboBox attendanceComboBox;
 
     @javafx.fxml.FXML
     public void clearBtnOnAction(ActionEvent actionEvent) {
@@ -31,6 +23,6 @@ public class SendInterviewNotificationController {
     }
 
     @javafx.fxml.FXML
-    public void sendBtnOnAction(ActionEvent actionEvent) {
+    public void saveBtnOnAction(ActionEvent actionEvent) {
     }
 }

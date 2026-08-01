@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="705.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AssignSkillTestController">
+<AnchorPane prefHeight="705.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.AssignSkillTestController">
    <children>
       <Text layoutX="247.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AssignSkillTest" wrappingWidth="135.13671875" />
       <ComboBox fx:id="candidateComboBox" layoutX="134.0" layoutY="56.0" prefWidth="150.0" />

@@ -1,4 +1,4 @@
-package Controller;
+package Ridwan;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;

@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="638.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EvaluateAssessmentController">
+<AnchorPane prefHeight="638.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.EvaluateAssessmentController">
    <children>
       <Text layoutX="177.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Evaluate Candidate Answers" textAlignment="CENTER" wrappingWidth="246.13671875" />
       <TableView fx:id="submissionTableView" layoutX="82.0" layoutY="52.0" prefHeight="200.0" prefWidth="446.0">

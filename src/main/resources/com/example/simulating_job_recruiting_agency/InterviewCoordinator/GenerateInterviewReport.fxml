@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="548.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GenerateInterviewReportController">
+<AnchorPane prefHeight="548.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.GenerateInterviewReportController">
    <children>
       <DatePicker fx:id="fromDatePicker" layoutX="27.0" layoutY="68.0" />
       <DatePicker fx:id="toDatePicker" layoutX="27.0" layoutY="133.0" />

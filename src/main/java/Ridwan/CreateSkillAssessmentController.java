@@ -1,30 +1,34 @@
-package Controller;
+package Ridwan;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-public class UpdateAssessmentCriteriaController {
+public class CreateSkillAssessmentController {
     @javafx.fxml.FXML
-    private TableColumn updateDateColumn;
+    private TableColumn testIdColumn;
     @javafx.fxml.FXML
     private ComboBox categoryComboBox;
     @javafx.fxml.FXML
     private Label titleLabel;
     @javafx.fxml.FXML
-    private TableColumn weightageColumn;
+    private TableColumn titleColumn;
     @javafx.fxml.FXML
-    private TableView criteriaTable;
+    private TableColumn statusColumn;
+    @javafx.fxml.FXML
+    private TableColumn creationDateColumn;
+    @javafx.fxml.FXML
+    private TableView assessmentTable;
+    @javafx.fxml.FXML
+    private Label assessmentInfoLabel;
+    @javafx.fxml.FXML
+    private TextField testTitleField;
     @javafx.fxml.FXML
     private TableColumn categoryColumn;
     @javafx.fxml.FXML
-    private Label statusLabel;
-    @javafx.fxml.FXML
-    private TextField weightageField;
-    @javafx.fxml.FXML
-    private Button clearBtnOnAction1;
+    private TextField instructionAreaTF;
 
     @javafx.fxml.FXML
-    public void updateBtnOnAction(ActionEvent actionEvent) {
+    public void saveTestBtnOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

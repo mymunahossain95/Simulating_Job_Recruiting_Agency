@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="679.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PerformanceReportsController">
+<AnchorPane prefHeight="679.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.PerformanceReportsController">
    <children>
       <Label fx:id="titleLabel" layoutX="126.0" layoutY="14.0" prefHeight="17.0" prefWidth="216.0" text="View Performance Reports" />
       <ComboBox fx:id="candidateComboBox" layoutX="132.0" layoutY="57.0" prefWidth="150.0" />

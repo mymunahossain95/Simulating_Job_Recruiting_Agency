@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="708.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UpdateAssessmentCriteriaController">
+<AnchorPane prefHeight="708.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.UpdateAssessmentCriteriaController">
    <children>
       <Label fx:id="titleLabel" layoutX="203.0" layoutY="14.0" prefHeight="17.0" prefWidth="193.0" text="Update Assessment Criteria" />
       <TableView fx:id="criteriaTable" layoutX="11.0" layoutY="54.0" prefHeight="200.0" prefWidth="293.0">

@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="815.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PublishAssessmentResultController">
+<AnchorPane prefHeight="815.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.PublishAssessmentResultController">
    <children>
       <Text layoutX="177.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publish Assessment Result" wrappingWidth="241.13671875" />
       <ComboBox fx:id="assessmentComboBox" layoutX="130.0" layoutY="62.0" prefWidth="150.0" />

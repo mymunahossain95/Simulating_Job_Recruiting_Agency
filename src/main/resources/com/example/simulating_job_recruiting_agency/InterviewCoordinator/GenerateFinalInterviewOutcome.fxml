@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GenerateFinalInterviewOutcomeController">
+<AnchorPane prefHeight="466.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.GenerateFinalInterviewOutcomeController">
    <children>
       <Text layoutX="220.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Final Interview Outcome" wrappingWidth="195.13671875" />
       <ComboBox fx:id="interviewComboBox" layoutX="76.0" layoutY="78.0" prefWidth="150.0" />

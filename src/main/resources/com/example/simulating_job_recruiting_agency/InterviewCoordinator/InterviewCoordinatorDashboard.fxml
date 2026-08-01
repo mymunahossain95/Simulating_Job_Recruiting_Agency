@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="310.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InterviewCoordinatorDashboardController">
+<AnchorPane prefHeight="310.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.InterviewCoordinatorDashboardController">
    <children>
       <Label layoutX="123.0" layoutY="14.0" prefHeight="17.0" prefWidth="187.0" text="Interview Coordinator Dashboard" />
       <Button layoutX="35.0" layoutY="61.0" mnemonicParsing="false" onAction="#scheduleInterviewBtnOnAction" text="Schedule Interview" />

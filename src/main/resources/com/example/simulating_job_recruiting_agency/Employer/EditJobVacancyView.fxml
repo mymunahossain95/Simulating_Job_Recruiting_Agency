@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="454.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditJobVacancyViewController">
+<AnchorPane prefHeight="454.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.EditJobVacancyViewController">
    <children>
       <Label layoutX="48.0" layoutY="49.0" text="Job Title" />
       <TextField fx:id="jobTitleTF" layoutX="105.0" layoutY="45.0" />
@@ -17,7 +17,7 @@
       <TextField fx:id="jobDescriptionTF" layoutX="130.0" layoutY="140.0" />
       <Label layoutX="48.0" layoutY="98.0" text="Salary" />
       <Label layoutX="39.0" layoutY="144.0" text="Job Description" />
-      <Label layoutX="316.0" layoutY="49.0" text="Deadline" />
+      <Label layoutX="336.0" layoutY="49.0" text="Deadline" />
       <DatePicker fx:id="deadlineDP" layoutX="400.0" layoutY="45.0" />
       <Button layoutX="449.0" layoutY="119.0" mnemonicParsing="false" onAction="#updateJobOA" text="Update Job" />
       <Button layoutX="449.0" layoutY="153.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
@@ -29,9 +29,9 @@
             <TableColumn fx:id="jobStatusTC" prefWidth="141.0" text="Job Status" />
         </columns>
       </TableView>
-      <Label layoutX="238.0" layoutY="178.0" text="Posted Jobs" />
+      <Label layoutX="269.0" layoutY="178.0" text="Posted Jobs" />
       <Label layoutX="64.0" layoutY="412.0" text="Status" />
       <Label fx:id="statusForEditJobVacancyLabel" layoutX="116.0" layoutY="412.0" text="Label" />
-      <Label layoutX="254.0" layoutY="20.0" text="EDIT JOB VACANCY" />
+      <Label layoutX="248.0" layoutY="14.0" text="EDIT JOB VACANCY" />
    </children>
 </AnchorPane>

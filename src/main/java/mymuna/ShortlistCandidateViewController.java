@@ -1,36 +1,33 @@
-package Controller;
+package mymuna;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class ReviewApplicationsViewController {
+public class ShortlistCandidateViewController {
     @javafx.fxml.FXML
-    private TableView reviewApplicationsTV;
+    private TableView shortlistCandidateTV;
     @javafx.fxml.FXML
-    private TableColumn applicationDateTC;
+    private Label statusForShortlistCandidateLabel;
+    @javafx.fxml.FXML
+    private TableColumn statusTC;
     @javafx.fxml.FXML
     private TableColumn candidateIdTC;
     @javafx.fxml.FXML
     private TableColumn candidateNameTC;
     @javafx.fxml.FXML
     private TableColumn appliedPositionTC;
-    @javafx.fxml.FXML
-    private TableColumn resumeStatusTC;
 
     @javafx.fxml.FXML
-    public void viewProfileOA(ActionEvent actionEvent) {
+    public void shortlistCandidateOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void downloadResumeOA(ActionEvent actionEvent) {
+    public void rejectCandidateOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void refreshOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void viewResumeOA(ActionEvent actionEvent) {
     }
 }

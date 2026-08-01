@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="455.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CompanyRegistrationViewController">
+<AnchorPane prefHeight="455.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.CompanyRegistrationViewController">
    <children>
       <Label layoutX="42.0" layoutY="39.0" text="Company Name" />
       <TextField fx:id="companyNameTF" layoutX="145.0" layoutY="35.0" />
@@ -20,7 +20,7 @@
       <Label layoutX="42.0" layoutY="170.0" text="Contact Number" />
       <Button layoutX="425.0" layoutY="48.0" mnemonicParsing="false" onAction="#submitProfileOA" text="Submit Profile" />
       <Button layoutX="445.0" layoutY="109.0" mnemonicParsing="false" onAction="#clearOA" text="Clear" />
-      <TableView fx:id="companyRegistationTV" layoutX="37.0" layoutY="212.0" prefHeight="174.0" prefWidth="529.0">
+      <TableView fx:id="companyRegistationTV" layoutX="36.0" layoutY="228.0" prefHeight="174.0" prefWidth="529.0">
         <columns>
           <TableColumn fx:id="companyIdTC" prefWidth="75.0" text="Company ID" />
           <TableColumn fx:id="companyNameTC" prefWidth="120.0" text="Company Name" />
@@ -31,5 +31,6 @@
       </TableView>
       <Label layoutX="53.0" layoutY="408.0" text="Status" />
       <Label fx:id="statusForCompanyResistationLabel" layoutX="123.0" layoutY="408.0" prefHeight="17.0" prefWidth="226.0" text="Label" />
+      <Label layoutX="278.0" layoutY="203.0" text="Company Profile" />
    </children>
 </AnchorPane>

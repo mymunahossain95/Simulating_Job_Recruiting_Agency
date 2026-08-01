@@ -1,4 +1,4 @@
-package Controller;
+package mymuna;
 
 import javafx.event.ActionEvent;
 

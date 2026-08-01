@@ -1,32 +1,32 @@
-package Controller;
+package mymuna;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-public class ScheduleInterviewViewController {
+public class HiringDecisionViewController {
     @javafx.fxml.FXML
-    private TableView scheduleInterviewTV;
+    private ComboBox decisionCB;
     @javafx.fxml.FXML
-    private Label statusForScheduleInterviewLabel;
+    private TableColumn decisionTC;
     @javafx.fxml.FXML
-    private TableColumn interviewLocationTC;
+    private Label statusForHiringDecisionLabel;
     @javafx.fxml.FXML
-    private TableColumn interviewDateTC;
+    private TableColumn decisionDateTC;
     @javafx.fxml.FXML
-    private TableColumn interviewStatusTC;
+    private TextField remarkTF;
     @javafx.fxml.FXML
-    private TextField interviewLocationTF;
+    private TableView hiringDecisionTV;
     @javafx.fxml.FXML
-    private ComboBox interviewTimeCB;
+    private TableColumn positionTC;
     @javafx.fxml.FXML
-    private TableColumn interviewTimeTC;
+    private TableColumn candidateIdTC;
     @javafx.fxml.FXML
     private ComboBox candidateNameCB;
     @javafx.fxml.FXML
     private TableColumn candidateNameTC;
 
     @javafx.fxml.FXML
-    public void scheduleInterviewOA(ActionEvent actionEvent) {
+    public void saveDecisionOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

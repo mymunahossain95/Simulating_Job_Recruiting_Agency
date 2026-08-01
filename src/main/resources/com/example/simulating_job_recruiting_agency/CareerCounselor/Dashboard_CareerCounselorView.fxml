@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorDashboardController">
+   <children>
+      <Button layoutX="38.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleCareerGuidanceButton" text="Career Guidance" />
+      <Button layoutX="38.0" layoutY="64.0" mnemonicParsing="false" onAction="#handleAssistanceRequestsButton" text="Assistance Requests" />
+      <Button layoutX="38.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleCounselingSessionsButton" text="Counseling Sessions" />
+      <Button layoutX="38.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleJobMatchingButton" text="Job Matching" />
+      <Button layoutX="37.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleTrainingRecommendationsButton" text="Training Recommendations" />
+      <Button layoutX="37.0" layoutY="219.0" mnemonicParsing="false" onAction="#handleResumeReviewButton" text="Resume Review" />
+      <Button layoutX="38.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleInterviewGuidanceButton" text="Interview Guidance" />
+      <Button layoutX="38.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleCandidateTrackingButton" text="CandidateTracking" />
+   </children>
+</AnchorPane>

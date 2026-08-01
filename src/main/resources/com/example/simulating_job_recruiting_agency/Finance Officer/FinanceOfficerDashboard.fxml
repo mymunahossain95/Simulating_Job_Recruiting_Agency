@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.FinanceOfficerDashboardController">
+   <children>
+      <Button layoutX="26.0" layoutY="132.0" mnemonicParsing="false" onAction="#onPaymentRequests" text="View Payment Requests" />
+      <Button layoutX="290.0" layoutY="208.0" mnemonicParsing="false" onAction="#onRefundRequests" text="Handle Refund Requests" />
+      <Button layoutX="277.0" layoutY="281.0" mnemonicParsing="false" onAction="#onTransactions" text="Maintain Transaction Records" />
+      <Button layoutX="137.0" layoutY="350.0" mnemonicParsing="false" onAction="#onCompliance" text="Monitor Financial Compliance" />
+      <Button layoutX="24.0" layoutY="281.0" mnemonicParsing="false" onAction="#onFinancialReports" text="Generate Financial Reports" />
+      <Button layoutX="24.0" layoutY="208.0" mnemonicParsing="false" onAction="#onProcessPayments" text="Process Candidate Payment" />
+      <Button layoutX="290.0" layoutY="132.0" mnemonicParsing="false" onAction="#onVerifyPayments" text="Verify Payment Eligibility" />
+      <Label fx:id="welcomeLabel" layoutX="224.0" layoutY="64.0" text="Welcome Finance Officer" />
+      <Text layoutX="203.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" FINANCE OFFICER DASHBOARD" />
+   </children>
+</AnchorPane>

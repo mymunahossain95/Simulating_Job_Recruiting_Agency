@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="527.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.PlacementStatisticsController">
+   <children>
+      <TableView fx:id="placementStateTableView" layoutX="25.0" layoutY="272.0" prefHeight="200.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="placementIdTableColumn" prefWidth="107.0" text="Placement ID" />
+          <TableColumn fx:id="candidateNameTableColumn" prefWidth="115.0" text="Candidate Name" />
+            <TableColumn fx:id="comPanyTableColumn" minWidth="3.0" prefWidth="88.0" text="Company" />
+            <TableColumn fx:id="indusTryTableColumn" prefWidth="81.0" text="Industry" />
+            <TableColumn fx:id="placementDataTableColumn" minWidth="3.0" prefWidth="111.0" text="Placement Data" />
+            <TableColumn fx:id="staTusTableColumn" prefWidth="77.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchCandidateTextField" layoutX="128.0" layoutY="27.0" />
+      <Text layoutX="25.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate" />
+      <ComboBox fx:id="montHComboBox" layoutX="486.0" layoutY="27.0" prefHeight="17.0" prefWidth="102.0" />
+      <ComboBox fx:id="yeArComboBox" layoutX="486.0" layoutY="61.0" prefHeight="17.0" prefWidth="102.0" />
+      <Text layoutX="436.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month" />
+      <Text layoutX="436.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year" />
+      <Button layoutX="25.0" layoutY="126.0" mnemonicParsing="false" onAction="#onGenerateReport" text="Generate Report" />
+      <Button layoutX="25.0" layoutY="169.0" mnemonicParsing="false" onAction="#onExportpPdf" text="Export PDF" />
+      <Button layoutX="25.0" layoutY="218.0" mnemonicParsing="false" onAction="#onExportExcel" text="Export Excel" />
+      <Button layoutX="10.0" layoutY="488.0" mnemonicParsing="false" onAction="#onRefresh" text="Refresh" />
+      <Button layoutX="553.0" layoutY="488.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+   </children>
+</AnchorPane>

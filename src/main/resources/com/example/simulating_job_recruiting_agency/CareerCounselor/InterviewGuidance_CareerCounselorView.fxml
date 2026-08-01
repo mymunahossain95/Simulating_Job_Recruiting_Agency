@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorInterviewGuidanceController">
+   <children>
+      <Label fx:id="interviewguidanceInterviewGuidanceLabel" layoutX="226.0" layoutY="28.0" text="Interview Guidance" />
+      <Label fx:id="interviewGuidanceJobRoleLabel" layoutX="243.0" layoutY="54.0" text="Job Role" />
+      <Label fx:id="interviewguidanceInterviewMaterialsLabel" layoutX="226.0" layoutY="78.0" text="Interview Materials" />
+      <TableView fx:id="interviewGuidanceCandidateListTableView" layoutX="87.0" layoutY="149.0" prefHeight="139.0" prefWidth="422.0">
+        <columns>
+          <TableColumn fx:id="interviewGuidanceCandidateIDCol1" prefWidth="115.99996948242188" text="Candidate ID" />
+          <TableColumn fx:id="interviewGuidanceCandidateNameCol2" prefWidth="159.3333740234375" text="Candidate Name" />
+            <TableColumn fx:id="interviewGuidanceJobRoleCol3" prefWidth="159.3333740234375" text="Job Role" />
+        </columns>
+      </TableView>
+      <Text layoutX="14.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate ID:" />
+      <Button layoutX="140.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleViewCandidateOnActionButton" text="View Candidate" />
+      <Button layoutX="140.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleProvideTipsOnActionButton" text="Provide Tips" />
+      <Button layoutX="317.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleShareMaterialsOnActionButton" text="Share Materials" />
+      <Button layoutX="317.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleBackOnActionButton" text="Back" />
+   </children>
+</AnchorPane>

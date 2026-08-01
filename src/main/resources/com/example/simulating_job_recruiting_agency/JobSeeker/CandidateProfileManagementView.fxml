@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.CandidateProfileManagementViewController">
+   <children>
+      <TextField fx:id="nameTF" layoutX="80.0" layoutY="36.0" />
+      <Text layoutX="31.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" />
+      <TextField fx:id="phoneTF" layoutX="372.0" layoutY="36.0" />
+      <TextField fx:id="skillsTF" layoutX="372.0" layoutY="84.0" />
+      <TextField fx:id="emailTF" layoutX="90.0" layoutY="96.0" />
+      <Text layoutX="318.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:" />
+      <Text layoutX="41.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="318.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Skills" />
+      <TextField fx:id="educatioTF" layoutX="372.0" layoutY="200.0" />
+      <TextField fx:id="experienceTF" layoutX="372.0" layoutY="136.0" />
+      <Text layoutX="303.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Experience" />
+      <Text layoutX="310.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Education" />
+      <Button layoutX="54.0" layoutY="188.0" mnemonicParsing="false" onAction="#saveOA" text="Save" />
+      <Button layoutX="64.0" layoutY="252.0" mnemonicParsing="false" onAction="#editOA" text="Edit" />
+   </children>
+</AnchorPane>

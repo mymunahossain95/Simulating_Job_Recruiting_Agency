@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="448.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.TrainingCoordinatorDashboardController">
+   <children>
+      <Button layoutX="423.0" layoutY="300.0" mnemonicParsing="false" onAction="#certificateButton" text="Issue Training Certificates" />
+      <Button layoutX="166.0" layoutY="300.0" mnemonicParsing="false" onAction="#attendanceButton" text="Manage Training Attendance" />
+      <Button layoutX="415.0" layoutY="183.0" mnemonicParsing="false" onAction="#assignmentsButton" text="Manage Trainer Assignments" />
+      <Button layoutX="211.0" layoutY="183.0" mnemonicParsing="false" onAction="#evaluateButton" text="Evaluate Training Effectiveness" />
+      <Button layoutX="14.0" layoutY="183.0" mnemonicParsing="false" onAction="#monitorProgressButton" text="Monitor Training Progress" />
+      <Button layoutX="37.0" layoutY="56.0" mnemonicParsing="false" onAction="#manageTrainingProgramsButton" text="Manage Training Programs" />
+      <Button layoutX="247.0" layoutY="56.0" mnemonicParsing="false" onAction="#scheduleSessionsButton" text="Schedule Training Sessions" />
+      <Button layoutX="464.0" layoutY="56.0" mnemonicParsing="false" onAction="#assignCandidatesButton" text="Assign Candidates" />
+   </children>
+</AnchorPane>

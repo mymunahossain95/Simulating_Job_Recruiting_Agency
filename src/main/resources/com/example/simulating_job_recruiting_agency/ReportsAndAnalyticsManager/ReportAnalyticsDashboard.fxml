@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.ReportAnalyticsDashboardController">
+   <children>
+      <Button layoutX="377.0" layoutY="301.0" mnemonicParsing="false" onAction="#onRecruitmentForecast" text="Recruitment Forecast" />
+      <Button layoutX="181.0" layoutY="301.0" mnemonicParsing="false" onAction="#onCandidateFeedback" text="Candidate Feedback" />
+      <Button layoutX="480.0" layoutY="208.0" mnemonicParsing="false" onAction="#onVacancyAnalysis" text="Vacancy Analysis" />
+      <Button layoutX="274.0" layoutY="208.0" mnemonicParsing="false" onAction="#onSkilDemand" text="Skill Demand Analysis" />
+      <Button layoutX="42.0" layoutY="208.0" mnemonicParsing="false" onAction="#onRecruitmentPerformance" text="Recruitment Performance" />
+      <Button layoutX="486.0" layoutY="116.0" mnemonicParsing="false" onAction="#onHiringTrends" text="Hiring Trends" />
+      <Button layoutX="42.0" layoutY="116.0" mnemonicParsing="false" onAction="#onPlacementStatistics" text="Placement Statistics" />
+      <Button layoutX="274.0" layoutY="116.0" mnemonicParsing="false" onAction="#onInterviwAnalytics" text="Interviw Analytics" />
+   </children>
+</AnchorPane>

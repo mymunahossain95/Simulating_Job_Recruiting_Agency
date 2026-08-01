@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="426.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.PaymentRequestsController">
+   <children>
+      <Button layoutX="14.0" layoutY="389.0" mnemonicParsing="false" onAction="#onViewDetails" text="View Details" />
+      <Button layoutX="620.0" layoutY="389.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <TableView fx:id="paymentRequestTable" layoutX="3.0" layoutY="172.0" prefHeight="206.0" prefWidth="672.0">
+        <columns>
+          <TableColumn fx:id="requestIdColumn" prefWidth="98.39999079704285" text="Request ID" />
+          <TableColumn fx:id="candidateIdColumn" prefWidth="93.5999755859375" text="Candidate ID" />
+            <TableColumn fx:id="candidateNameColumn" prefWidth="134.40003967285156" text="Candidate Name" />
+            <TableColumn fx:id="amountColumn" prefWidth="103.20001220703125" text="Amount" />
+            <TableColumn fx:id="requestDateColumn" prefWidth="127.2000732421875" text="Request Date" />
+            <TableColumn fx:id="statusColumn" prefWidth="107.2000732421875" text="Status" />
+        </columns>
+      </TableView>
+      <Text layoutX="272.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PAYMENT REQUESTS" />
+   </children>
+</AnchorPane>

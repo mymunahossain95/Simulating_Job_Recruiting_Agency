@@ -1,4 +1,4 @@
-package prottoy;
+package Prottoy;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;

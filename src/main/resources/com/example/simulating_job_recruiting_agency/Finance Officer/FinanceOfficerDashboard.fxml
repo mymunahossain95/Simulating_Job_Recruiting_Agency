@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.FinanceOfficerDashboardController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prottoy.FinanceOfficerDashboardController">
    <children>
       <Button layoutX="26.0" layoutY="132.0" mnemonicParsing="false" onAction="#onPaymentRequests" text="View Payment Requests" />
       <Button layoutX="290.0" layoutY="208.0" mnemonicParsing="false" onAction="#onRefundRequests" text="Handle Refund Requests" />

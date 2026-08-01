@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="489.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.PendingRegistrationsController">
+<AnchorPane prefHeight="489.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prottoy.PendingRegistrationsController">
    <children>
       <TableView fx:id="registrationTable" layoutX="29.0" layoutY="134.0" prefHeight="200.0" prefWidth="915.0">
         <columns>

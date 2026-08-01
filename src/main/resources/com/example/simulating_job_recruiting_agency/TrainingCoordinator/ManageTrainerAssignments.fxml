@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.ManageTrainerAssignmentsController">
+<AnchorPane prefHeight="510.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.ManageTrainerAssignmentsController">
    <children>
       <TableView fx:id="trainerAssignmentTableView" layoutX="24.0" layoutY="155.0" prefHeight="200.0" prefWidth="562.0">
         <columns>

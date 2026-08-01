@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.SkillDemandAnalysisController">
+<AnchorPane prefHeight="469.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.SkillDemandAnalysisController">
    <children>
       <TableView fx:id="skillDemandTableView" layoutX="54.0" layoutY="193.0" prefHeight="200.0" prefWidth="493.0">
         <columns>

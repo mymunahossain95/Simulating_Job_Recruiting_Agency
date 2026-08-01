@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.VacancyAnalysisController">
+<AnchorPane prefHeight="470.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.VacancyAnalysisController">
    <children>
       <TextField fx:id="searchVacancyTextField" layoutX="130.0" layoutY="32.0" />
       <Text layoutX="31.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Vacancy" />

@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="527.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.PlacementStatisticsController">
+<AnchorPane prefHeight="527.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.PlacementStatisticsController">
    <children>
       <TableView fx:id="placementStateTableView" layoutX="25.0" layoutY="272.0" prefHeight="200.0" prefWidth="580.0">
         <columns>

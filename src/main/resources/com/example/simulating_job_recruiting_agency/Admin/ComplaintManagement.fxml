@@ -7,20 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="409.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ComplaintManagementController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.ComplaintManagementController">
    <children>
-      <TableView fx:id="complaintTable" layoutX="6.0" layoutY="81.0" prefHeight="200.0" prefWidth="830.0">
+      <TableView fx:id="complaintTable" layoutX="20.0" layoutY="14.0" prefHeight="200.0" prefWidth="329.0">
         <columns>
-          <TableColumn fx:id="ComplaintIdColumnTable" prefWidth="309.5999879837036" text="Complaint ID" />
-          <TableColumn fx:id="UserColumnTable" prefWidth="245.60000610351562" text="User" />
-            <TableColumn fx:id="StatusColumnTable" minWidth="0.0" prefWidth="275.20001220703125" text="Status" />
+          <TableColumn fx:id="ComplaintIdColumnTable" prefWidth="112.0" text="Complaint ID" />
+          <TableColumn fx:id="UserColumnTable" prefWidth="101.60003662109375" text="User" />
+            <TableColumn fx:id="StatusColumnTable" minWidth="0.0" prefWidth="115.199951171875" text="Status" />
         </columns>
       </TableView>
-      <TextField fx:id="ResolutionTextField" layoutX="14.0" layoutY="313.0" />
-      <Text layoutX="14.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolution" />
-      <Button layoutX="291.0" layoutY="326.0" mnemonicParsing="false" onAction="#onResolve" text="Resolve" />
-      <Button layoutX="432.0" layoutY="326.0" mnemonicParsing="false" onAction="#onClose" text="Close" />
-      <Button layoutX="775.0" layoutY="369.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
-      <Text layoutX="336.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="   COMPLAINT MANAGEMENT   " />
+      <TextField fx:id="ResolutionTextField" layoutX="20.0" layoutY="248.0" />
+      <Text layoutX="20.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resolution" />
+      <Button layoutX="241.0" layoutY="241.0" mnemonicParsing="false" onAction="#onResolve" text="Resolve" />
+      <Button layoutX="340.0" layoutY="242.0" mnemonicParsing="false" onAction="#onClose" text="Close" />
    </children>
 </AnchorPane>

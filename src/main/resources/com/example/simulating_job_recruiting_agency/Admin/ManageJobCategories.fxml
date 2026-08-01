@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="493.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManageJobCategoriesController">
+<AnchorPane prefHeight="493.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.ManageJobCategoriesController">
    <children>
       <TableView fx:id="categoryTable" layoutX="4.0" layoutY="231.0" prefHeight="214.0" prefWidth="793.0">
         <columns>

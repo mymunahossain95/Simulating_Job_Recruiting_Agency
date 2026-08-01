@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="406.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminDashboardController">
+<AnchorPane prefHeight="406.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.AdminDashboardController">
    <children>
       <Button layoutX="39.0" layoutY="90.0" mnemonicParsing="false" onAction="#onManageUsers" text="Manage User Accounts" />
       <Button layoutX="40.0" layoutY="341.0" mnemonicParsing="false" onAction="#onBackup" text="Backup System Data" />

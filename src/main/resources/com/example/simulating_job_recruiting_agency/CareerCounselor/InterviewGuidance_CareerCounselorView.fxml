@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CareerCounselorInterviewGuidanceController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorInterviewGuidanceController">
    <children>
       <Label fx:id="interviewguidanceInterviewGuidanceLabel" layoutX="226.0" layoutY="28.0" text="Interview Guidance" />
       <Label fx:id="interviewGuidanceJobRoleLabel" layoutX="243.0" layoutY="54.0" text="Job Role" />

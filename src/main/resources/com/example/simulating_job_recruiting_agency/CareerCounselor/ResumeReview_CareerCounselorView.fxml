@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Line?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CareerCounselorResumeReviewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorResumeReviewController">
    <children>
       <Label fx:id="resumeReviewResumeReviewLabel" layoutX="457.0" layoutY="133.0" text="Resume Review" />
       <Label fx:id="resumeReviewCandidateReviewLabel" layoutX="441.0" layoutY="158.0" prefHeight="17.0" prefWidth="113.0" text="Candidate Resume" />

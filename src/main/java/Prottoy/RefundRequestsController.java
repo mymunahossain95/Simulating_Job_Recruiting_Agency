@@ -1,34 +1,35 @@
-package prottoy;
+package Prottoy;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 
-public class PaymentVerificationController {
+public class RefundRequestsController {
     @javafx.fxml.FXML
-    private TextField remarksField;
-    @javafx.fxml.FXML
-    private TableView paymentInfoTable;
-    @javafx.fxml.FXML
-    private TableColumn paymentTypeColumn;
+    private TableColumn reasonColumn;
     @javafx.fxml.FXML
     private TableColumn statusColumn;
+    @javafx.fxml.FXML
+    private TableView refundTable;
     @javafx.fxml.FXML
     private TableColumn candidateColumn;
     @javafx.fxml.FXML
     private TableColumn amountColumn;
     @javafx.fxml.FXML
-    private TableColumn paymentIdColumn;
+    private Label refundStatusLabel;
     @javafx.fxml.FXML
-    private Label verificationStatusLabel;
+    private TableColumn refundIdColumn;
 
     @javafx.fxml.FXML
     public void onBack(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onVerify(ActionEvent actionEvent) {
+    public void onRejectRefund(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onApproveRefund(ActionEvent actionEvent) {
     }
 }

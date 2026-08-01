@@ -1,37 +1,34 @@
-package prottoy;
+package Prottoy;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
-public class TransactionRecordsController {
+public class PaymentVerificationController {
     @javafx.fxml.FXML
-    private TableColumn transactionIdColumn;
+    private TextField remarksField;
     @javafx.fxml.FXML
-    private TableView transactionTable;
+    private TableView paymentInfoTable;
+    @javafx.fxml.FXML
+    private TableColumn paymentTypeColumn;
     @javafx.fxml.FXML
     private TableColumn statusColumn;
     @javafx.fxml.FXML
-    private Label updateStatusLabel;
+    private TableColumn candidateColumn;
     @javafx.fxml.FXML
     private TableColumn amountColumn;
     @javafx.fxml.FXML
-    private TableColumn paymentMethodColumn;
+    private TableColumn paymentIdColumn;
     @javafx.fxml.FXML
-    private TableColumn dateColumn;
-    @javafx.fxml.FXML
-    private TableColumn candidateIdColumn;
+    private Label verificationStatusLabel;
 
     @javafx.fxml.FXML
     public void onBack(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onUpdateRecord(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void onSaveRecord(ActionEvent actionEvent) {
+    public void onVerify(ActionEvent actionEvent) {
     }
 }

@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="521.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.FinancialReportsController">
+<AnchorPane prefHeight="521.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prottoy.FinancialReportsController">
    <children>
       <Text layoutX="297.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" FINANCIAL REPORTS" />
       <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Type" />

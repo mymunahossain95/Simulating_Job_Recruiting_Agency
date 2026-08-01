@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="639.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prottoy.ReportsController">
+<AnchorPane prefHeight="639.0" prefWidth="908.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prottoy.ReportsController">
    <children>
       <ComboBox fx:id="reportTypeCombo" layoutX="24.0" layoutY="48.0" prefWidth="150.0" />
       <Text layoutX="235.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" />

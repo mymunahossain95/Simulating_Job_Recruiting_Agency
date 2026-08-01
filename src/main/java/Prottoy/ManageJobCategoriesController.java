@@ -1,28 +1,30 @@
-package prottoy;
+package Prottoy;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class ComplaintManagementController {
+public class ManageJobCategoriesController {
     @javafx.fxml.FXML
-    private TableColumn UserColumnTable;
+    private TextField categoryNameField;
     @javafx.fxml.FXML
-    private TableColumn StatusColumnTable;
+    private TableColumn categoryNameColumn;
     @javafx.fxml.FXML
-    private TextField ResolutionTextField;
+    private TableColumn categoryIdColumn;
     @javafx.fxml.FXML
-    private TableView complaintTable;
-    @javafx.fxml.FXML
-    private TableColumn ComplaintIdColumnTable;
+    private TableView categoryTable;
 
     @javafx.fxml.FXML
-    public void onClose(ActionEvent actionEvent) {
+    public void onDelete(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onResolve(ActionEvent actionEvent) {
+    public void onUpdate(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void onAdd(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

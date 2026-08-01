@@ -1,29 +1,30 @@
-package Utsitacontroller;
+package Utsita;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TableView;
 
-public class VacancyAnalysisController {
+public class RecruitmentPerformanceController {
     @javafx.fxml.FXML
     private DatePicker endDateDatePicker;
     @javafx.fxml.FXML
-    private TextField searchVacancyTextField;
+    private TableView recruitmentPerformanceTableView;
     @javafx.fxml.FXML
-    private TableColumn filledDateTableColumn;
+    private TableColumn costPerHireTableColumn;
     @javafx.fxml.FXML
-    private TableColumn vacancyIdTableColumn;
+    private TableColumn successRateTableColumn;
     @javafx.fxml.FXML
-    private TableColumn jobTitleTableColumn;
+    private ComboBox reportTypeComboBox;
     @javafx.fxml.FXML
-    private TableColumn postedDateTableColumn;
+    private TableColumn recruitMentsTableColumn;
     @javafx.fxml.FXML
-    private TableColumn daysRequiredTableColumn;
+    private TableColumn departMentTableColumn;
+    @javafx.fxml.FXML
+    private TableColumn avgHiringTimeTableColumn;
     @javafx.fxml.FXML
     private DatePicker startDateDatePicker;
-    @javafx.fxml.FXML
-    private TableColumn compAnyTableColumn;
 
     @javafx.fxml.FXML
     public void onBack(ActionEvent actionEvent) {
@@ -38,6 +39,6 @@ public class VacancyAnalysisController {
     }
 
     @javafx.fxml.FXML
-    public void onAnalyze(ActionEvent actionEvent) {
+    public void onExportPdf(ActionEvent actionEvent) {
     }
 }

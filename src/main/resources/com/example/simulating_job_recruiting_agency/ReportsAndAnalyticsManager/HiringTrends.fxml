@@ -10,7 +10,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.HiringTrendsController">
+<AnchorPane prefHeight="501.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.HiringTrendsController">
    <children>
       <TableView fx:id="hiringTrendTableView" layoutX="19.0" layoutY="234.0" prefHeight="200.0" prefWidth="562.0">
         <columns>

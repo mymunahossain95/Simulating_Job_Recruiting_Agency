@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="512.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.TrainingManagementController">
+<AnchorPane prefHeight="512.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.TrainingManagementController">
    <children>
       <TextField fx:id="programNameTextField" layoutX="161.0" layoutY="30.0" />
       <TextField fx:id="maximumParticipantsTextField" layoutX="161.0" layoutY="65.0" />

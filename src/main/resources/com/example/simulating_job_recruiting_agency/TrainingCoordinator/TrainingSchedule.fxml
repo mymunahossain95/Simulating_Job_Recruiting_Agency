@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="669.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.TrainingScheduleController">
+<AnchorPane prefHeight="669.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.TrainingScheduleController">
    <children>
       <ComboBox fx:id="trainingProgramComboBox" layoutX="118.0" layoutY="25.0" prefWidth="150.0" />
       <Text layoutX="14.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training Program:" />

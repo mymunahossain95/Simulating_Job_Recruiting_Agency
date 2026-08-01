@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="511.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsitacontroller.MonitorTrainingProgressController">
+<AnchorPane prefHeight="511.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.MonitorTrainingProgressController">
    <children>
       <ComboBox fx:id="trainingProgram" layoutX="125.0" layoutY="25.0" prefHeight="16.0" prefWidth="120.0" />
       <ComboBox fx:id="sessionComboBox" layoutX="125.0" layoutY="62.0" prefHeight="16.0" prefWidth="120.0" />

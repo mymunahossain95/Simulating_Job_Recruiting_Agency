@@ -1,8 +1,7 @@
-package Utsitacontroller;
+package Utsita;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
-import javafx.scene.text.Text;
 
 public class TrainingManagementController {
     @javafx.fxml.FXML

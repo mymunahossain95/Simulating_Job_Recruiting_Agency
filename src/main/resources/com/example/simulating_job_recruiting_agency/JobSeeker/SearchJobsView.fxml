@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.SearchJobsViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.SearchJobsViewController">
    <children>
       <TextField fx:id="keyWordTF" layoutX="93.0" layoutY="41.0" />
       <Text layoutX="27.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KeyWord:" />

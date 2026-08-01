@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="455.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.CompanyRegistrationViewController">
+<AnchorPane prefHeight="455.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.CompanyRegistrationViewController">
    <children>
       <Label layoutX="42.0" layoutY="39.0" text="Company Name" />
       <TextField fx:id="companyNameTF" layoutX="145.0" layoutY="35.0" />

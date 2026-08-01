@@ -1,4 +1,4 @@
-package mymuna;
+package Mymuna;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.JobSeekerDashboardViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.JobSeekerDashboardViewController">
    <children>
       <Button layoutX="50.0" layoutY="60.0" mnemonicParsing="false" onAction="#createResumeOA" text="Create Resume" />
       <Button layoutX="50.0" layoutY="97.0" mnemonicParsing="false" onAction="#searchJobsOA" text="Search Jobs" />

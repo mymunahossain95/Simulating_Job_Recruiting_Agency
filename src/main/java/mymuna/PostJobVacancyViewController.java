@@ -1,32 +1,34 @@
-package Controller;
+package mymuna;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
-public class EditJobVacancyViewController {
-    @javafx.fxml.FXML
-    private TableColumn deadlineTC;
+public class PostJobVacancyViewController {
     @javafx.fxml.FXML
     private TableColumn jobIdTC;
     @javafx.fxml.FXML
     private TextField jobDescriptionTF;
     @javafx.fxml.FXML
-    private DatePicker deadlineDP;
+    private TableColumn applicationDeadlineTC;
     @javafx.fxml.FXML
     private TextField salaryTF;
     @javafx.fxml.FXML
+    private DatePicker applicationDeadlineDP;
+    @javafx.fxml.FXML
+    private TableColumn postingDateTC;
+    @javafx.fxml.FXML
     private TextField jobTitleTF;
     @javafx.fxml.FXML
-    private Label statusForEditJobVacancyLabel;
-    @javafx.fxml.FXML
-    private TableView editJobVacancyTV;
+    private Label statusForPostJobVacancyLabel;
     @javafx.fxml.FXML
     private TableColumn jobStatusTC;
+    @javafx.fxml.FXML
+    private TableView postedJobsTV;
     @javafx.fxml.FXML
     private TableColumn jobTitleTC;
 
     @javafx.fxml.FXML
-    public void updateJobOA(ActionEvent actionEvent) {
+    public void publishJobOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

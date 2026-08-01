@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RecommendedJobsViewController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.RecommendedJobsViewController">
    <children>
       <Label layoutX="70.0" layoutY="50.0" text="Recommended Jobs" />
       <Label layoutX="70.0" layoutY="95.0" text="Recommended Job List" />

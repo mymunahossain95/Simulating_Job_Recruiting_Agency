@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane fx:id="endDateDP" prefHeight="534.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RecruitmentReportsViewController">
+<AnchorPane fx:id="endDateDP" prefHeight="534.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mymuna.RecruitmentReportsViewController">
    <children>
       <Label layoutX="254.0" layoutY="23.0" text="RECRUITMENT REPORTS" />
       <Label layoutX="27.0" layoutY="65.0" text="Report Type" />

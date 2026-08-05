@@ -10,14 +10,14 @@
 
 <AnchorPane prefHeight="433.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Prottoy.ActivityLogsController">
    <children>
-      <DatePicker fx:id="fromDate" layoutX="16.0" layoutY="46.0" />
-      <DatePicker fx:id="toDate" layoutX="236.0" layoutY="46.0" />
-      <TextField fx:id="userIdField" layoutX="14.0" layoutY="131.0" />
-      <Button layoutX="236.0" layoutY="127.0" mnemonicParsing="false" onAction="#onFilter" text="Filter" />
-      <Text layoutX="16.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" />
-      <Text layoutX="236.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
-      <Text layoutX="16.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" />
-      <TableView fx:id="activityTable" layoutX="16.0" layoutY="219.0" prefHeight="200.0" prefWidth="718.0">
+      <DatePicker fx:id="fromDate" layoutX="14.0" layoutY="93.0" />
+      <DatePicker fx:id="toDate" layoutX="236.0" layoutY="92.0" />
+      <TextField fx:id="userIdField" layoutX="16.0" layoutY="153.0" />
+      <Button layoutX="192.0" layoutY="153.0" mnemonicParsing="false" onAction="#onFilter" text="Filter" />
+      <Text layoutX="16.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" />
+      <Text layoutX="236.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
+      <Text layoutX="19.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID" />
+      <TableView fx:id="activityTable" layoutX="16.0" layoutY="194.0" prefHeight="200.0" prefWidth="718.0">
         <columns>
           <TableColumn fx:id="activityIdTableColumn" prefWidth="102.39999580383301" text="Activity ID" />
           <TableColumn fx:id="userIdTableColumn" prefWidth="79.20000457763672" text="User ID" />
@@ -28,5 +28,7 @@
             <TableColumn fx:id="statusTableColumn" prefWidth="133.5999755859375" text="Status" />
         </columns>
       </TableView>
+      <Text layoutX="285.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  ACTIVITY LOGS    " />
+      <Button layoutX="684.0" layoutY="398.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
    </children>
 </AnchorPane>

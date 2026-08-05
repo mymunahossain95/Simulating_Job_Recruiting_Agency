@@ -8,8 +8,6 @@ public class PendingRegistrationsController {
     @javafx.fxml.FXML
     private TableColumn nameColumn;
     @javafx.fxml.FXML
-    private TableColumn roleColumn;
-    @javafx.fxml.FXML
     private TableColumn statusColumn;
     @javafx.fxml.FXML
     private TableColumn applicantIdColumn;

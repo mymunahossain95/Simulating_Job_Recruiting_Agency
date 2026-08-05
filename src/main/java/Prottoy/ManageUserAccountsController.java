@@ -30,7 +30,7 @@ public class ManageUserAccountsController {
     public void onCreate(ActionEvent actionEvent) {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void onSearch(ActionEvent actionEvent) {
     }
 

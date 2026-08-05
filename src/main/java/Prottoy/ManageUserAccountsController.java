@@ -14,8 +14,6 @@ public class ManageUserAccountsController {
     @javafx.fxml.FXML
     private TableColumn statusColumn;
     @javafx.fxml.FXML
-    private ComboBox roleComboBox;
-    @javafx.fxml.FXML
     private TableView userTable;
     @javafx.fxml.FXML
     private TableColumn userIdColum;
@@ -32,7 +30,7 @@ public class ManageUserAccountsController {
     public void onCreate(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void onSearch(ActionEvent actionEvent) {
     }
 

@@ -11,7 +11,7 @@ public class BackupManagementController {
     public void onCreateBackup(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void onDownloadBackup(ActionEvent actionEvent) {
     }
 

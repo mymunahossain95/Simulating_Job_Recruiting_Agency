@@ -8,19 +8,31 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierJobRequirementVerificationController">
+<AnchorPane prefHeight="487.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierJobRequirementVerificationController">
    <children>
       <Text layoutX="37.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Requirement Verification:" />
       <Line endX="88.33331298828125" endY="-5.7220458984375E-6" layoutX="115.0" layoutY="31.0" startX="-89.66665649414062" startY="-5.7220458984375E-6" />
-      <TableView fx:id="jobrequirementVerificationtableView" layoutX="114.0" layoutY="52.0" prefHeight="127.0" prefWidth="227.0">
+      <TableView fx:id="candidateProfiletableView" layoutX="25.0" layoutY="90.0" prefHeight="127.0" prefWidth="449.0">
         <columns>
-          <TableColumn fx:id="jobrequirementVerificationCandidateProfileCol1" prefWidth="112.66665649414062" text="Candidate Profile" />
-          <TableColumn fx:id="jobrequirementVerificationProfileDetailsCol2" prefWidth="113.33333333333334" text="Profile Details" />
+          <TableColumn fx:id="candidateIdCol1" prefWidth="112.66665649414062" text="Candidate Id" />
+            <TableColumn fx:id="educationCol2" prefWidth="112.66665649414062" text="Education" />
+            <TableColumn fx:id="experienceCol3" prefWidth="112.66665649414062" text="Experience" />
+            <TableColumn fx:id="candidateProfilrskills4" prefWidth="112.66665649414062" text="Skills" />
         </columns>
       </TableView>
-      <Label fx:id="jobRequirmentVerificationEligibilityStatusLabel" layoutX="186.0" layoutY="272.0" prefHeight="73.0" prefWidth="147.0" text="Eligibility Status" />
-      <Button layoutX="101.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleCheckEligibilityButtonOA" text="Check Eligibility" />
-      <Button layoutX="268.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleVerifyRequirementsButtonOA" text="Verify Requirements" />
-      <Button layoutX="438.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleBackButtonOA" text="Back" />
+      <Label fx:id="jobRequirmentVerificationEligibilityStatusLabel" layoutX="240.0" layoutY="399.0" prefHeight="73.0" prefWidth="147.0" text="Eligibility Status" />
+      <Button layoutX="14.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleCheckEligibilityButtonOA" text="Check Eligibility" />
+      <Button layoutX="14.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleVerifyRequirementsButtonOA" text="Verify Requirements" />
+      <Button layoutX="541.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next-&gt;" />
+      <Text layoutX="14.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate Profile:" />
+      <Text layoutX="6.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Requirment:" />
+      <TableView fx:id="jobRequirmentTableView" layoutX="25.0" layoutY="252.0" prefHeight="127.0" prefWidth="449.0">
+         <columns>
+            <TableColumn fx:id="positionCol1" prefWidth="112.66665649414062" text="Position" />
+            <TableColumn fx:id="minimumEducationCol2" prefWidth="136.00001525878906" text="Minimum Education" />
+            <TableColumn fx:id="minimumExperienceCol3" prefWidth="89.33331298828125" text="Minimum Experience" />
+            <TableColumn fx:id="jobRequirmentskills4" prefWidth="112.66665649414062" text="Skills" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>

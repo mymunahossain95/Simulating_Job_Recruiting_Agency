@@ -10,11 +10,29 @@ public class DocumentVerificationEducationVerificationController {
     @javafx.fxml.FXML
     private Label educationVerificationQualificationStatusLabel;
     @javafx.fxml.FXML
-    private TableView educationVerificationTableView;
-    @javafx.fxml.FXML
     private TextField educationVerificatiomRemarksTextField;
     @javafx.fxml.FXML
-    private TableColumn educationVerificationDegreeCertificatesCol2;
+    private TableColumn passingYearCol4;
+    @javafx.fxml.FXML
+    private TableColumn instituteCol3;
+    @javafx.fxml.FXML
+    private TableColumn statusCol4;
+    @javafx.fxml.FXML
+    private TableColumn certificateNoCol2;
+    @javafx.fxml.FXML
+    private TableColumn certificateTypeCol1;
+    @javafx.fxml.FXML
+    private TableView sscORhscCertificateTableView;
+    @javafx.fxml.FXML
+    private TableView educationVerificationRecordsTableView;
+    @javafx.fxml.FXML
+    private TableColumn BoardCol2;
+    @javafx.fxml.FXML
+    private TableColumn GroupCol3;
+    @javafx.fxml.FXML
+    private TableColumn examCol1;
+    @javafx.fxml.FXML
+    private TableColumn gpaCol5;
 
     @javafx.fxml.FXML
     public void educationVerificationVerifyQualificationButtonOnAction(ActionEvent actionEvent) {
@@ -24,7 +42,8 @@ public class DocumentVerificationEducationVerificationController {
     public void educationVerificationViewCertificateButtonOnAction(ActionEvent actionEvent) {
     }
 
+
     @javafx.fxml.FXML
-    public void educationVerificationBackButtonOnAction(ActionEvent actionEvent) {
+    public void educationVerificationNextButtonOnAction(ActionEvent actionEvent) {
     }
 }

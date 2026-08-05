@@ -10,29 +10,31 @@
 
 <AnchorPane prefHeight="500.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorJobMatchingController">
    <children>
-      <Label fx:id="jobMatchingLabel" layoutX="406.0" layoutY="141.0" text=" Job Matching" />
-      <Label fx:id="jobMatchingCandidateListLabel" layoutX="407.0" layoutY="218.0" text="Candidate List" />
-      <Label fx:id="jobMatchingvailableJobsLabel" layoutX="407.0" layoutY="184.0" text="Available Jobs" />
-      <TableView fx:id="candidateListTableView" layoutX="30.0" layoutY="133.0" prefHeight="119.0" prefWidth="321.0">
+      <Label fx:id="jobMatchingvailableJobsLabel" layoutX="24.0" layoutY="283.0" text="Available Jobs" />
+      <TableView fx:id="candidateListTableView" layoutX="30.0" layoutY="130.0" prefHeight="119.0" prefWidth="321.0">
         <columns>
-          <TableColumn fx:id="jobMatchingcandidListCandidateIDCol1" prefWidth="113.33330726623535" text="Candidate ID" />
-          <TableColumn fx:id="jobMatchingcandidListCandidateNameCol2" prefWidth="105.3333740234375" text="Candidate Name" />
-            <TableColumn fx:id="jobMatchingcandidListSkillsCol3" prefWidth="105.3333740234375" text="Skills" />
+          <TableColumn fx:id="candidateIDCol1" prefWidth="113.33330726623535" text="Candidate ID" />
+          <TableColumn fx:id="candidateNameCol2" prefWidth="105.3333740234375" text="Candidate Name" />
+            <TableColumn fx:id="skillsCol3" prefWidth="105.3333740234375" text="Skills" />
         </columns>
       </TableView>
-      <TableView fx:id="jobMatchingAvailableJobsTableView" layoutX="34.0" layoutY="278.0" prefHeight="119.0" prefWidth="427.0">
+      <TableView fx:id="availableJobsTableView" layoutX="21.0" layoutY="317.0" prefHeight="119.0" prefWidth="427.0">
         <columns>
-          <TableColumn fx:id="jobMatchingJobTitleCol1" prefWidth="75.0" text="Job Title" />
-          <TableColumn fx:id="jobMatchingCompanyNameCol2" prefWidth="118.66671752929688" text="Company Name" />
-            <TableColumn fx:id="jobMatchingRequiredSkillsCol3" prefWidth="118.66671752929688" text="Required Skills" />
-            <TableColumn fx:id="jobMatchingLocationCol4" prefWidth="118.66671752929688" text="Location" />
+          <TableColumn fx:id="jobTitleCol1" prefWidth="75.0" text="Job Title" />
+          <TableColumn fx:id="companyNameCol2" prefWidth="118.66671752929688" text="Company Name" />
+            <TableColumn fx:id="requiredSkillsCol3" prefWidth="118.66671752929688" text="Required Skills" />
+            <TableColumn fx:id="locationCol4" prefWidth="118.66671752929688" text="Location" />
         </columns>
       </TableView>
-      <Button layoutX="50.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchinAnalyzeMatchOA" text="Analyze Match" />
+      <Button layoutX="10.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleAnalyzeMatchButtonOA" text="Analyze Match" />
       <Line endX="310.33331298828125" layoutX="265.0" layoutY="266.0" startX="-243.66665649414062" />
-      <Button layoutX="165.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchinRecommendJobOA" text="Recommend Job" />
-      <Button layoutX="283.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchinSendRecommendationOA" text="Send Recommendation" />
-      <Button layoutX="445.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleJobMatchingBackOA" text="Back" />
-      <Text layoutX="259.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Job Matching" />
+      <Button layoutX="125.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleRecommendJobButtonOA" text="Recommend Job" />
+      <Button layoutX="248.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleSendRecommendationButtonOA" text="Send Recommendation" />
+      <Button layoutX="540.0" layoutY="464.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next-&gt;" />
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOB MATCHING:" />
+      <Line endX="-6.33331298828125" endY="3.814697265625E-6" layoutX="115.0" layoutY="32.0" startX="-100.0" />
+      <Text layoutX="18.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate List:" />
+      <Line endX="-6.33331298828125" endY="3.814697265625E-6" layoutX="115.0" layoutY="105.0" startX="-100.0" />
+      <Line endX="-6.33331298828125" endY="3.814697265625E-6" layoutX="125.0" layoutY="300.0" startX="-100.0" />
    </children>
 </AnchorPane>

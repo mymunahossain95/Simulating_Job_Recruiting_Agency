@@ -19,7 +19,8 @@ public class DocumentVerificationAgeVerificationController {
     public void handleageVerificationCompareAgeButtonOnAction(ActionEvent actionEvent) {
     }
 
+
     @javafx.fxml.FXML
-    public void handleageVerificationBackButtonOnAction(ActionEvent actionEvent) {
+    public void handleageVerificationNextButtonOnAction(ActionEvent actionEvent) {
     }
 }

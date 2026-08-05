@@ -10,13 +10,25 @@ public class DocumentVerifierIdentityVerificationController {
     @javafx.fxml.FXML
     private TextField identityVerificationRemarksTextField;
     @javafx.fxml.FXML
-    private TableColumn identityVerificationIUploadedDocumentsCol1;
-    @javafx.fxml.FXML
-    private TableColumn identityVerificationIdentityDocumentsCol1;
-    @javafx.fxml.FXML
     private Label identityVerificationVerificationStatusResultLabel;
     @javafx.fxml.FXML
-    private TableView identityVerificationTableView;
+    private TableColumn documentTypeCol2;
+    @javafx.fxml.FXML
+    private TableColumn nidbirthCertificateVerificationstatusCol3;
+    @javafx.fxml.FXML
+    private TableView nidPassportBirthCertiApostileTableView;
+    @javafx.fxml.FXML
+    private TableColumn statusCol4;
+    @javafx.fxml.FXML
+    private TableView candidateIdentityDocumentsTableView;
+    @javafx.fxml.FXML
+    private TableColumn nidBirthCertificatedocumentTypeCol1;
+    @javafx.fxml.FXML
+    private TableColumn issueAuthorityCol2;
+    @javafx.fxml.FXML
+    private TableColumn candidateNameCol3;
+    @javafx.fxml.FXML
+    private TableColumn candidateIdentitydocumentTypeCol1;
 
     @javafx.fxml.FXML
     public void handleOpenDocumentButtonOA(ActionEvent actionEvent) {
@@ -26,7 +38,8 @@ public class DocumentVerifierIdentityVerificationController {
     public void handleVerifyDocumentButtonOA(ActionEvent actionEvent) {
     }
 
+
     @javafx.fxml.FXML
-    public void handleBackButtonOA(ActionEvent actionEvent) {
+    public void handleNextButtonOA(ActionEvent actionEvent) {
     }
 }

@@ -24,9 +24,6 @@ public class DocumentVerifierVerificationRequestsController {
     @javafx.fxml.FXML
     private TableView verificationRequestTableView;
 
-    @javafx.fxml.FXML
-    public void verificationRequestGoBackButtonOnAction(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void verificationRequestProceedButtonOnAction(ActionEvent actionEvent) {
@@ -38,5 +35,9 @@ public class DocumentVerifierVerificationRequestsController {
 
     @javafx.fxml.FXML
     public void verificationRequestViewDetailsButtonOnAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void verificationRequestGoNextButtonOnAction(ActionEvent actionEvent) {
     }
 }

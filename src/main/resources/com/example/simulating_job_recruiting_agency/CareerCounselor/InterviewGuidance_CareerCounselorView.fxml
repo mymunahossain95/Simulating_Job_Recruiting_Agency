@@ -5,25 +5,25 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorInterviewGuidanceController">
+<AnchorPane prefHeight="437.0" prefWidth="605.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorInterviewGuidanceController">
    <children>
-      <Label fx:id="interviewguidanceInterviewGuidanceLabel" layoutX="226.0" layoutY="28.0" text="Interview Guidance" />
-      <Label fx:id="interviewGuidanceJobRoleLabel" layoutX="243.0" layoutY="54.0" text="Job Role" />
-      <Label fx:id="interviewguidanceInterviewMaterialsLabel" layoutX="226.0" layoutY="78.0" text="Interview Materials" />
-      <TableView fx:id="interviewGuidanceCandidateListTableView" layoutX="87.0" layoutY="149.0" prefHeight="139.0" prefWidth="422.0">
+      <Label layoutX="22.0" layoutY="21.0" text="INTERVIEW GUIDANCE:" />
+      <TableView fx:id="candidateListTableView" layoutX="43.0" layoutY="138.0" prefHeight="139.0" prefWidth="422.0">
         <columns>
-          <TableColumn fx:id="interviewGuidanceCandidateIDCol1" prefWidth="115.99996948242188" text="Candidate ID" />
-          <TableColumn fx:id="interviewGuidanceCandidateNameCol2" prefWidth="159.3333740234375" text="Candidate Name" />
-            <TableColumn fx:id="interviewGuidanceJobRoleCol3" prefWidth="159.3333740234375" text="Job Role" />
+          <TableColumn fx:id="candidateIDCol1" prefWidth="115.99996948242188" text="Candidate ID" />
+          <TableColumn fx:id="candidateNameCol2" prefWidth="159.3333740234375" text="Candidate Name" />
+            <TableColumn fx:id="jobRoleCol3" prefWidth="159.3333740234375" text="Job Role" />
         </columns>
       </TableView>
-      <Text layoutX="14.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate ID:" />
-      <Button layoutX="140.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleViewCandidateOnActionButton" text="View Candidate" />
-      <Button layoutX="140.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleProvideTipsOnActionButton" text="Provide Tips" />
-      <Button layoutX="317.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleShareMaterialsOnActionButton" text="Share Materials" />
-      <Button layoutX="317.0" layoutY="338.0" mnemonicParsing="false" onAction="#handleBackOnActionButton" text="Back" />
+      <Text layoutX="45.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate List:" />
+      <Button layoutX="42.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleViewCandidateButtonOnAction" text="View Candidate" />
+      <Button layoutX="173.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleProvideTipsOnActionButton" text="Provide Tips" />
+      <Button layoutX="288.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleShareMaterialsOnActionButton" text="Share Materials" />
+      <Button layoutX="550.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next-&gt;" />
+      <Line endX="55.00001525878906" endY="3.814697265625E-6" layoutX="103.0" layoutY="38.0" startX="-100.0" />
+      <Line endX="-13.666679382324219" endY="-1.52587890625E-5" layoutX="140.0" layoutY="126.0" startX="-100.0" />
    </children>
 </AnchorPane>

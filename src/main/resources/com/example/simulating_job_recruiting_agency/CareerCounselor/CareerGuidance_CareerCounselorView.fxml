@@ -6,32 +6,33 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
-
 
 <AnchorPane prefHeight="459.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorCareerGuidanceController">
    <children>
-      <Label fx:id="careerGuideLabel" layoutX="243.0" layoutY="14.0" text="Career Guidance" />
-      <TextField fx:id="careerGuidesearchCandidateTextField" layoutX="137.0" layoutY="57.0" />
-      <TableView fx:id="careerguidanceTableView" layoutX="27.0" layoutY="116.0" prefHeight="142.0" prefWidth="519.0">
+      <Label layoutX="14.0" layoutY="20.0" text="CAREER GUIDANCE:" />
+      <TextField fx:id="searchCandidateNameTextField" layoutX="168.0" layoutY="57.0" />
+      <TableView fx:id="candidateInformationTableView" layoutX="9.0" layoutY="120.0" prefHeight="142.0" prefWidth="519.0">
         <columns>
-          <TableColumn fx:id="careerGuidanceCandidateIDCol1" prefWidth="94.0" text="Candidate ID" />
-          <TableColumn fx:id="careerGuidanceCandidateNameCol2" prefWidth="97.99996948242188" text="Candidate Name" />
-            <TableColumn fx:id="careerGuidanceSkillsCol4" prefWidth="97.99996948242188" text="Skills" />
-            <TableColumn fx:id="careerGuidanceExperienceCol5111" prefWidth="130.00002034505212" text="Experience" />
-            <TableColumn fx:id="careerGuidanceEducationCol3" prefWidth="97.99996948242188" text="Education" />
+          <TableColumn fx:id="candidateIDCol1" prefWidth="94.0" text="Candidate ID" />
+          <TableColumn fx:id="candidateNameCol2" prefWidth="97.99996948242188" text="Candidate Name" />
+            <TableColumn fx:id="skillsCol3" prefWidth="97.99996948242188" text="Skills" />
+            <TableColumn fx:id="experienceCol4" prefWidth="130.00002034505212" text="Experience" />
+            <TableColumn fx:id="EducationCol5" prefWidth="97.99996948242188" text="Education" />
         </columns>
       </TableView>
-      <Text layoutX="32.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate:" />
-      <Button layoutX="243.0" layoutY="271.0" mnemonicParsing="false" onAction="#handlecareerguideSearchButton" text="Search" />
-      <Button layoutX="243.0" layoutY="308.0" mnemonicParsing="false" onAction="#handleViewProfilecareerguideButton" text="View Profile" />
-      <Button layoutX="243.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleSaveGuidancecareerguideButton" text="Save Guidance" />
-      <Button layoutX="243.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleSaveBackcareerguideButton" text="Back" />
-      <Label fx:id="careerguidecandidateInformationLabel" layoutX="366.0" layoutY="275.0" text="Candidate Information" />
-      <Label fx:id="careerguidesearchCandidateLabel" layoutX="371.0" layoutY="299.0" text="Search Candidate" />
-      <Label fx:id="careerguideEducationDetailsLabel" layoutX="371.0" layoutY="324.0" text="Education Details" />
-      <Label fx:id="careerguideskillInfoDetailsLabel" layoutX="373.0" layoutY="354.0" text="Skills Information" />
-      <Label fx:id="careerguideExperiencehistorLabel" layoutX="370.0" layoutY="377.0" text="Experience History" />
-      <Label fx:id="careerguideGuidanceSummaryhistorLabel" layoutX="370.0" layoutY="402.0" text="Guidance Summary" />
+      <Text layoutX="32.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate Name:" />
+      <Button layoutX="223.0" layoutY="414.0" mnemonicParsing="false" onAction="#handlecareerguideSearchButton" text="Search" />
+      <Button layoutX="298.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleViewProfilecareerguideButton" text="View Profile" />
+      <Button layoutX="394.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleSaveGuidancecareerguideButton" text="Save Guidance" />
+      <Button layoutX="542.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleNextcareerguideButton" text="Next-&gt;" />
+      <Label fx:id="educationDetailsLabel" layoutX="114.0" layoutY="275.0" prefHeight="25.0" prefWidth="106.0" text="Education Details" />
+      <Label fx:id="skillInfoDetailsLabel" layoutX="114.0" layoutY="311.0" prefHeight="25.0" prefWidth="106.0" text="Skills Information" />
+      <Label fx:id="experiencehistorLabel" layoutX="113.0" layoutY="344.0" prefHeight="25.0" prefWidth="106.0" text="Experience History" />
+      <Label fx:id="guidanceSummaryLabel" layoutX="110.0" layoutY="375.0" prefHeight="25.0" prefWidth="113.0" text="Guidance Summary" />
+      <Line endX="4.999992370605469" endY="0.3333396911621094" layoutX="115.0" layoutY="37.0" startX="-100.0" />
+      <Label layoutX="9.0" layoutY="92.0" text="CANDIDATE INFORMATION:" />
+      <Line endX="57.66667175292969" endY="-7.62939453125E-6" layoutX="101.0" layoutY="111.0" startX="-100.0" />
    </children>
 </AnchorPane>

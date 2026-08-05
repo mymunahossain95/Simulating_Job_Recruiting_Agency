@@ -15,6 +15,6 @@
       <Button layoutX="123.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleageVerificationVerifyAgeButtonOnAction" text="Verify Age" />
       <Button layoutX="122.0" layoutY="267.0" mnemonicParsing="false" onAction="#handleageVerificationCompareAgeButtonOnAction" text="Compare Age" />
       <Line endX="36.333343505859375" endY="-3.814697265625E-6" layoutX="115.0" layoutY="47.0" startX="-100.0" />
-      <Button layoutX="122.0" layoutY="307.0" mnemonicParsing="false" onAction="#handleageVerificationBackButtonOnAction" text="Back" />
+      <Button layoutX="533.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleageVerificationNextButtonOnAction" text="Next-&gt;" />
    </children>
 </AnchorPane>

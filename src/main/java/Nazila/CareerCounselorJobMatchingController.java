@@ -7,43 +7,40 @@ import javafx.scene.control.TableView;
 
 public class CareerCounselorJobMatchingController {
     @javafx.fxml.FXML
-    private Label jobMatchingCandidateListLabel;
-    @javafx.fxml.FXML
-    private TableColumn jobMatchingcandidListCandidateIDCol1;
-    @javafx.fxml.FXML
     private Label jobMatchingvailableJobsLabel;
-    @javafx.fxml.FXML
-    private TableColumn jobMatchingJobTitleCol1;
-    @javafx.fxml.FXML
-    private TableColumn jobMatchingLocationCol4;
-    @javafx.fxml.FXML
-    private TableColumn jobMatchingcandidListCandidateNameCol2;
     @javafx.fxml.FXML
     private TableView candidateListTableView;
     @javafx.fxml.FXML
-    private Label jobMatchingLabel;
+    private TableColumn candidateIDCol1;
     @javafx.fxml.FXML
-    private TableColumn jobMatchingRequiredSkillsCol3;
+    private TableColumn skillsCol3;
     @javafx.fxml.FXML
-    private TableView jobMatchingAvailableJobsTableView;
+    private TableColumn companyNameCol2;
     @javafx.fxml.FXML
-    private TableColumn jobMatchingCompanyNameCol2;
+    private TableColumn locationCol4;
     @javafx.fxml.FXML
-    private TableColumn jobMatchingcandidListSkillsCol3;
+    private TableColumn candidateNameCol2;
+    @javafx.fxml.FXML
+    private TableView availableJobsTableView;
+    @javafx.fxml.FXML
+    private TableColumn requiredSkillsCol3;
+    @javafx.fxml.FXML
+    private TableColumn jobTitleCol1;
+
 
     @javafx.fxml.FXML
-    public void handleJobMatchinRecommendJobOA(ActionEvent actionEvent) {
+    public void handleSendRecommendationButtonOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleJobMatchinAnalyzeMatchOA(ActionEvent actionEvent) {
+    public void handleAnalyzeMatchButtonOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleJobMatchinSendRecommendationOA(ActionEvent actionEvent) {
+    public void handleRecommendJobButtonOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleJobMatchingBackOA(ActionEvent actionEvent) {
+    public void handleNextButtonOA(ActionEvent actionEvent) {
     }
 }

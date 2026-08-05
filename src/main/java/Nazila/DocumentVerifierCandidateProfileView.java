@@ -33,7 +33,8 @@ public class DocumentVerifierCandidateProfileView {
     public void candidateListProceedButtonOA(ActionEvent actionEvent) {
     }
 
+
     @javafx.fxml.FXML
-    public void candidateListGoBackButtonOA(ActionEvent actionEvent) {
+    public void candidateListGoNextButtonOA(ActionEvent actionEvent) {
     }
 }

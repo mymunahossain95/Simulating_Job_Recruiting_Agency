@@ -6,24 +6,26 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
-
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="442.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorTrainingRecommendationsController">
    <children>
-      <Label fx:id="trainingRecomendationsCandidateSkillsLabel" layoutX="375.0" layoutY="258.0" prefHeight="37.0" prefWidth="104.0" text="Candidate Skills" />
-      <Label fx:id="trainingRecomendationsTraininCourseLabel" layoutX="74.0" layoutY="268.0" text="Training Courses" />
-      <TableView fx:id="trainingCoursesTableView" layoutX="66.0" layoutY="90.0" prefHeight="161.0" prefWidth="443.0">
+      <Label fx:id="candidateSkillsLabel" layoutX="51.0" layoutY="46.0" prefHeight="41.0" prefWidth="486.0" text="Candidate have to write their skills here for training course match(e.g:Java,Communication,)" textFill="#ac9595" />
+      <Label layoutX="14.0" layoutY="102.0" text="Training Courses" />
+      <TableView fx:id="trainingCoursesTableView" layoutX="14.0" layoutY="140.0" prefHeight="161.0" prefWidth="443.0">
         <columns>
-          <TableColumn fx:id="trainingCourseCourseNameCol1" prefWidth="96.6666259765625" text="Course Name" />
-          <TableColumn fx:id="trainingCourseTrainingProviderCol2" prefWidth="114.66668701171875" text="Training Provider" />
-            <TableColumn fx:id="trainingCourseDurationCol3" prefWidth="114.66668701171875" text="Duration" />
-            <TableColumn fx:id="trainingCourseSkillAreaCol4" prefWidth="114.66668701171875" text="Skill Area" />
+          <TableColumn fx:id="courseNameCol1" prefWidth="96.6666259765625" text="Course Name" />
+          <TableColumn fx:id="trainingProviderCol2" prefWidth="114.66668701171875" text="Training Provider" />
+            <TableColumn fx:id="durationCol3" prefWidth="114.66668701171875" text="Duration" />
+            <TableColumn fx:id="skillAreaCol4" prefWidth="114.66668701171875" text="Skill Area" />
         </columns>
       </TableView>
-      <Line endX="243.66668701171875" layoutX="354.0" layoutY="327.0" startX="-309.0" />
-      <Button layoutX="82.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleViewCandidateSkillsOA" text="View Candidate Skills" />
-      <Button layoutX="82.0" layoutY="391.0" mnemonicParsing="false" onAction="#handleViewRecommendTrainingOA" text="Recommend Training" />
-      <Button layoutX="341.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleViewSendRecommendOA" text="Save Recommendation" />
-      <Button layoutX="369.0" layoutY="391.0" mnemonicParsing="false" onAction="#handleViewBackOA" text="Back" />
+      <Button layoutX="205.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleViewCandidateSkillsButtonOA" text="View Candidate Skills" />
+      <Button layoutX="204.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleViewRecommendTrainingButtonnOA" text="Recommend Training" />
+      <Button layoutX="200.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleViewSendRecommendButtonOA" text="Save Recommendation" />
+      <Button layoutX="557.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleViewNextButtonOnAction" text="Next-&gt;" />
+      <Text layoutX="15.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRAINING RECOMMENDATIONS:" />
+      <Line endX="75.02146911621094" layoutX="116.0" layoutY="37.0" startX="-100.0" />
+      <Line endX="-0.9999923706054688" layoutX="116.0" layoutY="121.0" startX="-100.0" />
    </children>
 </AnchorPane>

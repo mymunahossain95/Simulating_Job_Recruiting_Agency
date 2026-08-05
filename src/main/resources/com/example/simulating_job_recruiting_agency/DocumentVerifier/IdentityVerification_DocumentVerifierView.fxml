@@ -9,21 +9,34 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierIdentityVerificationController">
+<AnchorPane prefHeight="482.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierIdentityVerificationController">
    <children>
       <Text layoutX="23.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IDENTITY VERIFICATION:" />
       <Line endX="46.333343505859375" endY="-5.7220458984375E-6" layoutX="114.0" layoutY="23.0" startX="-100.0" />
-      <TableView fx:id="identityVerificationTableView" layoutX="14.0" layoutY="43.0" prefHeight="122.0" prefWidth="263.0">
+      <TableView fx:id="candidateIdentityDocumentsTableView" layoutX="23.0" layoutY="82.0" prefHeight="122.0" prefWidth="515.0">
         <columns>
-          <TableColumn fx:id="identityVerificationIdentityDocumentsCol1" prefWidth="120.66665649414062" text="Identity Documents" />
-          <TableColumn fx:id="identityVerificationIUploadedDocumentsCol1" minWidth="6.66668701171875" prefWidth="141.33333333333331" text="Uploaded Documents" />
+          <TableColumn fx:id="candidateIdentitydocumentTypeCol1" prefWidth="120.66665649414062" text=" Document Type" />
+          <TableColumn fx:id="documentTypeCol2" minWidth="6.66668701171875" prefWidth="141.33333333333331" text=" Document No" />
+            <TableColumn fx:id="candidateNameCol3" minWidth="6.66668701171875" prefWidth="141.33333333333331" text="Candidate Name" />
+            <TableColumn fx:id="statusCol4" minWidth="6.66668701171875" prefWidth="141.33333333333331" text="Status" />
         </columns>
       </TableView>
-      <Text layoutX="51.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks:" />
-      <TextField fx:id="identityVerificationRemarksTextField" layoutX="108.0" layoutY="179.0" />
-      <Button layoutX="108.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleOpenDocumentButtonOA" text="Open Document" />
-      <Button layoutX="319.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleVerifyDocumentButtonOA" text="Verify Document" />
-      <Label fx:id="identityVerificationVerificationStatusResultLabel" layoutX="212.0" layoutY="307.0" prefHeight="49.0" prefWidth="156.0" text="Verification Status Result" />
-      <Button layoutX="453.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleBackButtonOA" text="Back" />
+      <Text layoutX="120.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verification Remarks:" />
+      <TextField fx:id="identityVerificationRemarksTextField" layoutX="231.0" layoutY="384.0" />
+      <Button layoutX="13.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleOpenDocumentButtonOA" text="Open Document" />
+      <Button layoutX="12.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleVerifyDocumentButtonOA" text="Verify Document" />
+      <Label fx:id="identityVerificationVerificationStatusResultLabel" layoutX="199.0" layoutY="417.0" prefHeight="49.0" prefWidth="156.0" text="Verification Status Result" />
+      <Button layoutX="541.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next -&gt;" />
+      <Text layoutX="22.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate Identity Documents:" />
+      <Text layoutX="22.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID / Passport / Birth Registration / Apostille:" />
+      <Line endX="78.99998474121094" layoutX="123.0" layoutY="71.0" startX="-100.0" />
+      <Line endX="140.00582885742188" endY="-0.98828125" layoutX="122.0" layoutY="241.0" startX="-100.0" />
+      <TableView fx:id="nidPassportBirthCertiApostileTableView" layoutX="25.0" layoutY="253.0" prefHeight="122.0" prefWidth="405.0">
+         <columns>
+            <TableColumn fx:id="nidBirthCertificatedocumentTypeCol1" prefWidth="120.66665649414062" text=" Document Type" />
+            <TableColumn fx:id="issueAuthorityCol2" minWidth="6.66668701171875" prefWidth="141.33333333333331" text="Issue Authority" />
+            <TableColumn fx:id="nidbirthCertificateVerificationstatusCol3" minWidth="6.66668701171875" prefWidth="141.33333333333331" text="Verification Status" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>

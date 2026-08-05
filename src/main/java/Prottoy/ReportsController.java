@@ -13,12 +13,16 @@ public class ReportsController {
     private TableColumn reportColumnTable;
     @javafx.fxml.FXML
     private ComboBox reportTypeCombo;
+    @javafx.fxml.FXML
+    private DatePicker endDate;
+    @javafx.fxml.FXML
+    private DatePicker startDate;
 
     @javafx.fxml.FXML
     public void onGenerateReport(ActionEvent actionEvent) {
     }
 
-    @Deprecated
+    @javafx.fxml.FXML
     public void onBack(ActionEvent actionEvent) {
     }
 }

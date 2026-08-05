@@ -9,8 +9,7 @@
    <children>
       <Label fx:id="statusLabel" layoutX="45.0" layoutY="165.0" text="Backup Status" />
       <Button layoutX="36.0" layoutY="60.0" mnemonicParsing="false" onAction="#onCreateBackup" text="Create Backup" />
-      <Button layoutX="36.0" layoutY="118.0" mnemonicParsing="false" onAction="#onDownloadBackup" text="Download Backup" />
-      <Button layoutX="590.0" layoutY="223.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="41.0" text="Back" />
+      <Button layoutX="509.0" layoutY="223.0" mnemonicParsing="false" onAction="#onBack" prefHeight="26.0" prefWidth="41.0" text="Back" />
       <Text layoutX="261.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" BACKUP MANAGEMENT" />
    </children>
 </AnchorPane>

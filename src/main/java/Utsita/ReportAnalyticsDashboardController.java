@@ -1,10 +1,15 @@
 package Utsita;
 
 import javafx.event.ActionEvent;
+import javafx.scene.Scene;
+import utility.SceneSwitchingHelper;
+
+import java.io.IOException;
 
 public class ReportAnalyticsDashboardController {
     @javafx.fxml.FXML
-    public void onInterviwAnalytics(ActionEvent actionEvent) {
+    public void onInterviewAnalytics(ActionEvent actionEvent) throws IOException {
+        SceneSwitchingHelper.switchScene(actionEvent, "/ReportsAndAnalyticsManager/InterviewAnalytics.fxml");
     }
 
     @javafx.fxml.FXML
@@ -24,11 +29,12 @@ public class ReportAnalyticsDashboardController {
     }
 
     @javafx.fxml.FXML
-    public void onSkilDemand(ActionEvent actionEvent) {
+    public void onSkillDemand(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onPlacementStatistics(ActionEvent actionEvent) {
+    public void onPlacementStatistics(ActionEvent actionEvent) throws IOException {
+        SceneSwitchingHelper.switchScene(actionEvent, "/ReportsAndAnalyticsManager/PlacementStatistics.fxml");
     }
 
     @javafx.fxml.FXML

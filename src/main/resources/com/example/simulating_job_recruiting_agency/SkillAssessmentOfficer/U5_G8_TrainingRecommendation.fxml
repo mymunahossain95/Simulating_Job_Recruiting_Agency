@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="361.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U5_G8_TrainingRecommendationController">
+   <children>
+      <Label layoutX="198.0" layoutY="20.0" prefHeight="17.0" prefWidth="169.0" text="Recommend Training Program" />
+      <ComboBox fx:id="candidateComboBox" layoutX="384.0" layoutY="64.0" prefWidth="150.0" />
+      <Button layoutX="30.0" layoutY="58.0" mnemonicParsing="false" onAction="#generateRecommendationBtnOA" prefHeight="26.0" prefWidth="169.0" text="generateRecommendationBtn" />
+      <TableView fx:id="recommendationTable" layoutX="31.0" layoutY="110.0" prefHeight="200.0" prefWidth="504.0">
+        <columns>
+          <TableColumn fx:id="candidateColumn" prefWidth="112.0" text="Candidate" />
+          <TableColumn fx:id="weakSkillColumn" prefWidth="123.0" text="weakSkill" />
+            <TableColumn fx:id="trainingColumn" prefWidth="89.0" text="Training" />
+            <TableColumn fx:id="priorityColumn" prefWidth="110.0" text="Priority" />
+        </columns>
+      </TableView>
+      <Label fx:id="statusLabel" layoutX="31.0" layoutY="328.0" prefHeight="17.0" prefWidth="341.0" text="Status Label:" />
+      <Text layoutX="304.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate :" wrappingWidth="67.0" />
+   </children>
+</AnchorPane>

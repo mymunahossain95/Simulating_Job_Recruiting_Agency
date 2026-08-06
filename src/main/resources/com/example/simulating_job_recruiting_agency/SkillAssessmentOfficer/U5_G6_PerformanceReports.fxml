@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U5_G6_PerformanceReportsController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="221.0" layoutY="6.0" prefHeight="17.0" prefWidth="216.0" text="View Performance Reports" />
+      <ComboBox fx:id="candidateComboBox" layoutX="132.0" layoutY="57.0" prefWidth="150.0" />
+      <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate" wrappingWidth="103.13671875" />
+      <Button layoutX="14.0" layoutY="115.0" mnemonicParsing="false" onAction="#generateReportBtnOnAction" prefHeight="25.0" prefWidth="130.0" text="generateReportBtn" />
+      <TableView fx:id="performanceTable" layoutX="14.0" layoutY="174.0" prefHeight="200.0" prefWidth="647.0">
+        <columns>
+          <TableColumn fx:id="assessmentColumn" prefWidth="126.0" text="assessment" />
+          <TableColumn fx:id="scoreColumn" prefWidth="136.0" text="score" />
+            <TableColumn fx:id="attemptsColumn" prefWidth="136.0" text="attempts" />
+            <TableColumn fx:id="averageColumn" prefWidth="136.0" text="average" />
+            <TableColumn fx:id="performanceColumn" prefWidth="136.0" text="performance" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

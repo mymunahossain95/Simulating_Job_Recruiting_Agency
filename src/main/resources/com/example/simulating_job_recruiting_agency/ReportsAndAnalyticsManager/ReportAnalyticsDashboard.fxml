@@ -8,10 +8,10 @@
       <Button layoutX="153.0" layoutY="441.0" mnemonicParsing="false" onAction="#onRecruitmentForecast" prefHeight="148.0" prefWidth="151.0" text="Recruitment Forecast" />
       <Button layoutX="369.0" layoutY="441.0" mnemonicParsing="false" onAction="#onCandidateFeedback" prefHeight="148.0" prefWidth="151.0" text="Candidate Feedback" />
       <Button layoutX="444.0" layoutY="274.0" mnemonicParsing="false" onAction="#onVacancyAnalysis" prefHeight="138.0" prefWidth="151.0" text="Vacancy Analysis" />
-      <Button layoutX="252.0" layoutY="274.0" mnemonicParsing="false" onAction="#onSkilDemand" prefHeight="138.0" prefWidth="151.0" text="Skill Demand Analysis" />
+      <Button layoutX="252.0" layoutY="274.0" mnemonicParsing="false" onAction="#onSkillDemand" prefHeight="138.0" prefWidth="151.0" text="Skill Demand Analysis" />
       <Button layoutX="56.0" layoutY="274.0" mnemonicParsing="false" onAction="#onRecruitmentPerformance" prefHeight="138.0" prefWidth="151.0" text="Recruitment Performance" />
       <Button layoutX="444.0" layoutY="110.0" mnemonicParsing="false" onAction="#onHiringTrends" prefHeight="148.0" prefWidth="151.0" text="Hiring Trends" />
       <Button layoutX="56.0" layoutY="110.0" mnemonicParsing="false" onAction="#onPlacementStatistics" prefHeight="148.0" prefWidth="151.0" text="Placement Statistics" />
-      <Button layoutX="252.0" layoutY="110.0" mnemonicParsing="false" onAction="#onInterviwAnalytics" prefHeight="148.0" prefWidth="151.0" text="Interviw Analytics" />
+      <Button layoutX="252.0" layoutY="110.0" mnemonicParsing="false" onAction="#onInterviewAnalytics" prefHeight="148.0" prefWidth="151.0" text="Interview Analytics" />
    </children>
 </AnchorPane>

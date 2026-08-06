@@ -13,9 +13,8 @@
         <columns>
           <TableColumn fx:id="userIdColum" prefWidth="177.60000038146973" text="User ID" />
           <TableColumn fx:id="nameColumn" prefWidth="152.0" text="Name" />
-            <TableColumn fx:id="emailColumn" prefWidth="157.60003662109375" text="Email" />
-            <TableColumn fx:id="roleColumn" prefWidth="157.60003662109375" text="Role" />
-            <TableColumn fx:id="statusColumn" prefWidth="157.60003662109375" text="Status" />
+            <TableColumn fx:id="emailColumn" prefWidth="279.20001220703125" text="Email" />
+            <TableColumn fx:id="statusColumn" prefWidth="215.99993896484375" text="Status" />
         </columns>
       </TableView>
       <Button layoutX="79.0" layoutY="365.0" mnemonicParsing="false" onAction="#onCreate" text="Create" />

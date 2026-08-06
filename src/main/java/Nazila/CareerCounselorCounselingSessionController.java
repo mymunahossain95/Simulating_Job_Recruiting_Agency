@@ -8,41 +8,37 @@ import javafx.scene.control.TableView;
 
 public class CareerCounselorCounselingSessionController {
     @javafx.fxml.FXML
-    private TableColumn counselingSessionCandidateNameCol2;
-    @javafx.fxml.FXML
-    private TableColumn counselingSessionSessionTimeCol5;
-    @javafx.fxml.FXML
-    private TableView counselingSessionTableView;
-    @javafx.fxml.FXML
-    private TableColumn counselingSessionSessionDateCol3;
-    @javafx.fxml.FXML
-    private TableColumn counselingSessionSessionDateCol4;
-    @javafx.fxml.FXML
-    private TableColumn counselingSessionStudentIDCol1;
-    @javafx.fxml.FXML
-    private TableColumn counselingSessionStatusCol6;
-    @javafx.fxml.FXML
-    private DatePicker counselingSessionSessionDatedatepicker;
-    @javafx.fxml.FXML
     private Label careercounselPreviousGuidanceLabel;
     @javafx.fxml.FXML
-    private Label counselingSessionCandidateInformationLabel;
+    private TableView candidateInformationTableView;
     @javafx.fxml.FXML
-    private Label careercounselingSessionCounselingSessionsLabel;
+    private TableColumn sessionDateCol3;
+    @javafx.fxml.FXML
+    private TableColumn sessionStatusCol5;
+    @javafx.fxml.FXML
+    private TableColumn candidateNameCol2;
+    @javafx.fxml.FXML
+    private DatePicker sessionDatedatepicker;
+    @javafx.fxml.FXML
+    private TableColumn sessionIDCol1;
+    @javafx.fxml.FXML
+    private TableColumn sessionTimeCol4;
+
+
 
     @javafx.fxml.FXML
-    public void handleCounselingSessionViewSessionOA(ActionEvent actionEvent) {
+    public void handleSaveSessionOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleCounselingBackSessionOA(ActionEvent actionEvent) {
+    public void handleViewSessionOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleCounselingSessionEndSessionOA(ActionEvent actionEvent) {
+    public void handleCounselingNextSessionOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleCounselingSessionSaveSessionOA(ActionEvent actionEvent) {
+    public void handleEndSessionOA(ActionEvent actionEvent) {
     }
 }

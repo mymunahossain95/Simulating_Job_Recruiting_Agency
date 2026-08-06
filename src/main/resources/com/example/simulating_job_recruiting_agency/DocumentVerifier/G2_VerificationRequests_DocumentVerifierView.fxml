@@ -26,7 +26,7 @@
       <Button layoutX="70.0" layoutY="318.0" mnemonicParsing="false" onAction="#verificationRequestViewDetailsButtonOnAction" text="View Details" />
       <Button layoutX="199.0" layoutY="318.0" mnemonicParsing="false" onAction="#verificationRequestViewRequestButtonOnAction" text="View Request" />
       <Button layoutX="356.0" layoutY="318.0" mnemonicParsing="false" onAction="#verificationRequestProceedButtonOnAction" text="Proceed Succesfully" />
-      <Button layoutX="524.0" layoutY="318.0" mnemonicParsing="false" onAction="#verificationRequestGoBackButtonOnAction" text="Go Back" />
+      <Button layoutX="543.0" layoutY="447.0" mnemonicParsing="false" onAction="#verificationRequestGoNextButtonOnAction" text="Next-&gt;" />
       <Line endX="100.0" layoutX="316.0" layoutY="40.0" startX="-100.0" />
    </children>
 </AnchorPane>

@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.CareerCounselorDashboardController">
    <children>
-      <Button layoutX="38.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleCareerGuidanceButton" text="Career Guidance" />
-      <Button layoutX="38.0" layoutY="64.0" mnemonicParsing="false" onAction="#handleAssistanceRequestsButton" text="Assistance Requests" />
-      <Button layoutX="38.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleCounselingSessionsButton" text="Counseling Sessions" />
-      <Button layoutX="38.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleJobMatchingButton" text="Job Matching" />
-      <Button layoutX="37.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleTrainingRecommendationsButton" text="Training Recommendations" />
-      <Button layoutX="37.0" layoutY="219.0" mnemonicParsing="false" onAction="#handleResumeReviewButton" text="Resume Review" />
-      <Button layoutX="38.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleInterviewGuidanceButton" text="Interview Guidance" />
-      <Button layoutX="38.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleCandidateTrackingButton" text="CandidateTracking" />
+      <Button layoutX="463.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleCareerGuidanceButton" text="Career Guidance" textFill="#1c0ae0" />
+      <Button layoutX="312.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleAssistanceRequestsButton" text="Assistance Requests" textFill="#4108e0" />
+      <Button layoutX="126.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleCounselingSessionsButton" text="Counseling Sessions" textFill="#1307f2" />
+      <Button layoutX="14.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleJobMatchingButton" text="Job Matching" textFill="#4a00f8" />
+      <Button layoutX="126.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleTrainingRecommendationsButton" text="Training Recommendations" textFill="#2305e4" />
+      <Button layoutX="14.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleResumeReviewButton" text="Resume Review" textFill="#5d0fef" />
+      <Button layoutX="314.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleInterviewGuidanceButton" text="Interview Guidance" textFill="#600af4" />
+      <Button layoutX="463.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleCandidateTrackingButton" text="CandidateTracking" textFill="#5214db" />
+      <Label layoutX="73.0" layoutY="81.0" prefHeight="110.0" prefWidth="468.0" text="Welcome to Careercounselor dashboard" textAlignment="CENTER" textFill="#ba2e7d">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

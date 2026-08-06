@@ -7,34 +7,29 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class CareerCounselorCareerGuidanceController {
+
     @javafx.fxml.FXML
-    private Label careerguideEducationDetailsLabel;
+    private TextField searchCandidateNameTextField;
     @javafx.fxml.FXML
-    private Label careerGuideLabel;
+    private TableColumn candidateIDCol1;
     @javafx.fxml.FXML
-    private Label careerguideskillInfoDetailsLabel;
+    private TableColumn skillsCol3;
     @javafx.fxml.FXML
-    private TableView careerguidanceTableView;
+    private Label educationDetailsLabel;
     @javafx.fxml.FXML
-    private Label careerguideExperiencehistorLabel;
+    private TableView candidateInformationTableView;
     @javafx.fxml.FXML
-    private TableColumn careerGuidanceExperienceCol5111;
+    private TableColumn EducationCol5;
     @javafx.fxml.FXML
-    private TableColumn careerGuidanceEducationCol3;
+    private Label guidanceSummaryLabel;
     @javafx.fxml.FXML
-    private TextField careerGuidesearchCandidateTextField;
+    private Label skillInfoDetailsLabel;
     @javafx.fxml.FXML
-    private Label careerguidecandidateInformationLabel;
+    private Label experiencehistorLabel;
     @javafx.fxml.FXML
-    private TableColumn careerGuidanceCandidateNameCol2;
+    private TableColumn candidateNameCol2;
     @javafx.fxml.FXML
-    private TableColumn careerGuidanceCandidateIDCol1;
-    @javafx.fxml.FXML
-    private Label careerguideGuidanceSummaryhistorLabel;
-    @javafx.fxml.FXML
-    private TableColumn careerGuidanceSkillsCol4;
-    @javafx.fxml.FXML
-    private Label careerguidesearchCandidateLabel;
+    private TableColumn experienceCol4;
 
     @javafx.fxml.FXML
     public void handleSaveGuidancecareerguideButton(ActionEvent actionEvent) {
@@ -45,10 +40,10 @@ public class CareerCounselorCareerGuidanceController {
     }
 
     @javafx.fxml.FXML
-    public void handleSaveBackcareerguideButton(ActionEvent actionEvent) {
+    public void handleViewProfilecareerguideButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleViewProfilecareerguideButton(ActionEvent actionEvent) {
+    public void handleNextcareerguideButton(ActionEvent actionEvent) {
     }
 }

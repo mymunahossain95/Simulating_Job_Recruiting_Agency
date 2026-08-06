@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierdashboardController">
    <children>
-      <Button layoutX="87.0" layoutY="56.0" mnemonicParsing="false" onAction="#handleCandidateProfileButtonOnAction" text="Candidate Profile" />
-      <Button layoutX="90.0" layoutY="93.0" mnemonicParsing="false" onAction="#handleVerificationRequestsButtonOnAction" text="Verification Requests" />
-      <Text layoutX="9.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DOCUMENT VERIFIER :" />
-      <Button layoutX="90.0" layoutY="129.0" mnemonicParsing="false" onAction="#handleAgeVerificationButtonOnAction" text="Age Verification" />
-      <Button layoutX="90.0" layoutY="165.0" mnemonicParsing="false" onAction="#handleEducationVerificationButtonOnAction" text="Education Verification" />
-      <Button layoutX="88.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleIdentityVerificationButtonOnAction" text="Identity Verification" />
-      <Button layoutX="88.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleJobRequirementVerificationButtonOnAction" text="Job Requirement Verification" />
-      <Button layoutX="88.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleFinalVerificationButtonOnAction" text="Final Verification" />
-      <Button layoutX="88.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleFinalGenerateReportButtonOnAction" text="Final Generate Report" />
-      <Line endX="85.0" endY="-12.000005722045898" layoutX="59.0" layoutY="35.0" startX="-50.0000114440918" startY="-12.000005722045898" />
+      <Button layoutX="310.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleCandidateDocumentsButtonOnAction" text="Candidate Documents" textFill="#dd4f4f" />
+      <Button layoutX="172.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleVerificationRequestsButtonOnAction" text="Verification Requests" textFill="#d73636" />
+      <Button layoutX="154.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleAgeVerificationButtonOnAction" text="Age Verification" textFill="#c74747" />
+      <Button layoutX="21.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleEducationVerificationButtonOnAction" text="Education Verification" textFill="#ce3c3c" />
+      <Button layoutX="17.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleIdentityVerificationButtonOnAction" text="Identity Verification" textFill="#ed4141" />
+      <Button layoutX="266.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleJobRequirementVerificationButtonOnAction" text="Job Requirement Verification" textFill="#e04e4e" />
+      <Button layoutX="458.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleFinalVerificationButtonOnAction" text="Final Verification" textFill="#d25656" />
+      <Button layoutX="444.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleFinalReportGenerationButtonOnAction" text="Final Report Generation" textFill="#ed5050" />
+      <Label layoutX="76.0" layoutY="51.0" prefHeight="120.0" prefWidth="446.0" text="Welcome to Document Verifier DashBoard" textAlignment="CENTER" textFill="#ad7fc7">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

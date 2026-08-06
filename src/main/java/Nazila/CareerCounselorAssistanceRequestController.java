@@ -8,37 +8,20 @@ import javafx.scene.control.TableView;
 
 public class CareerCounselorAssistanceRequestController {
     @javafx.fxml.FXML
-    private Label careerCAssistanceRequestsLabel;
-    @javafx.fxml.FXML
     private Label careerCRequestDetailsLabel;
     @javafx.fxml.FXML
-    private TableView assistanceReqCandidateNameCTableView;
+    private TableColumn requestTypeCol3;
     @javafx.fxml.FXML
-    private TableColumn assistanceReqRequestTypeCol3;
+    private ComboBox requestTypeComboBox;
     @javafx.fxml.FXML
-    private TableColumn assistanceReqSubmisionDateCol4;
+    private TableColumn requestIDCol1;
     @javafx.fxml.FXML
-    private TableColumn assistanceReqRequestIDCol2;
+    private TableColumn candidateNameCol2;
     @javafx.fxml.FXML
-    private TableColumn assistanceReqRequestIDCol1;
+    private TableView assistanceRequestTableView;
     @javafx.fxml.FXML
-    private ComboBox assistanceReqRequestTypeComboBox;
+    private TableColumn submisionDateCol4;
 
-    @Deprecated
-    public void handleassistanceReqBackonAction(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleassistanceReqViewRequestonAction(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleassistanceReqSubmitResponseonAction(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void handleassistanceReqProcessReqonAction(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void handleassistanceReqViewRequestButtononAction(ActionEvent actionEvent) {
@@ -48,11 +31,13 @@ public class CareerCounselorAssistanceRequestController {
     public void handleassistanceReqSubmitResponseButtononAction(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void handleassistanceReqBackButtononAction(ActionEvent actionEvent) {
-    }
+
 
     @javafx.fxml.FXML
     public void handleassistanceReqProcessReqButtononAction(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleassistanceReqNextButtononAction(ActionEvent actionEvent) {
     }
 }

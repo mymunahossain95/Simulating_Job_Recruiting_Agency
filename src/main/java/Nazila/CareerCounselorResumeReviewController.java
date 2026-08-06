@@ -6,34 +6,32 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class CareerCounselorResumeReviewController {
-    @javafx.fxml.FXML
-    private TableColumn uploadedResumesUploadDateCol3;
-    @javafx.fxml.FXML
-    private TableColumn uploadedResumesStatusCol4;
-    @javafx.fxml.FXML
-    private TableView resumeUploadedResumeTableView;
-    @javafx.fxml.FXML
-    private TableColumn uploadedResumesCandidateNameCol2;
-    @javafx.fxml.FXML
-    private Label resumeReviewResumeReviewLabel;
-    @javafx.fxml.FXML
-    private Label resumeReviewCandidateReviewLabel;
-    @javafx.fxml.FXML
-    private TableColumn uploadedResumesResumeIDCol1;
 
     @javafx.fxml.FXML
-    public void handleViewResumeOnAction(ActionEvent actionEvent) {
+    private TableColumn statusCol4;
+    @javafx.fxml.FXML
+    private TableColumn resumeIDCol1;
+    @javafx.fxml.FXML
+    private TableColumn candidateNameCol2;
+    @javafx.fxml.FXML
+    private TableColumn uploadDateCol3;
+    @javafx.fxml.FXML
+    private TableView fromUploadedResumeTableView;
+
+
+    @javafx.fxml.FXML
+    public void handleAnalyzeResumeButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleSendFeedbackOnAction(ActionEvent actionEvent) {
+    public void handleViewResumeButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleAnalyzeResumeOnAction(ActionEvent actionEvent) {
+    public void handleNextNuttonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleBackOnAction(ActionEvent actionEvent) {
+    public void handleSendFeedbackButtonOnAction(ActionEvent actionEvent) {
     }
 }

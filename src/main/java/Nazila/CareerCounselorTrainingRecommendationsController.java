@@ -7,33 +7,32 @@ import javafx.scene.control.TableView;
 
 public class CareerCounselorTrainingRecommendationsController {
     @javafx.fxml.FXML
-    private Label trainingRecomendationsCandidateSkillsLabel;
-    @javafx.fxml.FXML
-    private Label trainingRecomendationsTraininCourseLabel;
-    @javafx.fxml.FXML
-    private TableColumn trainingCourseCourseNameCol1;
-    @javafx.fxml.FXML
-    private TableColumn trainingCourseSkillAreaCol4;
-    @javafx.fxml.FXML
-    private TableColumn trainingCourseDurationCol3;
-    @javafx.fxml.FXML
     private TableView trainingCoursesTableView;
     @javafx.fxml.FXML
-    private TableColumn trainingCourseTrainingProviderCol2;
+    private Label candidateSkillsLabel;
+    @javafx.fxml.FXML
+    private TableColumn courseNameCol1;
+    @javafx.fxml.FXML
+    private TableColumn skillAreaCol4;
+    @javafx.fxml.FXML
+    private TableColumn durationCol3;
+    @javafx.fxml.FXML
+    private TableColumn trainingProviderCol2;
+
 
     @javafx.fxml.FXML
-    public void handleViewSendRecommendOA(ActionEvent actionEvent) {
+    public void handleViewNextButtonOnAction(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleViewRecommendTrainingOA(ActionEvent actionEvent) {
+    public void handleViewSendRecommendButtonOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleViewCandidateSkillsOA(ActionEvent actionEvent) {
+    public void handleViewRecommendTrainingButtonnOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleViewBackOA(ActionEvent actionEvent) {
+    public void handleViewCandidateSkillsButtonOA(ActionEvent actionEvent) {
     }
 }

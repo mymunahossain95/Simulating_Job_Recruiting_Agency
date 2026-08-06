@@ -7,8 +7,6 @@ import javafx.scene.control.TableView;
 
 public class CareerCounselorCandidateTrackingController {
     @javafx.fxml.FXML
-    private Label candidateTrackingCandidateTrackingLabel;
-    @javafx.fxml.FXML
     private TableColumn trackingInformationIPlacementStatusCol5;
     @javafx.fxml.FXML
     private TableColumn trackingInformationCandidateNameCol2;
@@ -33,7 +31,8 @@ public class CareerCounselorCandidateTrackingController {
     public void handleUpdateStatusButtonOnAction(ActionEvent actionEvent) {
     }
 
+
     @javafx.fxml.FXML
-    public void handleBackButtonOnAction(ActionEvent actionEvent) {
+    public void handleNextButtonOnAction(ActionEvent actionEvent) {
     }
 }

@@ -5,15 +5,23 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class DocumentVerifierFileVerificationController {
-    @javafx.fxml.FXML
-    private TableColumn finalVerificationVerificationSummaryCol1;
-    @javafx.fxml.FXML
-    private TableColumn finalVerificationVerificationResultCol2;
+public class DocumentVerifierFinalVerificationController {
     @javafx.fxml.FXML
     private Label fileVerificationFinalStatusLabel;
     @javafx.fxml.FXML
-    private TableView finalVerificationTableView;
+    private TableView verificationSummaryTableView;
+    @javafx.fxml.FXML
+    private TableView verificationResultTableView;
+    @javafx.fxml.FXML
+    private TableColumn resultsCol2;
+    @javafx.fxml.FXML
+    private TableColumn verificationCol1;
+    @javafx.fxml.FXML
+    private TableColumn verificationTypeCol1;
+    @javafx.fxml.FXML
+    private TableColumn verificationStatusCol2;
+    @javafx.fxml.FXML
+    private TableColumn verificationRemarksCol3;
 
     @javafx.fxml.FXML
     public void handleFinalizeDecisionButtonOA(ActionEvent actionEvent) {
@@ -31,7 +39,8 @@ public class DocumentVerifierFileVerificationController {
     public void handleMarkEligibleButtonOA(ActionEvent actionEvent) {
     }
 
+
     @javafx.fxml.FXML
-    public void handleBackButtonOA(ActionEvent actionEvent) {
+    public void handleNextButtonOA(ActionEvent actionEvent) {
     }
 }

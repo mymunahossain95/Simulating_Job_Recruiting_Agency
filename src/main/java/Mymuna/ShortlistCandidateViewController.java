@@ -4,30 +4,21 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 public class ShortlistCandidateViewController {
     @javafx.fxml.FXML
-    private TableView shortlistCandidateTV;
-    @javafx.fxml.FXML
     private Label statusForShortlistCandidateLabel;
     @javafx.fxml.FXML
-    private TableColumn statusTC;
+    private TextField candidateNameTF;
     @javafx.fxml.FXML
-    private TableColumn candidateIdTC;
-    @javafx.fxml.FXML
-    private TableColumn candidateNameTC;
-    @javafx.fxml.FXML
-    private TableColumn appliedPositionTC;
+    private TextField candidateIdTF;
 
     @javafx.fxml.FXML
     public void shortlistCandidateOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void rejectCandidateOA(ActionEvent actionEvent) {
-    }
 
-    @javafx.fxml.FXML
-    public void refreshOA(ActionEvent actionEvent) {
-    }
+
+
 }

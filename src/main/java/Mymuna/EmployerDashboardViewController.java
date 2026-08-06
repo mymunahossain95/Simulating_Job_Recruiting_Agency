@@ -31,7 +31,11 @@ public class EmployerDashboardViewController {
     public void companyRegistrationOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void editJobVacancyOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void viewJobVacancyOA(ActionEvent actionEvent) {
     }
 }

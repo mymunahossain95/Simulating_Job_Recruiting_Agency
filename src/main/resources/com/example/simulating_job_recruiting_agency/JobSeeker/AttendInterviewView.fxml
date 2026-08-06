@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.AttendInterviewViewController">
    <children>
       <Label layoutX="215.0" layoutY="39.0" prefHeight="17.0" prefWidth="179.0" text="Scheduled Interviews" />
@@ -19,9 +18,8 @@
             <TableColumn fx:id="attendanceStatusTC" prefWidth="111.0" text="attendanceStatus" />
         </columns>
       </TableView>
-      <Button layoutX="62.0" layoutY="287.0" mnemonicParsing="false" onAction="#confirmAttendanceOA" text="confirmAttendanceButton" />
-      <Button layoutX="381.0" layoutY="287.0" mnemonicParsing="false" onAction="#requestRescheduleOA" text="requestRescheduleButton" />
+      <Button layoutX="228.0" layoutY="270.0" mnemonicParsing="false" onAction="#confirmAttendanceOA" text="confirmAttendanceButton" />
       <Label fx:id="statusLabel" layoutX="52.0" layoutY="345.0" text="Status" />
-      <Label layoutX="111.0" layoutY="345.0" text="Label" />
+      <Label fx:id="statusForScheduledInterviewLabel" layoutX="111.0" layoutY="345.0" text="Label" />
    </children>
 </AnchorPane>

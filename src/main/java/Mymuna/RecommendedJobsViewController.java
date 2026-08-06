@@ -8,8 +8,6 @@ public class RecommendedJobsViewController {
     @javafx.fxml.FXML
     private TableColumn jobIdTC;
     @javafx.fxml.FXML
-    private TableColumn matchPercentageTC;
-    @javafx.fxml.FXML
     private TableColumn applixationDeadlineTC;
     @javafx.fxml.FXML
     private TableView recommendedJobsTV;
@@ -18,11 +16,5 @@ public class RecommendedJobsViewController {
     @javafx.fxml.FXML
     private TableColumn jobTitleTC;
 
-    @javafx.fxml.FXML
-    public void viewJobDetailsOA(ActionEvent actionEvent) {
-    }
 
-    @javafx.fxml.FXML
-    public void applyNowOA(ActionEvent actionEvent) {
-    }
 }

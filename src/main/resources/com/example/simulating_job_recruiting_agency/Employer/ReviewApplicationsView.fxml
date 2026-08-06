@@ -6,22 +6,18 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="432.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.ReviewApplicationsViewController">
    <children>
       <Label layoutX="244.0" layoutY="23.0" text="ReviewApplications" />
       <Label layoutX="239.0" layoutY="133.0" text="Candidate Applications" />
-      <Button layoutX="434.0" layoutY="73.0" mnemonicParsing="false" onAction="#viewResumeOA" text="View Resume" />
-      <Button layoutX="200.0" layoutY="73.0" mnemonicParsing="false" onAction="#downloadResumeOA" text="Download Resume" />
-      <Button layoutX="79.0" layoutY="73.0" mnemonicParsing="false" onAction="#viewProfileOA" text="View Profile" />
-      <Button layoutX="347.0" layoutY="73.0" mnemonicParsing="false" onAction="#refreshOA" text="Refresh" />
+      <Button layoutX="261.0" layoutY="76.0" mnemonicParsing="false" onAction="#refreshOA" text="Refresh" />
       <TableView fx:id="reviewApplicationsTV" layoutX="32.0" layoutY="167.0" prefHeight="200.0" prefWidth="552.0">
         <columns>
-          <TableColumn fx:id="candidateIdTC" prefWidth="99.0" text="Candidate ID" />
-          <TableColumn fx:id="candidateNameTC" prefWidth="111.0" text="Candidate Name" />
-            <TableColumn fx:id="appliedPositionTC" prefWidth="114.0" text="Applied Position" />
-            <TableColumn fx:id="resumeStatusTC" prefWidth="112.0" text="Resume Status" />
-            <TableColumn fx:id="applicationDateTC" prefWidth="115.0" text="Application Date" />
+          <TableColumn fx:id="applicationIdTC" prefWidth="99.0" text="Application ID" />
+          <TableColumn fx:id="candidateNameTC" prefWidth="134.0" text="Candidate Name" />
+            <TableColumn fx:id="jobIdTC" prefWidth="84.0" text="Job Id" />
+            <TableColumn fx:id="jobTitleTC" prefWidth="110.0" text="Job Title" />
+            <TableColumn fx:id="applicationStatusTC" prefWidth="124.0" text="Application Status" />
         </columns>
       </TableView>
    </children>

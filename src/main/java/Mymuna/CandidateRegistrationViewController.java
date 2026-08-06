@@ -18,7 +18,7 @@ public class CandidateRegistrationViewController {
     @javafx.fxml.FXML
     private TextField confirmPasswordTF;
     @javafx.fxml.FXML
-    private Label statusForCreateCandidateAccountLabel;
+    private Label statusForCandidateRegistrationLabel;
 
 
     @javafx.fxml.FXML

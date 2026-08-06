@@ -1,71 +1,41 @@
 package User;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
-public class Employer implements Serializable {
+public class Employer extends User implements Serializable {
 
-    private String employerId;
-    private String companyName;
-    private String companyEmail;
-    private String contactNumber;
-    private String password;
+    private String companyId;
 
-    public Employer(String employerId, String companyName, String companyEmail, String contactNumber, String password) {
-        this.employerId = employerId;
-        this.companyName = companyName;
-        this.companyEmail = companyEmail;
-        this.contactNumber = contactNumber;
-        this.password = password;
+    public Employer(String userId,
+                    String fullName,
+                    String email,
+                    String password,
+                    LocalDate dateOfBirth,
+                    String phone,
+                    String address,
+                    String status,
+                    String companyId) {
+
+        super(userId, fullName, email, password,
+                dateOfBirth, phone, address, status);
+
+        this.companyId = companyId;
     }
 
-    public String getEmployerId() {
-        return employerId;
+    public String getCompanyId() {
+        return companyId;
     }
 
-    public void setEmployerId(String employerId) {
-        this.employerId = employerId;
-    }
-
-    public String getCompanyName() {
-        return companyName;
-    }
-
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
-    }
-
-    public String getCompanyEmail() {
-        return companyEmail;
-    }
-
-    public void setCompanyEmail(String companyEmail) {
-        this.companyEmail = companyEmail;
-    }
-
-    public String getContactNumber() {
-        return contactNumber;
-    }
-
-    public void setContactNumber(String contactNumber) {
-        this.contactNumber = contactNumber;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setCompanyId(String companyId) {
+        this.companyId = companyId;
     }
 
     @Override
     public String toString() {
         return "Employer{" +
-                "employerId='" + employerId + '\'' +
-                ", companyName='" + companyName + '\'' +
-                ", companyEmail='" + companyEmail + '\'' +
-                ", contactNumber='" + contactNumber + '\'' +
-                ", password='" + password + '\'' +
+                "companyId='" + companyId + '\'' +
+                ", " + super.toString() +
                 '}';
     }
 }

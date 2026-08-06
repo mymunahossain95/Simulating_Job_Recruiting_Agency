@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.ApplyForJobViewController">
+   <children>
+      <TextField fx:id="coverLetterTF" layoutX="123.0" layoutY="93.0" />
+      <Button layoutX="121.0" layoutY="227.0" mnemonicParsing="false" onAction="#submitApplicationOA" prefHeight="25.0" prefWidth="359.0" text="Submit Application" />
+      <Label layoutX="32.0" layoutY="97.0" text="Cover Letter" />
+      <ComboBox fx:id="availabilityToJoinCB" layoutX="123.0" layoutY="150.0" prefWidth="150.0" />
+      <Label layoutX="17.0" layoutY="154.0" text="Availability to Join" />
+      <Label layoutX="253.0" layoutY="14.0" text="Apply For Job" />
+      <Label fx:id="statusForApplyForJobLabel" layoutX="136.0" layoutY="335.0" text="Label" />
+      <Label layoutX="32.0" layoutY="335.0" text="Status" />
+      <Label layoutX="40.0" layoutY="63.0" text="Job ID" />
+      <TextField fx:id="jobIdTF" layoutX="123.0" layoutY="59.0" />
+   </children>
+</AnchorPane>

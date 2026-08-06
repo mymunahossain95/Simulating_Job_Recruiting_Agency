@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.ScheduleInterviewViewController">
+   <children>
+      <Label layoutX="32.0" layoutY="232.0" text="Interview Location" />
+      <TextField fx:id="interviewLocationTF" layoutX="167.0" layoutY="228.0" />
+      <Label layoutX="70.0" layoutY="103.0" text="Candidate ID" />
+      <Label layoutX="51.0" layoutY="188.0" text="Interview Time" />
+      <DatePicker layoutX="167.0" layoutY="275.0" />
+      <Label layoutX="66.0" layoutY="279.0" text="Interview Date" />
+      <Button layoutX="446.0" layoutY="196.0" mnemonicParsing="false" onAction="#scheduleInterviewOA" text="Schedule Interview" />
+      <Label layoutX="241.0" layoutY="20.0" text="SCHEDULE INTERVIEW" />
+      <Label fx:id="statusForScheduleInterviewLabel" layoutX="432.0" layoutY="399.0" text="Label" />
+      <Label layoutX="156.0" layoutY="399.0" text="Status" />
+      <TextField fx:id="candidateIdTF" layoutX="167.0" layoutY="99.0" />
+      <TextField fx:id="interviewTimeTF" layoutX="167.0" layoutY="184.0" />
+      <TextField fx:id="candidateNameTF" layoutX="167.0" layoutY="138.0" />
+      <Label layoutX="60.0" layoutY="142.0" text="Candidate Name" />
+   </children>
+</AnchorPane>

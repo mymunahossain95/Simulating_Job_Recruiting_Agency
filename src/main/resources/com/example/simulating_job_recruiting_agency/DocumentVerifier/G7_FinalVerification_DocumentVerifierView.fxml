@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="525.0" prefWidth="617.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierFinalVerificationController">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FILE VERIFICATION:" wrappingWidth="118.94793701171875" />
+      <Line endX="24.333343505859375" endY="-7.62939453125E-6" layoutX="131.0" layoutY="79.0" startX="-119.0" startY="-7.62939453125E-6" />
+      <TableView fx:id="verificationSummaryTableView" layoutX="30.0" layoutY="92.0" prefHeight="149.0" prefWidth="394.0">
+        <columns>
+          <TableColumn fx:id="verificationTypeCol1" prefWidth="139.99996948242188" text="Verification Type" />
+          <TableColumn fx:id="verificationStatusCol2" prefWidth="142.66665649414062" text="Status" />
+            <TableColumn fx:id="verificationRemarksCol3" prefWidth="142.66665649414062" text="Remarks" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleFinalizeDecisionButtonOA" text="Finalize Decision" />
+      <Button layoutX="130.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleMarkEligibleButtonOA" text="Mark Eligible" />
+      <Button layoutX="227.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleMarkNotEligibleButtonOA" text="Mark Not Eligible" />
+      <Button layoutX="341.0" layoutY="447.0" mnemonicParsing="false" onAction="#handleSaveDecisionButtonOA" text="Save Decision" />
+      <Label fx:id="fileVerificationFinalStatusLabel" layoutX="400.0" layoutY="310.0" prefHeight="97.0" prefWidth="201.0" text="Final Status" />
+      <Button layoutX="547.0" layoutY="485.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next-&gt;" />
+      <Text layoutX="14.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERIFICATION SUMMARY:" wrappingWidth="164.28128051757812" />
+      <Text layoutX="14.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VERIFICATION RESULTS:" wrappingWidth="164.28128051757812" />
+      <Line endX="24.333343505859375" endY="-7.62939453125E-6" layoutX="131.0" layoutY="275.0" startX="-119.0" startY="-7.62939453125E-6" />
+      <TableView fx:id="verificationResultTableView" layoutX="30.0" layoutY="286.0" prefHeight="149.0" prefWidth="284.0">
+         <columns>
+            <TableColumn fx:id="verificationCol1" prefWidth="139.99996948242188" text="Verification " />
+            <TableColumn fx:id="resultsCol2" prefWidth="142.66665649414062" text=" Results" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

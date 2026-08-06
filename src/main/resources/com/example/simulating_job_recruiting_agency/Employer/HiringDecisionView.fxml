@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="516.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.HiringDecisionViewController">
+   <children>
+      <Label layoutX="272.0" layoutY="24.0" text="HIRING DECISION" />
+      <Label layoutX="33.0" layoutY="188.0" text="Candidate Name" />
+      <Label layoutX="65.0" layoutY="311.0" text="Remarks" />
+      <Label layoutX="34.0" layoutY="262.0" text="Hiring Decisions" />
+      <Button layoutX="427.0" layoutY="373.0" mnemonicParsing="false" onAction="#saveDecisionOA" text="Save Decision" />
+      <TextField fx:id="remarkTF" layoutX="140.0" layoutY="307.0" />
+      <ComboBox fx:id="hiringDecisionCB" layoutX="140.0" layoutY="258.0" prefWidth="150.0" />
+      <Label layoutX="88.0" layoutY="453.0" text="Status" />
+      <Label fx:id="statusForHiringDecisionLabel" layoutX="161.0" layoutY="453.0" text="Label" />
+      <TextField fx:id="candidateIdTF" layoutX="140.0" layoutY="128.0" />
+      <TextField fx:id="candidateNameCB" layoutX="140.0" layoutY="184.0" />
+      <Label layoutX="33.0" layoutY="132.0" text="Candidate Id" />
+   </children>
+</AnchorPane>

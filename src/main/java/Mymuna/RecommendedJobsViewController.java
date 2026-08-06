@@ -1,0 +1,20 @@
+package Mymuna;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+
+public class RecommendedJobsViewController {
+    @javafx.fxml.FXML
+    private TableColumn jobIdTC;
+    @javafx.fxml.FXML
+    private TableColumn applixationDeadlineTC;
+    @javafx.fxml.FXML
+    private TableView recommendedJobsTV;
+    @javafx.fxml.FXML
+    private TableColumn companyNameTC;
+    @javafx.fxml.FXML
+    private TableColumn jobTitleTC;
+
+
+}

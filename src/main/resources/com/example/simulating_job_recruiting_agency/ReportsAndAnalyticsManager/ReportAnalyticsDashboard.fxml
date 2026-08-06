@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="644.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.ReportAnalyticsDashboardController">
+   <children>
+      <Button layoutX="153.0" layoutY="441.0" mnemonicParsing="false" onAction="#onRecruitmentForecast" prefHeight="148.0" prefWidth="151.0" text="Recruitment Forecast" />
+      <Button layoutX="369.0" layoutY="441.0" mnemonicParsing="false" onAction="#onCandidateFeedback" prefHeight="148.0" prefWidth="151.0" text="Candidate Feedback" />
+      <Button layoutX="444.0" layoutY="274.0" mnemonicParsing="false" onAction="#onVacancyAnalysis" prefHeight="138.0" prefWidth="151.0" text="Vacancy Analysis" />
+      <Button layoutX="252.0" layoutY="274.0" mnemonicParsing="false" onAction="#onSkilDemand" prefHeight="138.0" prefWidth="151.0" text="Skill Demand Analysis" />
+      <Button layoutX="56.0" layoutY="274.0" mnemonicParsing="false" onAction="#onRecruitmentPerformance" prefHeight="138.0" prefWidth="151.0" text="Recruitment Performance" />
+      <Button layoutX="444.0" layoutY="110.0" mnemonicParsing="false" onAction="#onHiringTrends" prefHeight="148.0" prefWidth="151.0" text="Hiring Trends" />
+      <Button layoutX="56.0" layoutY="110.0" mnemonicParsing="false" onAction="#onPlacementStatistics" prefHeight="148.0" prefWidth="151.0" text="Placement Statistics" />
+      <Button layoutX="252.0" layoutY="110.0" mnemonicParsing="false" onAction="#onInterviwAnalytics" prefHeight="148.0" prefWidth="151.0" text="Interviw Analytics" />
+   </children>
+</AnchorPane>

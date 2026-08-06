@@ -1,6 +1,7 @@
 package Mymuna;
 
 import javafx.event.ActionEvent;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
@@ -17,12 +18,8 @@ public class TrackApplicationsViewController {
     private TableColumn jobTitleTC;
     @javafx.fxml.FXML
     private TableColumn appliedDateTC;
-
     @javafx.fxml.FXML
-    public void refreshOA(ActionEvent actionEvent) {
-    }
+    private Label statusForTrackApplicationLabel;
 
-    @javafx.fxml.FXML
-    public void viewApplicationDetailsOA(ActionEvent actionEvent) {
-    }
+
 }

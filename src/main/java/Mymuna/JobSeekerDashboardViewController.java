@@ -15,7 +15,7 @@ public class JobSeekerDashboardViewController {
     public void searchJobsOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void createResumeOA(ActionEvent actionEvent) {
     }
 
@@ -23,15 +23,27 @@ public class JobSeekerDashboardViewController {
     public void trackApplicationsOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void profileOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void applyJobOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void recommendedJobsOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void applyForJobOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void candidateRegistationOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void candidateProfileManagementOA(ActionEvent actionEvent) {
     }
 }

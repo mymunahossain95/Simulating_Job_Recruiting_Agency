@@ -8,8 +8,6 @@ import javafx.scene.control.TextField;
 
 public class SearchJobsViewController {
     @javafx.fxml.FXML
-    private TextField keyWordTF;
-    @javafx.fxml.FXML
     private ComboBox locationTF;
     @javafx.fxml.FXML
     private TableColumn jobIdTC;
@@ -27,6 +25,8 @@ public class SearchJobsViewController {
     private TableColumn deadLineTC;
     @javafx.fxml.FXML
     private TableColumn jobTitleTC;
+    @javafx.fxml.FXML
+    private TextField jobTitleTF;
 
     @javafx.fxml.FXML
     public void searchOA(ActionEvent actionEvent) {

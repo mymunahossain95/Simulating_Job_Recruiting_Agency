@@ -20,10 +20,9 @@ public class AttendInterviewViewController {
     private TableColumn companyNameTC;
     @javafx.fxml.FXML
     private Label statusLabel;
-
     @javafx.fxml.FXML
-    public void requestRescheduleOA(ActionEvent actionEvent) {
-    }
+    private Label statusForScheduledInterviewLabel;
+
 
     @javafx.fxml.FXML
     public void confirmAttendanceOA(ActionEvent actionEvent) {

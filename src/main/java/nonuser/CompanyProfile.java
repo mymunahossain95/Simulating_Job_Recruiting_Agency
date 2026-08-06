@@ -1,29 +1,19 @@
-package User;
+package nonuser;
 
 import java.io.Serializable;
 
-public class Employer implements Serializable {
+public class CompanyProfile implements Serializable {
 
-    private String employerId;
     private String companyName;
+    private String companyAddress;
     private String companyEmail;
     private String contactNumber;
-    private String password;
 
-    public Employer(String employerId, String companyName, String companyEmail, String contactNumber, String password) {
-        this.employerId = employerId;
+    public CompanyProfile(String companyName, String companyAddress, String companyEmail, String contactNumber) {
         this.companyName = companyName;
+        this.companyAddress = companyAddress;
         this.companyEmail = companyEmail;
         this.contactNumber = contactNumber;
-        this.password = password;
-    }
-
-    public String getEmployerId() {
-        return employerId;
-    }
-
-    public void setEmployerId(String employerId) {
-        this.employerId = employerId;
     }
 
     public String getCompanyName() {
@@ -32,6 +22,14 @@ public class Employer implements Serializable {
 
     public void setCompanyName(String companyName) {
         this.companyName = companyName;
+    }
+
+    public String getCompanyAddress() {
+        return companyAddress;
+    }
+
+    public void setCompanyAddress(String companyAddress) {
+        this.companyAddress = companyAddress;
     }
 
     public String getCompanyEmail() {
@@ -50,22 +48,13 @@ public class Employer implements Serializable {
         this.contactNumber = contactNumber;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     @Override
     public String toString() {
-        return "Employer{" +
-                "employerId='" + employerId + '\'' +
-                ", companyName='" + companyName + '\'' +
+        return "CompanyProfile{" +
+                "companyName='" + companyName + '\'' +
+                ", companyAddress='" + companyAddress + '\'' +
                 ", companyEmail='" + companyEmail + '\'' +
                 ", contactNumber='" + contactNumber + '\'' +
-                ", password='" + password + '\'' +
                 '}';
     }
 }

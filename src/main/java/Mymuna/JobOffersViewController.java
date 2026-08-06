@@ -10,8 +10,6 @@ public class JobOffersViewController {
     @javafx.fxml.FXML
     private TableView jobOffersViewTV;
     @javafx.fxml.FXML
-    private Label positionLabel;
-    @javafx.fxml.FXML
     private TableColumn offerIdTC;
     @javafx.fxml.FXML
     private TextField joiningDateTF;
@@ -29,6 +27,10 @@ public class JobOffersViewController {
     private TableColumn companyNameTC;
     @javafx.fxml.FXML
     private TableColumn responsestatusTC;
+    @javafx.fxml.FXML
+    private TextField companyTF;
+    @javafx.fxml.FXML
+    private Label statusForJobOfferLabel;
 
     @javafx.fxml.FXML
     public void acceptOfferOA(ActionEvent actionEvent) {

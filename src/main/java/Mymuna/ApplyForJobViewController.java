@@ -1,31 +1,20 @@
 package Mymuna;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 public class ApplyForJobViewController {
     @javafx.fxml.FXML
-    private TableColumn jobIdTC;
-    @javafx.fxml.FXML
-    private TableView applyForJobsTV;
-    @javafx.fxml.FXML
-    private TableColumn companyTC;
-    @javafx.fxml.FXML
-    private TableColumn statusTC;
-    @javafx.fxml.FXML
-    private TableColumn deadLineTC;
-    @javafx.fxml.FXML
     private TextField coverLetterTF;
     @javafx.fxml.FXML
-    private TableColumn jobTitleTC;
+    private Label statusForApplyForJobLabel;
+    @javafx.fxml.FXML
+    private ComboBox<String> availabilityToJoinCB;
+    @javafx.fxml.FXML
+    private TextField jobIdTF;
+
 
     @javafx.fxml.FXML
-    public void uploadResumeOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void applyOA(ActionEvent actionEvent) {
+    public void submitApplicationOA(ActionEvent actionEvent) {
     }
 }

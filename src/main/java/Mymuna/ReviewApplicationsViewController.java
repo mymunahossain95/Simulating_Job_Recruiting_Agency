@@ -8,29 +8,19 @@ public class ReviewApplicationsViewController {
     @javafx.fxml.FXML
     private TableView reviewApplicationsTV;
     @javafx.fxml.FXML
-    private TableColumn applicationDateTC;
-    @javafx.fxml.FXML
-    private TableColumn candidateIdTC;
-    @javafx.fxml.FXML
     private TableColumn candidateNameTC;
     @javafx.fxml.FXML
-    private TableColumn appliedPositionTC;
+    private TableColumn jobIdTC;
     @javafx.fxml.FXML
-    private TableColumn resumeStatusTC;
+    private TableColumn applicationStatusTC;
+    @javafx.fxml.FXML
+    private TableColumn jobTitleTC;
+    @javafx.fxml.FXML
+    private TableColumn applicationIdTC;
 
-    @javafx.fxml.FXML
-    public void viewProfileOA(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void downloadResumeOA(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void refreshOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void viewResumeOA(ActionEvent actionEvent) {
-    }
 }

@@ -4,7 +4,6 @@ import java.io.Serializable;
 
 public class Evaluation implements Serializable {
 
-    // Fields
     private String candidateName;
     private String assessmentName;
     private double score;

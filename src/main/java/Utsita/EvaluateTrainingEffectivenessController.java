@@ -7,6 +7,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 public class EvaluateTrainingEffectivenessController {
+
     @javafx.fxml.FXML
     private TableColumn completionRateTableColumn;
     @javafx.fxml.FXML
@@ -23,7 +24,7 @@ public class EvaluateTrainingEffectivenessController {
     private TableView trainingEvaluationTableView;
 
     @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
+    public void homeButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML

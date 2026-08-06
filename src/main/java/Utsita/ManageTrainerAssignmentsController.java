@@ -4,12 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 public class ManageTrainerAssignmentsController {
-    @javafx.fxml.FXML
-    private TableColumn statusTableColumn;
-    @javafx.fxml.FXML
-    private ComboBox sessionComboBox;
-    @javafx.fxml.FXML
-    private TableColumn sessionTableColumn;
+
     @javafx.fxml.FXML
     private TextField searchTrainer;
     @javafx.fxml.FXML
@@ -27,25 +22,23 @@ public class ManageTrainerAssignmentsController {
     @javafx.fxml.FXML
     private TableColumn trainerNameTableColumn;
     @javafx.fxml.FXML
-    private TableColumn assignmentDateTableColumn;
-
+    private TableColumn statusTableColumn1;
     @javafx.fxml.FXML
-    public void searchButton(ActionEvent actionEvent) {
-    }
+    private TableColumn assignmentDateTableColumn;
 
     @javafx.fxml.FXML
     public void assignTrainerButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void removeButtton(ActionEvent actionEvent) {
+    public void removeButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
     public void updateButton(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void homeButton(ActionEvent actionEvent) {
     }
 }

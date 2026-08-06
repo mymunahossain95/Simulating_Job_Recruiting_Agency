@@ -3,42 +3,44 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="512.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.TrainingManagementController">
    <children>
-      <TextField fx:id="programNameTextField" layoutX="161.0" layoutY="30.0" />
-      <TextField fx:id="maximumParticipantsTextField" layoutX="161.0" layoutY="65.0" />
-      <TextField fx:id="searChTextField" layoutX="161.0" layoutY="98.0" />
-      <Text layoutX="33.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name:" />
-      <Text layoutX="33.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Participants:" />
-      <Text layoutX="33.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" />
-      <DatePicker fx:id="startDateDatePicker" layoutX="466.0" layoutY="30.0" prefHeight="5.0" prefWidth="120.0" />
-      <DatePicker fx:id="endDateDatePicker" layoutX="466.0" layoutY="65.0" prefHeight="6.0" prefWidth="120.0" />
-      <Text layoutX="406.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
-      <Text layoutX="408.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" />
-      <ComboBox fx:id="cateGoryComboBox" layoutX="466.0" layoutY="119.0" prefHeight="17.0" prefWidth="120.0" />
-      <ComboBox fx:id="skillLevelComboBox" layoutX="466.0" layoutY="155.0" prefHeight="17.0" prefWidth="120.0" />
-      <Text layoutX="394.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
-      <Button layoutX="31.0" layoutY="193.0" mnemonicParsing="false" onAction="#addButton" text="Add Program" />
-      <Button layoutX="11.0" layoutY="473.0" mnemonicParsing="false" onAction="#updateButton" text="Update" />
-      <Button layoutX="555.0" layoutY="473.0" mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
-      <Button layoutX="33.0" layoutY="163.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
-      <Button layoutX="559.0" layoutY="231.0" mnemonicParsing="false" onAction="#clearButton" text="Clear" />
-      <TableView fx:id="trainingProgramTableView" layoutX="14.0" layoutY="263.0" prefHeight="200.0" prefWidth="593.0">
+      <TextField fx:id="programNameTextField" layoutX="134.0" layoutY="109.0" />
+      <TextField fx:id="searChTextField" layoutX="134.0" layoutY="142.0" />
+      <Text layoutX="39.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program Name:" />
+      <Text layoutX="39.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" />
+      <DatePicker fx:id="startDateDatePicker" layoutX="464.0" layoutY="106.0" prefHeight="5.0" prefWidth="120.0" />
+      <Text layoutX="404.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
+      <ComboBox fx:id="cateGoryComboBox" layoutX="464.0" layoutY="138.0" prefHeight="17.0" prefWidth="120.0" />
+      <Text layoutX="404.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" />
+      <Button layoutX="209.0" layoutY="231.0" mnemonicParsing="false" onAction="#addButton" text="Add Program" />
+      <Button layoutX="128.0" layoutY="231.0" mnemonicParsing="false" onAction="#updateButton" text="Update" />
+      <Button layoutX="442.0" layoutY="231.0" mnemonicParsing="false" onAction="#deleteButton" text="Delete" />
+      <TableView fx:id="trainingProgramTableView" layoutX="128.0" layoutY="264.0" prefHeight="200.0" prefWidth="365.0">
         <columns>
-          <TableColumn fx:id="programIdTableColumn" prefWidth="81.0" text="Program ID" />
-          <TableColumn fx:id="programNameTableColumn" prefWidth="94.0" text="Program Name" />
-            <TableColumn fx:id="cateGoryTableColumn" prefWidth="75.0" text="Category" />
-            <TableColumn fx:id="startDateTableColumn" prefWidth="77.0" text="Start Date" />
-            <TableColumn fx:id="endDateTableColumn" prefWidth="81.0" text="End Date" />
-            <TableColumn fx:id="skillLevelTableColumn" prefWidth="96.0" text="Skill Level" />
-            <TableColumn fx:id="capaCityTableColumn" prefWidth="88.0" text="Capacity" />
+          <TableColumn fx:id="programIdTableColumn" prefWidth="89.0" text="Program ID" />
+          <TableColumn fx:id="programNameTableColumn" prefWidth="104.0" text="Program Name" />
+            <TableColumn fx:id="cateGoryTableColumn" prefWidth="79.0" text="Category" />
+            <TableColumn fx:id="startDateTableColumn" prefWidth="92.0" text="Start Date" />
         </columns>
       </TableView>
+      <Button layoutX="554.0" layoutY="14.0" mnemonicParsing="false" onAction="#homeButton" text="Home" />
+      <Label layoutX="235.0" layoutY="16.0" text="Training Management ">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
    </children>
 </AnchorPane>

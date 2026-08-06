@@ -16,35 +16,21 @@ public class PlacementStatisticsController {
     @javafx.fxml.FXML
     private TableColumn candidateNameTableColumn;
     @javafx.fxml.FXML
-    private TableColumn placementDataTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn placementIdTableColumn;
-    @javafx.fxml.FXML
     private TableColumn staTusTableColumn;
     @javafx.fxml.FXML
     private ComboBox montHComboBox;
     @javafx.fxml.FXML
-    private TextField searchCandidateTextField;
-    @javafx.fxml.FXML
     private TableView placementStateTableView;
 
     @javafx.fxml.FXML
-    public void onBack(ActionEvent actionEvent) {
+    public void exportButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onExportExcel(ActionEvent actionEvent) {
+    public void generateButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onRefresh(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void onExportpPdf(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void onGenerateReport(ActionEvent actionEvent) {
+    public void homeButton(ActionEvent actionEvent) {
     }
 }

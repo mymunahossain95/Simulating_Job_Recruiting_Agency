@@ -9,10 +9,10 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="455.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierCandidateProfileView">
+<AnchorPane prefHeight="455.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierCandidateDocumentsView">
    <children>
-      <Label layoutX="27.0" layoutY="23.0" text="CANDIDATE PROFILE:" />
-      <Line endX="37.666656494140625" endY="-3.814697265625E-6" layoutX="115.0" layoutY="40.0" startX="-100.0" />
+      <Label layoutX="27.0" layoutY="23.0" text="CANDIDATE DOCUMENTS:" />
+      <Line endX="53.99998474121094" endY="0.3333396911621094" layoutX="115.0" layoutY="40.0" startX="-100.0" />
       <TextField fx:id="candidateProfileSearchCandidateTextField" layoutX="135.0" layoutY="72.0" />
       <Text layoutX="37.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate:" />
       <Button layoutX="133.0" layoutY="106.0" mnemonicParsing="false" onAction="#candidateProfileSearchCandidateButtonOA" text="Search" />

@@ -45,9 +45,6 @@ public class DocumentVerifierFinalReportGenerationController {
     public void reportGenerationGenerateReportButtonOA(ActionEvent actionEvent) {
     }
 
-    @javafx.fxml.FXML
-    public void reportGenerationDownloadReportButtonOA(ActionEvent actionEvent) {
-    }
 
 
     @javafx.fxml.FXML

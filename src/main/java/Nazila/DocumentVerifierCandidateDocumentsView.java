@@ -5,7 +5,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-public class DocumentVerifierCandidateProfileView {
+public class DocumentVerifierCandidateDocumentsView {
     @javafx.fxml.FXML
     private TableColumn candidateListPhoneNumberCol41;
     @javafx.fxml.FXML

@@ -10,8 +10,8 @@
 
 <AnchorPane prefHeight="512.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nazila.DocumentVerifierFinalReportGenerationController">
    <children>
-      <Text layoutX="25.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORT GENERATION:" />
-      <Line endX="19.140625" endY="-1.0000057220458984" layoutX="126.0" layoutY="32.0" startX="-101.0" startY="-1.0000057220458984" />
+      <Text layoutX="16.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REPORT GENERATION:" />
+      <Line endX="36.66667175292969" endY="-1.0000057220458984" layoutX="106.0" layoutY="32.0" startX="-101.0" startY="-1.0000057220458984" />
       <TableView fx:id="candidateRecordsTableView" layoutX="10.0" layoutY="75.0" prefHeight="113.0" prefWidth="523.0">
         <columns>
           <TableColumn fx:id="CandidateIdCol1" prefWidth="116.6666259765625" text="Candidate Id" />
@@ -20,10 +20,9 @@
             <TableColumn fx:id="finalStatusCol4" prefWidth="142.0" text="FinalStatus" />
         </columns>
       </TableView>
-      <Button layoutX="581.0" layoutY="297.0" mnemonicParsing="false" onAction="#reportGenerationSelectRecordButtonOA" text="Select Record" />
-      <Button layoutX="568.0" layoutY="340.0" mnemonicParsing="false" onAction="#reportGenerationGenerateReportButtonOA" text="Generate Report" />
-      <Button layoutX="557.0" layoutY="256.0" mnemonicParsing="false" onAction="#reportGenerationDownloadReportButtonOA" text="Download Report" />
-      <Label fx:id="reportGenerationReportGeneratedSuccessfullyLabel" layoutX="455.0" layoutY="375.0" prefHeight="45.0" prefWidth="226.0" text="Report Generated Successfully" />
+      <Button layoutX="455.0" layoutY="296.0" mnemonicParsing="false" onAction="#reportGenerationSelectRecordButtonOA" text="Select Record" />
+      <Button layoutX="455.0" layoutY="332.0" mnemonicParsing="false" onAction="#reportGenerationGenerateReportButtonOA" text="Generate Report" />
+      <Label fx:id="reportGenerationReportGeneratedSuccessfullyLabel" layoutX="455.0" layoutY="376.0" prefHeight="45.0" prefWidth="226.0" text="Report Generated Successfully" />
       <Button layoutX="612.0" layoutY="472.0" mnemonicParsing="false" onAction="#reportGenerationNextButtonOA" text="Next -&gt;" />
       <Text layoutX="14.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate Records:" />
       <Line endX="19.140625" endY="-1.0000057220458984" layoutX="126.0" layoutY="68.0" startX="-118.00000762939453" startY="-1.0000076293945312" />

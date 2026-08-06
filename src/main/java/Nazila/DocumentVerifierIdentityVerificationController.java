@@ -1,6 +1,7 @@
 package Nazila;
 
 import javafx.event.ActionEvent;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -29,6 +30,8 @@ public class DocumentVerifierIdentityVerificationController {
     private TableColumn candidateNameCol3;
     @javafx.fxml.FXML
     private TableColumn candidateIdentitydocumentTypeCol1;
+    @javafx.fxml.FXML
+    private PieChart identityVerificationPieChart;
 
     @javafx.fxml.FXML
     public void handleOpenDocumentButtonOA(ActionEvent actionEvent) {

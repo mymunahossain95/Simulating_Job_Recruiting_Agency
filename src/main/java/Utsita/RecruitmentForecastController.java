@@ -7,16 +7,11 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
 public class RecruitmentForecastController {
-    @javafx.fxml.FXML
-    private TextField searchIndustryTextField;
-    @javafx.fxml.FXML
-    private ComboBox industRyComboBox;
+
     @javafx.fxml.FXML
     private TableView foreCastTableView;
     @javafx.fxml.FXML
     private TableColumn yeArTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn industRyTableColumn;
     @javafx.fxml.FXML
     private TableColumn growthRateTableColumn;
     @javafx.fxml.FXML
@@ -27,18 +22,14 @@ public class RecruitmentForecastController {
     private TableColumn expectedVacanciesTableColumn;
 
     @javafx.fxml.FXML
-    public void onBack(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
     public void onExportForecast(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onRefresh(ActionEvent actionEvent) {
+    public void onGenerateForecast(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void onGenerateForecast(ActionEvent actionEvent) {
+    public void homeButton(ActionEvent actionEvent) {
     }
 }

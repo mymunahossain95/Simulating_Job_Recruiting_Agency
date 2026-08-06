@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 
 public class AssignCandidatesController {
+
     @javafx.fxml.FXML
     private TableColumn statusTableColumn;
     @javafx.fxml.FXML
@@ -13,29 +14,21 @@ public class AssignCandidatesController {
     @javafx.fxml.FXML
     private TableColumn candidateNameTableColumn;
     @javafx.fxml.FXML
-    private Label selectedProgramLable;
-    @javafx.fxml.FXML
     private TableColumn candidateIdTableColumn;
-    @javafx.fxml.FXML
-    private TableColumn availableSeatsTableColumn;
-    @javafx.fxml.FXML
-    private Label remainingSeatsLable;
     @javafx.fxml.FXML
     private ComboBox trainingProgramComboBox;
     @javafx.fxml.FXML
     private TextField searchCandidateTextField;
+
     @javafx.fxml.FXML
-    private Label selectedCandidateLable;
+    public void searchButton(ActionEvent actionEvent) {
+    }
 
     @javafx.fxml.FXML
     public void assignCandidateButton(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void backButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void loadCandidatesButton(ActionEvent actionEvent) {
+    public void homeButton(ActionEvent actionEvent) {
     }
 }

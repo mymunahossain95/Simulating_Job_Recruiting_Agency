@@ -3,13 +3,12 @@ package User;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-public class TrainingCoordinator extends User implements Serializable {
+public class RecruitmentAnalyticsManager extends User implements Serializable {
+    private final String managerId;
 
-    private final String coordinatorId;
-
-    public TrainingCoordinator(
+    public RecruitmentAnalyticsManager(
             String userId,
-            String coordinatorId,
+            String managerId,
             String fullName,
             String email,
             String password,
@@ -29,17 +28,17 @@ public class TrainingCoordinator extends User implements Serializable {
                 status
         );
 
-        this.coordinatorId = coordinatorId;
+        this.managerId = managerId;
     }
 
-    public String getCoordinatorId() {
-        return coordinatorId;
+    public String getManagerId() {
+        return managerId;
     }
 
     @Override
     public String toString() {
-        return "TrainingCoordinator{" +
-                "coordinatorId='" + coordinatorId + '\'' +
+        return "RecruitmentAnalyticsManager{" +
+                "managerId='" + managerId + '\'' +
                 ", userId='" + getUserId() + '\'' +
                 ", fullName='" + getFullName() + '\'' +
                 ", email='" + getEmail() + '\'' +

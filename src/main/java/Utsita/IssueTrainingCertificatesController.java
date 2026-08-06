@@ -7,6 +7,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class IssueTrainingCertificatesController {
+
     @javafx.fxml.FXML
     private TableView certificateTableView;
     @javafx.fxml.FXML
@@ -16,10 +17,6 @@ public class IssueTrainingCertificatesController {
     @javafx.fxml.FXML
     private TableColumn trainingProgramTableColumn;
     @javafx.fxml.FXML
-    private TextField certificateIdTextField;
-    @javafx.fxml.FXML
-    private TextArea remarksTextArea;
-    @javafx.fxml.FXML
     private TextField searchCandidateTextField;
     @javafx.fxml.FXML
     private TableColumn certificateIdTableColumn;
@@ -27,14 +24,6 @@ public class IssueTrainingCertificatesController {
     private TableColumn completionStatusTableColumn;
     @javafx.fxml.FXML
     private TableColumn issueDateTableColumn;
-
-    @javafx.fxml.FXML
-    public void printButton(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
-    public void downloadButton(ActionEvent actionEvent) {
-    }
 
     @javafx.fxml.FXML
     public void searchButton(ActionEvent actionEvent) {

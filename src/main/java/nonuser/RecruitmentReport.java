@@ -9,7 +9,11 @@ public class RecruitmentReport implements Serializable {
     private String totalRecords;
     private String generatedDate;
 
-    public RecruitmentReport(String reportId, String reportType, String totalRecords, String generatedDate) {
+    public RecruitmentReport(String reportId,
+                             String reportType,
+                             String totalRecords,
+                             String generatedDate) {
+
         this.reportId = reportId;
         this.reportType = reportType;
         this.totalRecords = totalRecords;

@@ -4,16 +4,31 @@ import java.io.Serializable;
 
 public class CompanyProfile implements Serializable {
 
+    private String companyId;
     private String companyName;
     private String companyAddress;
     private String companyEmail;
     private String contactNumber;
 
-    public CompanyProfile(String companyName, String companyAddress, String companyEmail, String contactNumber) {
+    public CompanyProfile(String companyId,
+                          String companyName,
+                          String companyAddress,
+                          String companyEmail,
+                          String contactNumber) {
+
+        this.companyId = companyId;
         this.companyName = companyName;
         this.companyAddress = companyAddress;
         this.companyEmail = companyEmail;
         this.contactNumber = contactNumber;
+    }
+
+    public String getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(String companyId) {
+        this.companyId = companyId;
     }
 
     public String getCompanyName() {
@@ -51,7 +66,8 @@ public class CompanyProfile implements Serializable {
     @Override
     public String toString() {
         return "CompanyProfile{" +
-                "companyName='" + companyName + '\'' +
+                "companyId='" + companyId + '\'' +
+                ", companyName='" + companyName + '\'' +
                 ", companyAddress='" + companyAddress + '\'' +
                 ", companyEmail='" + companyEmail + '\'' +
                 ", contactNumber='" + contactNumber + '\'' +

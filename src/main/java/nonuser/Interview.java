@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Interview implements Serializable {
 
-    private int interviewId;
+    private String interviewId;
     private String candidateId;
     private String candidateName;
     private String companyName;
@@ -13,8 +13,15 @@ public class Interview implements Serializable {
     private String interviewLocation;
     private String attendanceStatus;
 
+    public Interview(String interviewId,
+                     String candidateId,
+                     String candidateName,
+                     String companyName,
+                     String interviewDate,
+                     String interviewTime,
+                     String interviewLocation,
+                     String attendanceStatus) {
 
-    public Interview(int interviewId, String candidateId, String candidateName, String companyName, String interviewDate, String interviewTime, String interviewLocation, String attendanceStatus) {
         this.interviewId = interviewId;
         this.candidateId = candidateId;
         this.candidateName = candidateName;
@@ -25,11 +32,11 @@ public class Interview implements Serializable {
         this.attendanceStatus = attendanceStatus;
     }
 
-    public int getInterviewId() {
+    public String getInterviewId() {
         return interviewId;
     }
 
-    public void setInterviewId(int interviewId) {
+    public void setInterviewId(String interviewId) {
         this.interviewId = interviewId;
     }
 
@@ -92,7 +99,7 @@ public class Interview implements Serializable {
     @Override
     public String toString() {
         return "Interview{" +
-                "interviewId=" + interviewId +
+                "interviewId='" + interviewId + '\'' +
                 ", candidateId='" + candidateId + '\'' +
                 ", candidateName='" + candidateName + '\'' +
                 ", companyName='" + companyName + '\'' +

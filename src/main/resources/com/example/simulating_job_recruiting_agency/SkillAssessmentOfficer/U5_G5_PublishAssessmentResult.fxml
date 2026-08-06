@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="583.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U5_G5_PublishAssessmentResultController">
+   <children>
+      <Text layoutX="205.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publish Assessment Result" wrappingWidth="241.13671875" />
+      <ComboBox fx:id="assessmentComboBox" layoutX="130.0" layoutY="62.0" prefWidth="150.0" />
+      <Text layoutX="23.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assessment" wrappingWidth="107.13671875" />
+      <Button layoutX="25.0" layoutY="120.0" mnemonicParsing="false" onAction="#publishResultBtnOnAction" text="Publish Results" />
+      <TableView fx:id="draftResultTable" layoutX="14.0" layoutY="166.0" prefHeight="200.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="candidateColumn" prefWidth="183.0" text="Candidate Name" />
+          <TableColumn fx:id="scoreColumn" prefWidth="120.0" text="Score" />
+            <TableColumn fx:id="gradeColumn" prefWidth="131.0" text="Grade" />
+            <TableColumn fx:id="statusColumn" prefWidth="138.0" text="Status" />
+        </columns>
+      </TableView>
+      <Text fx:id="statusLabel" layoutX="119.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status Label :" wrappingWidth="387.13671875" />
+   </children>
+</AnchorPane>

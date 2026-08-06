@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="466.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G8_GenerateFinalInterviewOutcomeController">
+   <children>
+      <Text layoutX="220.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Final Interview Outcome" wrappingWidth="195.13671875" />
+      <ComboBox fx:id="interviewComboBox" layoutX="76.0" layoutY="78.0" prefWidth="150.0" />
+      <Text layoutX="14.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="119.13671875" />
+      <Button layoutX="318.0" layoutY="78.0" mnemonicParsing="false" onAction="#generateOutcomeBtnOnAction" prefHeight="45.0" prefWidth="184.0" text="Generate Outcome" />
+      <TableView fx:id="outcomeTable" layoutX="14.0" layoutY="252.0" prefHeight="200.0" prefWidth="629.0">
+        <columns>
+          <TableColumn fx:id="candidateColumn" prefWidth="126.0" text="Candidate" />
+          <TableColumn fx:id="scoreColumn" prefWidth="111.0" text="Score" />
+            <TableColumn fx:id="decisionColumn" prefWidth="133.0" text="Decision" />
+            <TableColumn fx:id="remarksColumn" prefWidth="127.0" text="Remarks" />
+            <TableColumn fx:id="interviewIDColumn" prefWidth="127.0" text="Interview ID" />
+        </columns>
+      </TableView>
+      <Text layoutX="13.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interview" wrappingWidth="63.13671875" />
+      <Text layoutX="53.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Outcome :" wrappingWidth="195.13671875" />
+      <Label fx:id="statusLabel" layoutX="30.0" layoutY="173.0" prefHeight="17.0" prefWidth="470.0" text="Status" />
+   </children>
+</AnchorPane>

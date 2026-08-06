@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="465.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U5_G4_GenerateSkillScoreController">
+   <children>
+      <Text layoutX="202.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Candidate Skill Score" wrappingWidth="196.13671875" />
+      <ComboBox fx:id="candidateComboBox" layoutX="127.0" layoutY="62.0" prefWidth="150.0" />
+      <Text layoutX="14.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="candidateComboBox" wrappingWidth="106.13671875" />
+      <Button layoutX="25.0" layoutY="115.0" mnemonicParsing="false" onAction="#generateScoreBtnOnAction" text="generateScoreBtn" />
+      <TableView fx:id="scoreTable" layoutX="27.0" layoutY="167.0" prefHeight="200.0" prefWidth="546.0">
+        <columns>
+          <TableColumn fx:id="candidateColumn" prefWidth="120.0" text="Candidate Name" />
+          <TableColumn fx:id="scoreColumn" prefWidth="121.0" text="Assessment Score" />
+            <TableColumn fx:id="percentageColumn" prefWidth="79.0" text="Percentage" />
+            <TableColumn fx:id="gradeColumn" prefWidth="86.0" text="Grade" />
+            <TableColumn fx:id="statusColumn" prefWidth="139.0" text="Assessment Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

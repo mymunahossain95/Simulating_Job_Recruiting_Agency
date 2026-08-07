@@ -42,5 +42,6 @@
             <DropShadow />
          </effect>
       </Label>
+      <Button layoutX="130.0" layoutY="473.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
    </children>
 </AnchorPane>

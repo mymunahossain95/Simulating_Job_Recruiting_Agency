@@ -4,15 +4,15 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class IssueTrainingCertificates implements Serializable {
-    private final String certificateId;
-    private final String candidateId;
+    private final int certificateId;
+    private final int candidateId;
     private String candidateName;
     private String trainingProgram;
     private String completionStatus;
     private LocalDate issueDate;
 
-    public IssueTrainingCertificates(String certificateId,
-                                    String candidateId,
+    public IssueTrainingCertificates(int certificateId,
+                                    int candidateId,
                                     String candidateName,
                                     String trainingProgram,
                                     String completionStatus,
@@ -26,11 +26,11 @@ public class IssueTrainingCertificates implements Serializable {
         this.issueDate = issueDate;
     }
 
-    public String getCertificateId() {
+    public int getCertificateId() {
         return certificateId;
     }
 
-    public String getCandidateId() {
+    public int getCandidateId() {
         return candidateId;
     }
 

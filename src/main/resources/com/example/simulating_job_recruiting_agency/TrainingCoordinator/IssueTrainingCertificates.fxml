@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
@@ -13,10 +14,10 @@
 
 <AnchorPane prefHeight="549.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Utsita.IssueTrainingCertificatesController">
    <children>
-      <TextField fx:id="searchCandidateTextField" layoutX="139.0" layoutY="171.0" />
-      <Text layoutX="36.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Date" />
-      <DatePicker layoutX="139.0" layoutY="138.0" />
-      <Text layoutX="36.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate" />
+      <TextField fx:id="searchCandidateTextField" layoutX="139.0" layoutY="192.0" />
+      <Text layoutX="36.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Issue Date" />
+      <DatePicker fx:id="issueDateDatePicker" layoutX="139.0" layoutY="88.0" />
+      <Text layoutX="36.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate" />
       <TableView fx:id="certificateTableView" layoutX="11.0" layoutY="253.0" prefHeight="200.0" prefWidth="608.0">
         <columns>
           <TableColumn fx:id="certificateIdTableColumn" prefWidth="97.0" text="Certificate ID" />
@@ -28,7 +29,7 @@
         </columns>
       </TableView>
       <Button layoutX="281.0" layoutY="470.0" mnemonicParsing="false" onAction="#issueCertificateButton" text="Issue Certificate" />
-      <Button layoutX="562.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButton" text="Home" />
+      <Button layoutX="562.0" layoutY="14.0" mnemonicParsing="false" onAction="#homeButton" text="Home" />
       <Button layoutX="548.0" layoutY="217.0" mnemonicParsing="false" onAction="#searchButton" text="Search" />
       <Label layoutX="247.0" layoutY="16.0" text="Issue Training Certificates">
          <font>
@@ -38,5 +39,9 @@
             <DropShadow />
          </effect>
       </Label>
+      <ComboBox fx:id="candidateComboBox" layoutX="139.0" layoutY="122.0" prefWidth="150.0" />
+      <Text layoutX="36.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate" />
+      <ComboBox fx:id="trainingProgramComboBox" layoutX="139.0" layoutY="159.0" prefWidth="150.0" />
+      <Text layoutX="36.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Training Program" />
    </children>
 </AnchorPane>

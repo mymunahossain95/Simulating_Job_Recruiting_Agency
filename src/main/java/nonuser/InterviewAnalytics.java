@@ -6,12 +6,12 @@ public class InterviewAnalytics implements Serializable {
         private String candidateName;
         private double score;
         private String result;
-        private double successRate;
+        private String successRate;
 
         public InterviewAnalytics(String candidateName,
                                   double score,
                                   String result,
-                                  double successRate) {
+                                  String successRate) {
 
             this.candidateName = candidateName;
             this.score = score;
@@ -31,7 +31,7 @@ public class InterviewAnalytics implements Serializable {
             return result;
         }
 
-        public double getSuccessRate() {
+        public String getSuccessRate() {
             return successRate;
         }
 
@@ -47,7 +47,7 @@ public class InterviewAnalytics implements Serializable {
             this.result = result;
         }
 
-        public void setSuccessRate(double successRate) {
+        public void setSuccessRate(String successRate) {
             this.successRate = successRate;
         }
 

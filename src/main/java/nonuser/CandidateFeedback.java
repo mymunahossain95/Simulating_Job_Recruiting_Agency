@@ -5,12 +5,12 @@ import java.io.Serializable;
 public class CandidateFeedback implements Serializable {
 
         private String candidateName;
-        private double rating;
+        private int rating;
         private String comments;
         private String status;
 
         public CandidateFeedback(String candidateName,
-                                 double rating,
+                                 int rating,
                                  String comments,
                                  String status) {
 
@@ -24,7 +24,7 @@ public class CandidateFeedback implements Serializable {
             return candidateName;
         }
 
-        public double getRating() {
+        public int getRating() {
             return rating;
         }
 
@@ -40,7 +40,7 @@ public class CandidateFeedback implements Serializable {
             this.candidateName = candidateName;
         }
 
-        public void setRating(double rating) {
+        public void setRating(int rating) {
             this.rating = rating;
         }
 

@@ -5,12 +5,12 @@ import java.io.Serializable;
 public class EvaluateTrainingEffectiveness implements Serializable {
     private final String programName;
     private int participants;
-    private double averageScore;
+    private String averageScore;
     private String completionRate;
 
     public EvaluateTrainingEffectiveness(String programName,
                                          int participants,
-                                         double averageScore,
+                                         String averageScore,
                                          String completionRate) {
 
         this.programName = programName;
@@ -27,7 +27,7 @@ public class EvaluateTrainingEffectiveness implements Serializable {
         return participants;
     }
 
-    public double getAverageScore() {
+    public String getAverageScore() {
         return averageScore;
     }
 
@@ -39,7 +39,7 @@ public class EvaluateTrainingEffectiveness implements Serializable {
         this.participants = participants;
     }
 
-    public void setAverageScore(double averageScore) {
+    public void setAverageScore(String averageScore) {
         this.averageScore = averageScore;
     }
 

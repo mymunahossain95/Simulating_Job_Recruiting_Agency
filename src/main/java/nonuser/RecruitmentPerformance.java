@@ -5,13 +5,13 @@ import java.io.Serializable;
 public class RecruitmentPerformance implements Serializable {
     private String department;
     private int recruitments;
-    private double averageHiringTime;
-    private double successRate;
+    private String averageHiringTime;
+    private String successRate;
 
     public RecruitmentPerformance(String department,
                                   int recruitments,
-                                  double averageHiringTime,
-                                  double successRate) {
+                                  String averageHiringTime,
+                                  String successRate) {
 
         this.department = department;
         this.recruitments = recruitments;
@@ -27,11 +27,11 @@ public class RecruitmentPerformance implements Serializable {
         return recruitments;
     }
 
-    public double getAverageHiringTime() {
+    public String getAverageHiringTime() {
         return averageHiringTime;
     }
 
-    public double getSuccessRate() {
+    public String getSuccessRate() {
         return successRate;
     }
 
@@ -43,11 +43,11 @@ public class RecruitmentPerformance implements Serializable {
         this.recruitments = recruitments;
     }
 
-    public void setAverageHiringTime(double averageHiringTime) {
+    public void setAverageHiringTime(String averageHiringTime) {
         this.averageHiringTime = averageHiringTime;
     }
 
-    public void setSuccessRate(double successRate) {
+    public void setSuccessRate(String successRate) {
         this.successRate = successRate;
     }
 

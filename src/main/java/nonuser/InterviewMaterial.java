@@ -3,31 +3,32 @@ package nonuser;
 import java.io.Serializable;
 
 public class InterviewMaterial implements Serializable {
-    private int materialId;
-    private String title,materialType,description;
+    private String materialId;
+    private String materialName;
+    private String materialType;
+    private String description;
 
-
-    public InterviewMaterial(int materialId, String title, String materialType, String description) {
+    public InterviewMaterial(String materialId, String materialName, String materialType, String description) {
         this.materialId = materialId;
-        this.title = title;
+        this.materialName = materialName;
         this.materialType = materialType;
         this.description = description;
     }
 
-    public int getMaterialId() {
+    public String getMaterialId() {
         return materialId;
     }
 
-    public void setMaterialId(int materialId) {
+    public void setMaterialId(String materialId) {
         this.materialId = materialId;
     }
 
-    public String getTitle() {
-        return title;
+    public String getMaterialName() {
+        return materialName;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setMaterialName(String materialName) {
+        this.materialName = materialName;
     }
 
     public String getMaterialType() {
@@ -49,10 +50,11 @@ public class InterviewMaterial implements Serializable {
     @Override
     public String toString() {
         return "InterviewMaterial{" +
-                "materialId=" + materialId +
-                ", title='" + title + '\'' +
+                "materialId='" + materialId + '\'' +
+                ", materialName='" + materialName + '\'' +
                 ", materialType='" + materialType + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
 }
+

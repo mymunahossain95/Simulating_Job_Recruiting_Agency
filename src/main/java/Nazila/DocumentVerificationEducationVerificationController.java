@@ -5,34 +5,35 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import nonuser.EducationRecords;
 
 public class DocumentVerificationEducationVerificationController {
     @javafx.fxml.FXML
     private Label educationVerificationQualificationStatusLabel;
     @javafx.fxml.FXML
-    private TextField educationVerificatiomRemarksTextField;
+    private TableColumn <EducationRecords,Integer>passingYearCol4;
     @javafx.fxml.FXML
-    private TableColumn passingYearCol4;
+    private TableColumn<EducationRecords,String> instituteCol3;
     @javafx.fxml.FXML
-    private TableColumn instituteCol3;
+    private TableColumn<EducationRecords,String> statusCol4;
     @javafx.fxml.FXML
-    private TableColumn statusCol4;
+    private TableColumn<EducationRecords,Integer> certificateNoCol2;
     @javafx.fxml.FXML
-    private TableColumn certificateNoCol2;
+    private TableColumn<EducationRecords,String> certificateTypeCol1;
     @javafx.fxml.FXML
-    private TableColumn certificateTypeCol1;
+    private TableView <EducationRecords>sscORhscCertificateTableView;
     @javafx.fxml.FXML
-    private TableView sscORhscCertificateTableView;
+    private TableView <EducationRecords>educationVerificationRecordsTableView;
     @javafx.fxml.FXML
-    private TableView educationVerificationRecordsTableView;
+    private TableColumn <EducationRecords,String>BoardCol2;
     @javafx.fxml.FXML
-    private TableColumn BoardCol2;
+    private TableColumn<EducationRecords,String> GroupCol3;
     @javafx.fxml.FXML
-    private TableColumn GroupCol3;
+    private TableColumn<EducationRecords,String> examCol1;
     @javafx.fxml.FXML
-    private TableColumn examCol1;
+    private TableColumn<EducationRecords,Float> gpaCol5;
     @javafx.fxml.FXML
-    private TableColumn gpaCol5;
+    private TextField candidateVerificationRemarksTextField;
 
     @javafx.fxml.FXML
     public void educationVerificationVerifyQualificationButtonOnAction(ActionEvent actionEvent) {
@@ -42,8 +43,7 @@ public class DocumentVerificationEducationVerificationController {
     public void educationVerificationViewCertificateButtonOnAction(ActionEvent actionEvent) {
     }
 
-
     @javafx.fxml.FXML
-    public void educationVerificationNextButtonOnAction(ActionEvent actionEvent) {
+    public void handleGoHometButtonOnAction(ActionEvent actionEvent) {
     }
 }

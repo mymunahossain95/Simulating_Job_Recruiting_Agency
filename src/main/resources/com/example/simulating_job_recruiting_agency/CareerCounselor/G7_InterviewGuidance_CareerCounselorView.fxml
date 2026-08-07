@@ -22,7 +22,7 @@
       <Button layoutX="42.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleViewCandidateButtonOnAction" text="View Candidate" />
       <Button layoutX="173.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleProvideTipsOnActionButton" text="Provide Tips" />
       <Button layoutX="288.0" layoutY="311.0" mnemonicParsing="false" onAction="#handleShareMaterialsOnActionButton" text="Share Materials" />
-      <Button layoutX="550.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next-&gt;" />
+      <Button layoutX="550.0" layoutY="397.0" mnemonicParsing="false" onAction="#handleHomeButtonOA" text="Home" />
       <Line endX="55.00001525878906" endY="3.814697265625E-6" layoutX="103.0" layoutY="38.0" startX="-100.0" />
       <Line endX="-13.666679382324219" endY="-1.52587890625E-5" layoutX="140.0" layoutY="126.0" startX="-100.0" />
    </children>

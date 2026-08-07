@@ -6,6 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import nonuser.IdentityDocument;
 
 public class DocumentVerifierIdentityVerificationController {
     @javafx.fxml.FXML
@@ -13,23 +14,23 @@ public class DocumentVerifierIdentityVerificationController {
     @javafx.fxml.FXML
     private Label identityVerificationVerificationStatusResultLabel;
     @javafx.fxml.FXML
-    private TableColumn documentTypeCol2;
+    private TableColumn<IdentityDocument, String> documentTypeCol2;
     @javafx.fxml.FXML
-    private TableColumn nidbirthCertificateVerificationstatusCol3;
+    private TableColumn <IdentityDocument, String>nidbirthCertificateVerificationstatusCol3;
     @javafx.fxml.FXML
-    private TableView nidPassportBirthCertiApostileTableView;
+    private TableView <IdentityDocument>nidPassportBirthCertiApostileTableView;
     @javafx.fxml.FXML
-    private TableColumn statusCol4;
+    private TableColumn<IdentityDocument, String> statusCol4;
     @javafx.fxml.FXML
-    private TableView candidateIdentityDocumentsTableView;
+    private TableView<IdentityDocument> candidateIdentityDocumentsTableView;
     @javafx.fxml.FXML
-    private TableColumn nidBirthCertificatedocumentTypeCol1;
+    private TableColumn <IdentityDocument, String>nidBirthCertificatedocumentTypeCol1;
     @javafx.fxml.FXML
-    private TableColumn issueAuthorityCol2;
+    private TableColumn<IdentityDocument, String> issueAuthorityCol2;
     @javafx.fxml.FXML
-    private TableColumn candidateNameCol3;
+    private TableColumn<IdentityDocument, String> candidateNameCol3;
     @javafx.fxml.FXML
-    private TableColumn candidateIdentitydocumentTypeCol1;
+    private TableColumn <IdentityDocument, String>candidateIdentitydocumentTypeCol1;
     @javafx.fxml.FXML
     private PieChart identityVerificationPieChart;
 
@@ -43,6 +44,6 @@ public class DocumentVerifierIdentityVerificationController {
 
 
     @javafx.fxml.FXML
-    public void handleNextButtonOA(ActionEvent actionEvent) {
+    public void handleGoHomeButtonOA(ActionEvent actionEvent) {
     }
 }

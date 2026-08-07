@@ -4,28 +4,32 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import nonuser.AvailableJob;
+import nonuser.Candidate;
+import nonuser.CounselingSession;
 
 public class CareerCounselorJobMatchingController {
     @javafx.fxml.FXML
     private Label jobMatchingvailableJobsLabel;
     @javafx.fxml.FXML
-    private TableView candidateListTableView;
+    private TableView <Candidate>candidateListTableView;
     @javafx.fxml.FXML
-    private TableColumn candidateIDCol1;
+    private TableColumn <Candidate,String>candidateIDCol1;
     @javafx.fxml.FXML
-    private TableColumn skillsCol3;
+    private TableColumn <Candidate,String> skillsCol3;
     @javafx.fxml.FXML
-    private TableColumn companyNameCol2;
+    private TableColumn <Candidate,String> companyNameCol2;
+    //this is table 2 from avaialblejob
     @javafx.fxml.FXML
-    private TableColumn locationCol4;
+    private TableColumn<AvailableJob, String> locationCol4;
     @javafx.fxml.FXML
-    private TableColumn candidateNameCol2;
+    private TableColumn <AvailableJob, String>candidateNameCol2;
     @javafx.fxml.FXML
-    private TableView availableJobsTableView;
+    private TableView <AvailableJob>availableJobsTableView;
     @javafx.fxml.FXML
-    private TableColumn requiredSkillsCol3;
+    private TableColumn <AvailableJob, String>requiredSkillsCol3;
     @javafx.fxml.FXML
-    private TableColumn jobTitleCol1;
+    private TableColumn <AvailableJob,String>jobTitleCol1;
 
 
     @javafx.fxml.FXML
@@ -40,7 +44,9 @@ public class CareerCounselorJobMatchingController {
     public void handleRecommendJobButtonOA(ActionEvent actionEvent) {
     }
 
+
+
     @javafx.fxml.FXML
-    public void handleNextButtonOA(ActionEvent actionEvent) {
+    public void handleHomeButtonOA(ActionEvent actionEvent) {
     }
 }

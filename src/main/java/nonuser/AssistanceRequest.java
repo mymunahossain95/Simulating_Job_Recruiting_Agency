@@ -1,100 +1,97 @@
 package nonuser;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class AssistanceRequest implements Serializable {
-    private int candidateId;
-    private String name,email,phoneNumber,education,experience;
-    private int age;
-    private ArrayList<String> skills;
+    private String requestId;
+    private String candidateName;
+    private String requestType;
+    private LocalDate submissionDate;
+    private String requestDetails;
+    private String response;
+    private String status;
 
-    public AssistanceRequest(int candidateId, String name, String email, String phoneNumber, int age, String education, ArrayList<String> skills, String experience) {
-        this.candidateId = candidateId;
-        this.name = name;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.age = age;
-        this.education = education;
-        this.skills = skills;
-        this.experience = experience;
+    public AssistanceRequest() {
     }
 
-    public int getCandidateId() {
-        return candidateId;
+    public AssistanceRequest(String requestId, String candidateName, String requestType, LocalDate submissionDate, String requestDetails, String response, String status) {
+        this.requestId = requestId;
+        this.candidateName = candidateName;
+        this.requestType = requestType;
+        this.submissionDate = submissionDate;
+        this.requestDetails = requestDetails;
+        this.response = response;
+        this.status = status;
     }
 
-    public void setCandidateId(int candidateId) {
-        this.candidateId = candidateId;
+    public String getRequestId() {
+        return requestId;
     }
 
-    public String getName() {
-        return name;
+    public void setRequestId(String requestId) {
+        this.requestId = requestId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getCandidateName() {
+        return candidateName;
     }
 
-    public String getEmail() {
-        return email;
+    public void setCandidateName(String candidateName) {
+        this.candidateName = candidateName;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getRequestType() {
+        return requestType;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public void setRequestType(String requestType) {
+        this.requestType = requestType;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public LocalDate getSubmissionDate() {
+        return submissionDate;
     }
 
-    public int getAge() {
-        return age;
+    public void setSubmissionDate(LocalDate submissionDate) {
+        this.submissionDate = submissionDate;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public String getRequestDetails() {
+        return requestDetails;
     }
 
-    public String getEducation() {
-        return education;
+    public void setRequestDetails(String requestDetails) {
+        this.requestDetails = requestDetails;
     }
 
-    public void setEducation(String education) {
-        this.education = education;
+    public String getResponse() {
+        return response;
     }
 
-    public ArrayList<String> getSkills() {
-        return skills;
+    public void setResponse(String response) {
+        this.response = response;
     }
 
-    public void setSkills(ArrayList<String> skills) {
-        this.skills = skills;
+    public String getStatus() {
+        return status;
     }
 
-    public String getExperience() {
-        return experience;
-    }
-
-    public void setExperience(String experience) {
-        this.experience = experience;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
     @Override
     public String toString() {
         return "AssistanceRequest{" +
-                "candidateId=" + candidateId +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", age=" + age +
-                ", education='" + education + '\'' +
-                ", skills=" + skills +
-                ", experience='" + experience + '\'' +
+                "requestId='" + requestId + '\'' +
+                ", candidateName='" + candidateName + '\'' +
+                ", requestType='" + requestType + '\'' +
+                ", submissionDate=" + submissionDate +
+                ", requestDetails='" + requestDetails + '\'' +
+                ", response='" + response + '\'' +
+                ", status='" + status + '\'' +
                 '}';
     }
 }

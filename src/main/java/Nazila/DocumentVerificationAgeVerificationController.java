@@ -21,6 +21,6 @@ public class DocumentVerificationAgeVerificationController {
 
 
     @javafx.fxml.FXML
-    public void handleageVerificationNextButtonOnAction(ActionEvent actionEvent) {
+    public void handleGoHomeButtonOnAction(ActionEvent actionEvent) {
     }
 }

@@ -5,24 +5,28 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import nonuser.CounselingSession;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class CareerCounselorCounselingSessionController {
     @javafx.fxml.FXML
     private Label careercounselPreviousGuidanceLabel;
     @javafx.fxml.FXML
-    private TableView candidateInformationTableView;
+    private TableView<CounselingSession> candidateInformationTableView;
     @javafx.fxml.FXML
-    private TableColumn sessionDateCol3;
+    private TableColumn<CounselingSession, LocalDate> sessionDateCol3;
     @javafx.fxml.FXML
-    private TableColumn sessionStatusCol5;
+    private TableColumn<CounselingSession,String> sessionStatusCol5;
     @javafx.fxml.FXML
-    private TableColumn candidateNameCol2;
+    private TableColumn<CounselingSession,String> candidateNameCol2;
     @javafx.fxml.FXML
     private DatePicker sessionDatedatepicker;
     @javafx.fxml.FXML
-    private TableColumn sessionIDCol1;
+    private TableColumn<CounselingSession,String> sessionIDCol1;
     @javafx.fxml.FXML
-    private TableColumn sessionTimeCol4;
+    private TableColumn<CounselingSession, LocalTime> sessionTimeCol4;
 
 
 
@@ -35,10 +39,10 @@ public class CareerCounselorCounselingSessionController {
     }
 
     @javafx.fxml.FXML
-    public void handleCounselingNextSessionOA(ActionEvent actionEvent) {
+    public void handleEndSessionOA(ActionEvent actionEvent) {
     }
 
     @javafx.fxml.FXML
-    public void handleEndSessionOA(ActionEvent actionEvent) {
+    public void handleCounselingSessionHomeButtonOA(ActionEvent actionEvent) {
     }
 }

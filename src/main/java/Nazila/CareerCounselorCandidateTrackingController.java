@@ -4,23 +4,30 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import nonuser.CandidateTracking;
+import nonuser.Interview;
+import nonuser.JobApplication;
 
 public class CareerCounselorCandidateTrackingController {
     @javafx.fxml.FXML
-    private TableColumn trackingInformationIPlacementStatusCol5;
+    private TableColumn<CandidateTracking,String> trackingInformationIPlacementStatusCol5;
     @javafx.fxml.FXML
-    private TableColumn trackingInformationCandidateNameCol2;
+    private TableColumn<CandidateTracking,String> trackingInformationCandidateNameCol2;
     @javafx.fxml.FXML
-    private TableColumn trackingInformationInterviewStatusCol4;
+    private TableColumn<CandidateTracking,String> trackingInformationInterviewStatusCol4;
     @javafx.fxml.FXML
-    private TableColumn trackingInformationCandidateIDCol1;
+    private TableColumn <CandidateTracking,String> trackingInformationCandidateIDCol1;
     @javafx.fxml.FXML
-    private TableView trackingInformationTableView;
+    private TableView<CandidateTracking> trackingInformationTableView;
     @javafx.fxml.FXML
-    private TableColumn trackingInformationApplicationStatusCol3;
+    private TableColumn <CandidateTracking,String>trackingInformationApplicationStatusCol3;
 
     @javafx.fxml.FXML
     public void handleSaveUpdateButtonOnAction(ActionEvent actionEvent) {
+
+
+
     }
 
     @javafx.fxml.FXML
@@ -31,8 +38,7 @@ public class CareerCounselorCandidateTrackingController {
     public void handleUpdateStatusButtonOnAction(ActionEvent actionEvent) {
     }
 
-
     @javafx.fxml.FXML
-    public void handleNextButtonOnAction(ActionEvent actionEvent) {
+    public void handleHomeButtonOnAction(ActionEvent actionEvent) {
     }
 }

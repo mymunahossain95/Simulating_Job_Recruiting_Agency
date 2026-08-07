@@ -4,17 +4,19 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import nonuser.Candidate;
+import nonuser.CounselingSession;
 
 public class CareerCounselorInterviewGuidanceController {
 
     @javafx.fxml.FXML
-    private TableColumn candidateIDCol1;
+    private TableColumn <Candidate,String>candidateIDCol1;
     @javafx.fxml.FXML
-    private TableColumn candidateNameCol2;
+    private TableColumn<Candidate,String> candidateNameCol2;
     @javafx.fxml.FXML
-    private TableView candidateListTableView;
+    private TableView <Candidate>candidateListTableView;
     @javafx.fxml.FXML
-    private TableColumn jobRoleCol3;
+    private TableColumn<Candidate,String> jobRoleCol3;
 
 
 
@@ -31,7 +33,8 @@ public class CareerCounselorInterviewGuidanceController {
     public void handleViewCandidateButtonOnAction(ActionEvent actionEvent) {
     }
 
+
     @javafx.fxml.FXML
-    public void handleNextButtonOA(ActionEvent actionEvent) {
+    public void handleHomeButtonOA(ActionEvent actionEvent) {
     }
 }

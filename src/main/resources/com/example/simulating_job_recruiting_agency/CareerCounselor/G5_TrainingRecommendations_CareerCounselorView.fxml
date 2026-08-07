@@ -23,7 +23,7 @@
       <Button layoutX="205.0" layoutY="310.0" mnemonicParsing="false" onAction="#handleViewCandidateSkillsButtonOA" text="View Candidate Skills" />
       <Button layoutX="204.0" layoutY="390.0" mnemonicParsing="false" onAction="#handleViewRecommendTrainingButtonnOA" text="Recommend Training" />
       <Button layoutX="200.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleViewSendRecommendButtonOA" text="Save Recommendation" />
-      <Button layoutX="557.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleViewNextButtonOnAction" text="Next-&gt;" />
+      <Button layoutX="557.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleViewHomeButtonOnAction" text="Home" />
       <Text layoutX="15.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TRAINING RECOMMENDATIONS:" />
       <Line endX="75.02146911621094" layoutX="116.0" layoutY="37.0" startX="-100.0" />
       <Line endX="-0.9999923706054688" layoutX="116.0" layoutY="121.0" startX="-100.0" />

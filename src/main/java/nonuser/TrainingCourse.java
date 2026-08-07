@@ -14,6 +14,9 @@ public class TrainingCourse implements Serializable {
         this.skillArea = skillArea;
     }
 
+    public TrainingCourse() {
+    }
+
     public int getCourseId() {
         return courseId;
     }

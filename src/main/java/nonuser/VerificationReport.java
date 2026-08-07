@@ -4,95 +4,71 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class VerificationReport implements Serializable {
-    private int reportId;
-    private Candidate candidate;
-    private String ageStatus,educationStatus,identityStatus,finalStatus,reportDate;
-    public VerificationReport(int reportId, Candidate candidate, String ageStatus, String educationStatus, String jobRequirementStatus, String identityStatus, String finalStatus, LocalDate reportDate) {
-        this.reportId = reportId;
-        this.candidate = candidate;
-        this.ageStatus = ageStatus;
-        this.educationStatus = educationStatus;
-        this.jobRequirementStatus = jobRequirementStatus;
-        this.identityStatus = identityStatus;
-        this.finalStatus = finalStatus;
-        this.reportDate = reportDate;
+    private String candidateId;
+    private String candidateName;
+    private String appliedJob;
+    private String eligibility;
+    private String finalDecision;
+
+    public VerificationReport() {
     }
 
-    public int getReportId() {
-        return reportId;
+    public VerificationReport(String candidateId, String candidateName, String appliedJob, String eligibility, String finalDecision) {
+        this.candidateId = candidateId;
+        this.candidateName = candidateName;
+        this.appliedJob = appliedJob;
+        this.eligibility = eligibility;
+        this.finalDecision = finalDecision;
     }
 
-    public void setReportId(int reportId) {
-        this.reportId = reportId;
+    public String getCandidateId() {
+        return candidateId;
     }
 
-    public Candidate getCandidate() {
-        return candidate;
+    public void setCandidateId(String candidateId) {
+        this.candidateId = candidateId;
     }
 
-    public void setCandidate(Candidate candidate) {
-        this.candidate = candidate;
+    public String getCandidateName() {
+        return candidateName;
     }
 
-    public String getAgeStatus() {
-        return ageStatus;
+    public void setCandidateName(String candidateName) {
+        this.candidateName = candidateName;
     }
 
-    public void setAgeStatus(String ageStatus) {
-        this.ageStatus = ageStatus;
+    public String getAppliedJob() {
+        return appliedJob;
     }
 
-    public String getEducationStatus() {
-        return educationStatus;
+    public void setAppliedJob(String appliedJob) {
+        this.appliedJob = appliedJob;
     }
 
-    public void setEducationStatus(String educationStatus) {
-        this.educationStatus = educationStatus;
+    public String getEligibility() {
+        return eligibility;
     }
 
-    public String getJobRequirementStatus() {
-        return jobRequirementStatus;
+    public void setEligibility(String eligibility) {
+        this.eligibility = eligibility;
     }
 
-    public void setJobRequirementStatus(String jobRequirementStatus) {
-        this.jobRequirementStatus = jobRequirementStatus;
+    public String getFinalDecision() {
+        return finalDecision;
     }
 
-    public String getIdentityStatus() {
-        return identityStatus;
-    }
-
-    public void setIdentityStatus(String identityStatus) {
-        this.identityStatus = identityStatus;
-    }
-
-    public String getFinalStatus() {
-        return finalStatus;
-    }
-
-    public void setFinalStatus(String finalStatus) {
-        this.finalStatus = finalStatus;
-    }
-
-    public LocalDate getReportDate() {
-        return reportDate;
-    }
-
-    public void setReportDate(LocalDate reportDate) {
-        this.reportDate = reportDate;
+    public void setFinalDecision(String finalDecision) {
+        this.finalDecision = finalDecision;
     }
 
     @Override
     public String toString() {
         return "VerificationReport{" +
-                "reportId=" + reportId +
-                ", candidate=" + candidate +
-                ", ageStatus='" + ageStatus + '\'' +
-                ", educationStatus='" + educationStatus + '\'' +
-                ", jobRequirementStatus='" + jobRequirementStatus + '\'' +
-                ", identityStatus='" + identityStatus + '\'' +
-                ", finalStatus='" + finalStatus + '\'' +
-                ", reportDate=" + reportDate +
+                "candidateId='" + candidateId + '\'' +
+                ", candidateName='" + candidateName + '\'' +
+                ", appliedJob='" + appliedJob + '\'' +
+                ", eligibility='" + eligibility + '\'' +
+                ", finalDecision='" + finalDecision + '\'' +
                 '}';
     }
 }

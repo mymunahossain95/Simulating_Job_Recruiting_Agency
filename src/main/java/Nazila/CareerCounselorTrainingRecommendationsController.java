@@ -4,25 +4,25 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import nonuser.ResumeReview;
+import nonuser.TrainingCourse;
 
 public class CareerCounselorTrainingRecommendationsController {
     @javafx.fxml.FXML
-    private TableView trainingCoursesTableView;
+    private TableView<TrainingCourse> trainingCoursesTableView;
     @javafx.fxml.FXML
     private Label candidateSkillsLabel;
     @javafx.fxml.FXML
-    private TableColumn courseNameCol1;
+    private TableColumn <TrainingCourse,String> courseNameCol1;
     @javafx.fxml.FXML
-    private TableColumn skillAreaCol4;
+    private TableColumn <TrainingCourse,String>skillAreaCol4;
     @javafx.fxml.FXML
-    private TableColumn durationCol3;
+    private TableColumn<TrainingCourse,String> durationCol3;
     @javafx.fxml.FXML
-    private TableColumn trainingProviderCol2;
+    private TableColumn<TrainingCourse,String> trainingProviderCol2;
 
 
-    @javafx.fxml.FXML
-    public void handleViewNextButtonOnAction(ActionEvent actionEvent) {
-    }
+
 
     @javafx.fxml.FXML
     public void handleViewSendRecommendButtonOA(ActionEvent actionEvent) {
@@ -34,5 +34,9 @@ public class CareerCounselorTrainingRecommendationsController {
 
     @javafx.fxml.FXML
     public void handleViewCandidateSkillsButtonOA(ActionEvent actionEvent) {
+    }
+
+    @javafx.fxml.FXML
+    public void handleViewHomeButtonOnAction(ActionEvent actionEvent) {
     }
 }

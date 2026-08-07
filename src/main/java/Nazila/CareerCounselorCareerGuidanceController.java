@@ -5,21 +5,22 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import nonuser.Candidate;
 
 public class CareerCounselorCareerGuidanceController {
 
     @javafx.fxml.FXML
     private TextField searchCandidateNameTextField;
     @javafx.fxml.FXML
-    private TableColumn candidateIDCol1;
+    private TableColumn<Candidate,String> candidateIDCol1;
     @javafx.fxml.FXML
-    private TableColumn skillsCol3;
+    private TableColumn<Candidate,String> skillsCol3;
     @javafx.fxml.FXML
     private Label educationDetailsLabel;
     @javafx.fxml.FXML
-    private TableView candidateInformationTableView;
+    private TableView<Candidate> candidateInformationTableView;
     @javafx.fxml.FXML
-    private TableColumn EducationCol5;
+    private TableColumn<Candidate,String> EducationCol5;
     @javafx.fxml.FXML
     private Label guidanceSummaryLabel;
     @javafx.fxml.FXML
@@ -27,9 +28,9 @@ public class CareerCounselorCareerGuidanceController {
     @javafx.fxml.FXML
     private Label experiencehistorLabel;
     @javafx.fxml.FXML
-    private TableColumn candidateNameCol2;
+    private TableColumn <Candidate,String>candidateNameCol2;
     @javafx.fxml.FXML
-    private TableColumn experienceCol4;
+    private TableColumn<Candidate,String> experienceCol4;
 
     @javafx.fxml.FXML
     public void handleSaveGuidancecareerguideButton(ActionEvent actionEvent) {
@@ -43,7 +44,9 @@ public class CareerCounselorCareerGuidanceController {
     public void handleViewProfilecareerguideButton(ActionEvent actionEvent) {
     }
 
+
+
     @javafx.fxml.FXML
-    public void handleNextcareerguideButton(ActionEvent actionEvent) {
+    public void handleBacktoDashboardcareerguideButton(ActionEvent actionEvent) {
     }
 }

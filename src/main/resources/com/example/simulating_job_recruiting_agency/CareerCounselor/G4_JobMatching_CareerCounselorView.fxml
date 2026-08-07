@@ -30,7 +30,7 @@
       <Line endX="310.33331298828125" layoutX="265.0" layoutY="266.0" startX="-243.66665649414062" />
       <Button layoutX="125.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleRecommendJobButtonOA" text="Recommend Job" />
       <Button layoutX="248.0" layoutY="451.0" mnemonicParsing="false" onAction="#handleSendRecommendationButtonOA" text="Send Recommendation" />
-      <Button layoutX="540.0" layoutY="464.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next-&gt;" />
+      <Button layoutX="540.0" layoutY="464.0" mnemonicParsing="false" onAction="#handleHomeButtonOA" text="Home" />
       <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JOB MATCHING:" />
       <Line endX="-6.33331298828125" endY="3.814697265625E-6" layoutX="115.0" layoutY="32.0" startX="-100.0" />
       <Text layoutX="18.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate List:" />

@@ -4,30 +4,32 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import nonuser.AvailableJob;
+import nonuser.Candidate;
 
 public class DocumentVerifierJobRequirementVerificationController {
     @javafx.fxml.FXML
     private Label jobRequirmentVerificationEligibilityStatusLabel;
     @javafx.fxml.FXML
-    private TableColumn candidateProfilrskills4;
+    private TableColumn<Candidate, String> candidateProfilrskills4;
     @javafx.fxml.FXML
-    private TableColumn educationCol2;
+    private TableView <Candidate>candidateProfiletableView;
     @javafx.fxml.FXML
-    private TableColumn positionCol1;
+    private TableView<AvailableJob> jobRequirmentTableView;
     @javafx.fxml.FXML
-    private TableView candidateProfiletableView;
+    private TableColumn <Candidate, String>candidateProfilecandidateIdCol1;
     @javafx.fxml.FXML
-    private TableColumn experienceCol3;
+    private TableColumn <AvailableJob, String>jobRequirmentjobRequirmentskills4;
     @javafx.fxml.FXML
-    private TableColumn minimumEducationCol2;
+    private TableColumn <Candidate, String>candidateProfileEducationCol2;
     @javafx.fxml.FXML
-    private TableColumn candidateIdCol1;
+    private TableColumn<AvailableJob, String> jobRequirmentminimumExperienceCol3;
     @javafx.fxml.FXML
-    private TableColumn minimumExperienceCol3;
+    private TableColumn <AvailableJob, String>jobRequirmentminimumEducationCol2;
     @javafx.fxml.FXML
-    private TableColumn jobRequirmentskills4;
+    private TableColumn<Candidate, String> candidateProfileExperienceCol3;
     @javafx.fxml.FXML
-    private TableView jobRequirmentTableView;
+    private TableColumn<AvailableJob, String> jobRequirmentpositionCol1;
 
     @javafx.fxml.FXML
     public void handleVerifyRequirementsButtonOA(ActionEvent actionEvent) {
@@ -37,8 +39,7 @@ public class DocumentVerifierJobRequirementVerificationController {
     public void handleCheckEligibilityButtonOA(ActionEvent actionEvent) {
     }
 
-
     @javafx.fxml.FXML
-    public void handleNextButtonOA(ActionEvent actionEvent) {
+    public void handleGoHomeButtonOA(ActionEvent actionEvent) {
     }
 }

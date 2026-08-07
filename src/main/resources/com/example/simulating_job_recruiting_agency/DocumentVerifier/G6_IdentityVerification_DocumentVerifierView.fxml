@@ -26,12 +26,10 @@
       <TextField fx:id="identityVerificationRemarksTextField" layoutX="127.0" layoutY="384.0" />
       <Button layoutX="13.0" layoutY="466.0" mnemonicParsing="false" onAction="#handleOpenDocumentButtonOA" text="Open Document" />
       <Button layoutX="12.0" layoutY="503.0" mnemonicParsing="false" onAction="#handleVerifyDocumentButtonOA" text="Verify Document" />
-      <Label fx:id="identityVerificationVerificationStatusResultLabel" layoutX="127.0" layoutY="442.0" prefHeight="49.0" prefWidth="156.0" text="Verification Status Result" />
-      <Button layoutX="596.0" layoutY="503.0" mnemonicParsing="false" onAction="#handleNextButtonOA" text="Next -&gt;" />
-      <Text layoutX="14.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate Identity Documents:" />
-      <Text layoutX="22.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID / Passport / Birth Registration / Apostille:" />
-      <Line endX="78.99998474121094" layoutX="113.0" layoutY="57.0" startX="-100.0" />
-      <Line endX="140.00582885742188" endY="-0.98828125" layoutX="122.0" layoutY="241.0" startX="-100.0" />
+      <Label fx:id="identityVerificationVerificationStatusResultLabel" layoutX="124.0" layoutY="478.0" prefHeight="49.0" prefWidth="156.0" text="Verification Status Result" />
+      <Button layoutX="596.0" layoutY="503.0" mnemonicParsing="false" onAction="#handleGoHomeButtonOA" text="Home" />
+      <Text layoutX="22.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate Identity Documents:" />
+      <Text layoutX="23.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NID / Passport / Birth Registration / Apostille:" />
       <TableView fx:id="nidPassportBirthCertiApostileTableView" layoutX="25.0" layoutY="253.0" prefHeight="122.0" prefWidth="405.0">
          <columns>
             <TableColumn fx:id="nidBirthCertificatedocumentTypeCol1" prefWidth="120.66665649414062" text=" Document Type" />

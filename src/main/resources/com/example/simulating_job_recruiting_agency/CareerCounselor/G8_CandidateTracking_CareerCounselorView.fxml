@@ -24,7 +24,7 @@
       <Button layoutX="92.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleUpdateStatusButtonOnAction" text="Update Status" />
       <Button layoutX="255.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleTrackProgressButtonOnAction" text="Track Progress" />
       <Button layoutX="450.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleSaveUpdateButtonOnAction" text="Save Update" />
-      <Button layoutX="567.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleNextButtonOnAction" text="Next-&gt;" />
+      <Button layoutX="567.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleHomeButtonOnAction" text="Home" />
       <Line endX="7.0" endY="0.33333778381347656" layoutX="137.0" layoutY="31.0" startX="-129.0" startY="-5.7220458984375E-6" />
       <Line endX="-13.80859375" endY="1.9999923706054688" layoutX="178.0" layoutY="92.0" startX="-129.0" startY="-5.7220458984375E-6" />
    </children>

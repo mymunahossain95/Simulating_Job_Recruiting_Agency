@@ -4,22 +4,22 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import nonuser.Candidate;
+import nonuser.EducationRecords;
 
 public class DocumentVerifierCandidateDocumentsView {
     @javafx.fxml.FXML
-    private TableColumn candidateListPhoneNumberCol41;
+    private TableColumn<Candidate,String> candidateListPhoneNumberCol4;
     @javafx.fxml.FXML
-    private TableColumn candidateListPhoneNumberCol4;
+    private TableColumn<Candidate,String> candidateListEmailCol3;
     @javafx.fxml.FXML
-    private TableColumn candidateListEmailCol3;
+    private TableColumn<Candidate,String> candidateListCandidateIDCol1;
     @javafx.fxml.FXML
-    private TableColumn candidateListCandidateIDCol1;
+    private TableColumn<Candidate,String> candidateListCandidateNameCol2;
     @javafx.fxml.FXML
-    private TableColumn candidateListCandidateNameCol2;
+    private TableView<Candidate> candidateListTableView;
     @javafx.fxml.FXML
-    private TableView candidateListTableView;
-    @javafx.fxml.FXML
-    private TextField candidateProfileSearchCandidateTextField;
+    private TextField candidateSearchTextField;
 
     @javafx.fxml.FXML
     public void candidateProfileSearchCandidateButtonOA(ActionEvent actionEvent) {
@@ -34,7 +34,8 @@ public class DocumentVerifierCandidateDocumentsView {
     }
 
 
+
     @javafx.fxml.FXML
-    public void candidateListGoNextButtonOA(ActionEvent actionEvent) {
+    public void handleGoHomeButtonOA(ActionEvent actionEvent) {
     }
 }

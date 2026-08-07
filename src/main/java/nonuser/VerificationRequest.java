@@ -5,17 +5,20 @@ import java.time.LocalDate;
 
 public class VerificationRequest implements Serializable {
     private int requestId;
-    private Candidate candidate;
-    private String verificationType, status,remarks;
-    private LocalDate submissionDate;
+    private int candidateId;
+    private String candidateName;
+    private String verificationType;
+    private String status;
 
-    public VerificationRequest(int requestId, Candidate candidate, String verificationType, LocalDate submissionDate, String status, String remarks) {
+    public VerificationRequest() {
+    }
+
+    public VerificationRequest(int requestId, int candidateId, String candidateName, String verificationType, String status) {
         this.requestId = requestId;
-        this.candidate = candidate;
+        this.candidateId = candidateId;
+        this.candidateName = candidateName;
         this.verificationType = verificationType;
-        this.submissionDate = submissionDate;
         this.status = status;
-        this.remarks = remarks;
     }
 
     public int getRequestId() {
@@ -26,12 +29,20 @@ public class VerificationRequest implements Serializable {
         this.requestId = requestId;
     }
 
-    public Candidate getCandidate() {
-        return candidate;
+    public int getCandidateId() {
+        return candidateId;
     }
 
-    public void setCandidate(Candidate candidate) {
-        this.candidate = candidate;
+    public void setCandidateId(int candidateId) {
+        this.candidateId = candidateId;
+    }
+
+    public String getCandidateName() {
+        return candidateName;
+    }
+
+    public void setCandidateName(String candidateName) {
+        this.candidateName = candidateName;
     }
 
     public String getVerificationType() {
@@ -42,14 +53,6 @@ public class VerificationRequest implements Serializable {
         this.verificationType = verificationType;
     }
 
-    public LocalDate getSubmissionDate() {
-        return submissionDate;
-    }
-
-    public void setSubmissionDate(LocalDate submissionDate) {
-        this.submissionDate = submissionDate;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -58,23 +61,14 @@ public class VerificationRequest implements Serializable {
         this.status = status;
     }
 
-    public String getRemarks() {
-        return remarks;
-    }
-
-    public void setRemarks(String remarks) {
-        this.remarks = remarks;
-    }
-
     @Override
     public String toString() {
         return "VerificationRequest{" +
                 "requestId=" + requestId +
-                ", candidate=" + candidate +
+                ", candidateId=" + candidateId +
+                ", candidateName='" + candidateName + '\'' +
                 ", verificationType='" + verificationType + '\'' +
-                ", submissionDate=" + submissionDate +
                 ", status='" + status + '\'' +
-                ", remarks='" + remarks + '\'' +
                 '}';
     }
 }

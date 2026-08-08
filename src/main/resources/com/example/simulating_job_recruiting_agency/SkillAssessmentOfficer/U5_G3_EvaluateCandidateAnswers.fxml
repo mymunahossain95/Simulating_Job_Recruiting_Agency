@@ -35,5 +35,6 @@
       <Text layoutX="389.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remarks " wrappingWidth="51.68359375" />
       <Text layoutX="221.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Answer" wrappingWidth="85.68359375" />
       <Label fx:id="successStatusLabel" layoutX="206.0" layoutY="367.0" prefHeight="17.0" prefWidth="308.0" text="Success Status:" />
+      <Button layoutX="45.0" layoutY="333.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="130.0" text="Back to Dashhboard" />
    </children>
 </AnchorPane>

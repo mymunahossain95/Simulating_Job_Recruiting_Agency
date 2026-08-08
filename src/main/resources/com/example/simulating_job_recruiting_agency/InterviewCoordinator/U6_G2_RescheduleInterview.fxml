@@ -24,5 +24,6 @@
       <Label layoutX="41.0" layoutY="176.0" prefHeight="17.0" prefWidth="125.0" text="Interview List :" />
       <Label layoutX="40.0" layoutY="89.0" prefHeight="17.0" prefWidth="63.0" text="New Date" />
       <Label layoutX="40.0" layoutY="133.0" prefHeight="17.0" prefWidth="63.0" text="New Time" />
+      <Button layoutX="40.0" layoutY="421.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="178.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="456.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G4_AssignInterviewPanelController">
+<AnchorPane prefHeight="519.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G4_AssignInterviewPanelController">
    <children>
       <ComboBox fx:id="interviewComboBox" layoutX="14.0" layoutY="58.0" prefWidth="150.0" />
       <ComboBox fx:id="panelMemberComboBox" layoutX="14.0" layoutY="118.0" prefWidth="150.0" />
@@ -25,5 +25,6 @@
       <Text layoutX="178.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Assign Interview Panel" textAlignment="CENTER" wrappingWidth="176.13671875" />
       <Text layoutX="162.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interview Panel" textAlignment="CENTER" wrappingWidth="176.13671875" />
       <Label fx:id="statusLabel" layoutX="238.0" layoutY="136.0" prefHeight="17.0" prefWidth="226.0" text="Status Label :" />
+      <Button layoutX="16.0" layoutY="460.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="138.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

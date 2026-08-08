@@ -30,5 +30,6 @@
       </TableView>
       <TextField fx:id="instructionAreaTF" layoutX="111.0" layoutY="196.0" />
       <Label fx:id="statusLabel" layoutX="32.0" layoutY="423.0" prefHeight="17.0" prefWidth="388.0" text="Status: " />
+      <Button layoutX="274.0" layoutY="113.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="34.0" prefWidth="136.0" text="Back to  Dashboard" />
    </children>
 </AnchorPane>

@@ -25,5 +25,6 @@
       <Button layoutX="362.0" layoutY="172.0" mnemonicParsing="false" onAction="#updateBtnOnAction" prefHeight="66.0" prefWidth="160.0" text="updateBtn" />
       <Label fx:id="statusLabel" layoutX="20.0" layoutY="346.0" prefHeight="17.0" prefWidth="342.0" />
       <Text layoutX="362.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catagory :" wrappingWidth="58.13671875" />
+      <Button layoutX="20.0" layoutY="294.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="124.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

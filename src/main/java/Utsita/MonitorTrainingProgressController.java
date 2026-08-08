@@ -2,6 +2,7 @@ package Utsita;
 
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -31,6 +32,8 @@ public class MonitorTrainingProgressController {
     private Label completationRateLabel;
     @javafx.fxml.FXML
     private TableColumn<MonitorTrainingProgress, String> candidateTableColumn;
+    @javafx.fxml.FXML
+    private PieChart progressPieChart;
 
     @javafx.fxml.FXML
     public void initialize(){
@@ -159,10 +162,46 @@ public class MonitorTrainingProgressController {
                 "Completion Rate: " + percentage + "%"
         );
     }
+    private void updatePieChart() {
+
+        int completed = 0;
+        int notCompleted = 0;
+
+        for (MonitorTrainingProgress progress :
+                trainingProgressTableView.getItems()) {
+
+            if (progress.getStatus()
+                    .equalsIgnoreCase("Completed")) {
+
+                completed++;
+
+            } else {
+
+                notCompleted++;
+            }
+        }
+
+        progressPieChart.getData().clear();
+
+        progressPieChart.getData().add(
+                new PieChart.Data(
+                        "Completed",
+                        completed
+                )
+        );
+
+        progressPieChart.getData().add(
+                new PieChart.Data(
+                        "Not Completed",
+                        notCompleted
+                )
+        );
+    }
+
 
     @javafx.fxml.FXML
     public void homeButton(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(actionEvent,
-                "/TrainingCoordinator/TrainingCoordinatorDashboard");
+                "/com.example.simulating_job_recruiting_agency/TrainingCoordinator/TrainingCoordinatorDashboard.fxml");
     }
 }

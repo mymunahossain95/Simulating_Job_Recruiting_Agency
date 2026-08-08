@@ -92,6 +92,6 @@ public class VacancyAnalysisController {
     @javafx.fxml.FXML
     public void homeButton(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(actionEvent,
-                "/ReportsAndAnalyticsManager/ReportAnalyticsDashboard.fxml");
+                "/com.example.simulating_job_recruiting_agency/ReportsAndAnalyticsManager/ReportAnalyticsDashboard.fxml");
     }
 }

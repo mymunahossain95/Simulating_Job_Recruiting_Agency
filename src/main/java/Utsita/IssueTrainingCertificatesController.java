@@ -135,11 +135,13 @@ public class IssueTrainingCertificatesController {
         int candidateId = 0;
 
         for (Candidate candidate : candidateList) {
+
             if (candidate.getCandidateName().equals(candidateComboBox.getValue())) {
-                candidateId = candidate.getCandidateId();
+                candidateId = Integer.parseInt(
+                        String.valueOf(candidate.getCandidateId())
+                );
                 break;
             }
-
         }
         IssueTrainingCertificates certificate =
                 new IssueTrainingCertificates(
@@ -174,6 +176,6 @@ public class IssueTrainingCertificatesController {
     @javafx.fxml.FXML
     public void homeButton(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(actionEvent,
-                "/TrainingCoordinator/TrainingCoordinatorDashboard");
+                "/com.example.simulating_job_recruiting_agency/TrainingCoordinator/TrainingCoordinatorDashboard");
     }
 }

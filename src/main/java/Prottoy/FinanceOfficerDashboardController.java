@@ -58,7 +58,7 @@ public class FinanceOfficerDashboardController {
     public void onBack(ActionEvent actionEvent) throws IOException{
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/FinanceOfficer/FinanceOfficerDashboard.fxml"
+                "/com.example.simulating_job_recruiting_agency/commonDashboard.fxml"
         );
     }
 }

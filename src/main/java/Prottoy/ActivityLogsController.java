@@ -133,7 +133,7 @@ public class ActivityLogsController {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Prottoy/AdminDashboard.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/AdminDashboard.fxml"
         );
     }
 }

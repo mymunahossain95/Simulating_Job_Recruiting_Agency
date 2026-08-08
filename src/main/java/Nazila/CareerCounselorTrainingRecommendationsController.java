@@ -76,6 +76,6 @@ public class CareerCounselorTrainingRecommendationsController {
 
     @javafx.fxml.FXML
     public void handleViewHomeButtonOnAction(ActionEvent actionEvent) {
-        SceneSwitchingHelper.switchScene( actionEvent, "/Nazila/CareerCounselorDashboard.fxml" );
+        SceneSwitchingHelper.switchScene( actionEvent, "/com.example.simulating_job_recruiting_agency/CareerCounselor/CareerCounselorDashboard.fxml" );
     }
 }

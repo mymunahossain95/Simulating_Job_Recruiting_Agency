@@ -6,10 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commonDashboardController">
+<AnchorPane prefHeight="531.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commonDashboardController">
    <children>
-      <Label layoutX="14.0" layoutY="22.0" text="JOB RECRUITING AGENCY">
+      <Label layoutX="14.0" layoutY="22.0" text="JOB RECRUITING AGENCY" textFill="#632bc9">
          <font>
             <Font size="22.0" />
          </font>
@@ -17,57 +16,57 @@
             <DropShadow />
          </effect>
       </Label>
-      <Label layoutX="456.0" layoutY="87.0" text="Select User">
+      <Label layoutX="456.0" layoutY="87.0" text="Select User" textFill="#be8686">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="200.0" layoutY="150.0" mnemonicParsing="false" onAction="#user1Button" prefHeight="55.0" prefWidth="280.0" text="Job Seeker">
+      <Button layoutX="200.0" layoutY="181.0" mnemonicParsing="false" onAction="#user1Button" prefHeight="47.0" prefWidth="217.0" text="Job Seeker" textFill="#d78787">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="200.0" layoutY="474.0" mnemonicParsing="false" onAction="#user9Button" prefHeight="55.0" prefWidth="280.0" text="Admin">
+      <Button layoutX="200.0" layoutY="434.0" mnemonicParsing="false" onAction="#user9Button" prefHeight="55.0" prefWidth="217.0" text="Admin" textFill="#d98d8d">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="520.0" layoutY="396.0" mnemonicParsing="false" onAction="#user8Button" prefHeight="55.0" prefWidth="280.0" text="Training Coordinator">
+      <Button layoutX="508.0" layoutY="368.0" mnemonicParsing="false" onAction="#user8Button" prefHeight="55.0" prefWidth="245.0" text="Training Coordinator" textFill="#c97474">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="520.0" layoutY="313.0" mnemonicParsing="false" onAction="#user6Button" prefHeight="55.0" prefWidth="280.0" text="Interview Coordinator">
+      <Button layoutX="506.0" layoutY="291.0" mnemonicParsing="false" onAction="#user6Button" prefHeight="69.0" prefWidth="245.0" text="Interview Coordinator" textFill="#c07070">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="520.0" layoutY="474.0" mnemonicParsing="false" onAction="#user10Button" prefHeight="55.0" prefWidth="280.0" text="Finance Officer">
+      <Button layoutX="512.0" layoutY="434.0" mnemonicParsing="false" onAction="#user10Button" prefHeight="55.0" prefWidth="245.0" text="Finance Officer" textFill="#d48181">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="520.0" layoutY="236.0" mnemonicParsing="false" onAction="#user4Button" prefHeight="55.0" prefWidth="280.0" text="Document Verifier">
+      <Button layoutX="502.0" layoutY="229.0" mnemonicParsing="false" onAction="#user4Button" prefHeight="55.0" prefWidth="253.0" text="Document Verifier" textFill="#c57f7f">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="200.0" layoutY="396.0" mnemonicParsing="false" onAction="#user7Button" prefHeight="55.0" prefWidth="280.0" text="Recruitment Analytics Manager">
+      <Button layoutX="200.0" layoutY="368.0" mnemonicParsing="false" onAction="#user7Button" prefHeight="55.0" prefWidth="217.0" text="Recruitment Analytics Manager" textFill="#d49696">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="200.0" layoutY="313.0" mnemonicParsing="false" onAction="#user5Button" prefHeight="55.0" prefWidth="280.0" text="Skill Assessment Officer">
+      <Button layoutX="200.0" layoutY="303.0" mnemonicParsing="false" onAction="#user5Button" prefHeight="55.0" prefWidth="217.0" text="Skill Assessment Officer" textFill="#e49595">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="520.0" layoutY="150.0" mnemonicParsing="false" onAction="#user2Button" prefHeight="55.0" prefWidth="280.0" text="Employer">
+      <Button layoutX="506.0" layoutY="171.0" mnemonicParsing="false" onAction="#user2Button" prefHeight="47.0" prefWidth="245.0" text="Employer" textFill="#b37d7d">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="200.0" layoutY="236.0" mnemonicParsing="false" onAction="#user3Button" prefHeight="55.0" prefWidth="280.0" text="Career Counselor">
+      <Button layoutX="200.0" layoutY="236.0" mnemonicParsing="false" onAction="#user3Button" prefHeight="55.0" prefWidth="217.0" text="Career Counselor" textFill="#ba7e7e">
          <font>
             <Font size="18.0" />
          </font>

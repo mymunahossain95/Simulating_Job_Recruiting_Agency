@@ -38,7 +38,7 @@ public class EvaluateTrainingEffectivenessController {
         );
 
         programTableColumn.setCellValueFactory(
-                new PropertyValueFactory<>("program"));
+                new PropertyValueFactory<>("programName"));
 
         participantsTableColumn.setCellValueFactory(
                 new PropertyValueFactory<>("participants"));
@@ -51,7 +51,7 @@ public class EvaluateTrainingEffectivenessController {
     }
 
     @javafx.fxml.FXML
-    public void generateEvaluationButton(ActionEvent event) {
+    public void generateEvaluationButton(ActionEvent actionEvent) {
 
         if (trainigProgramComboBox.getValue() == null) {
             AlertGenerator.showWarningAlert(
@@ -87,10 +87,10 @@ public class EvaluateTrainingEffectivenessController {
     }
 
     @javafx.fxml.FXML
-    public void homeButton(ActionEvent event) {
+    public void homeButton(ActionEvent actionEvent) {
 
         SceneSwitchingHelper.switchScene(
-                event,
+                actionEvent,
                 "/TrainingCoordinator/TrainingCoordinatorDashboard.fxml"
         );
     }

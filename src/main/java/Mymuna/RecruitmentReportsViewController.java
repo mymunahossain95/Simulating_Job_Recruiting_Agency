@@ -3,6 +3,7 @@ package Mymuna;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -13,9 +14,6 @@ import utility.SceneSwitchingHelper;
 import utility.databaseAccessor;
 
 public class RecruitmentReportsViewController {
-
-    @javafx.fxml.FXML
-    private TableView<RecruitmentReport> recrutmentReportsTV;
 
     @javafx.fxml.FXML
     private ComboBox<String> reportTypeCB;
@@ -34,9 +32,24 @@ public class RecruitmentReportsViewController {
 
     private ObservableList<RecruitmentReport> reportList;
 
+    @javafx.fxml.FXML
+    private PieChart genderPieChart;
+
+    @javafx.fxml.FXML
+    private TableView<RecruitmentReport> recruitmentReportsTV;
+
 
     @javafx.fxml.FXML
     public void initialize() {
+
+
+        genderPieChart.getData().clear();
+
+        genderPieChart.setTitle("Candidate Gender Distribution");
+        genderPieChart.getData().add(new PieChart.Data("Male", 60));
+        genderPieChart.getData().add(new PieChart.Data("Female", 40));
+
+
 
         reportTypeCB.getItems().addAll(
                 "Interview Report",
@@ -44,10 +57,13 @@ public class RecruitmentReportsViewController {
                 "Hiring Report"
         );
 
+
+
         reportIdTC.setCellValueFactory(new PropertyValueFactory<>("reportId"));
         reportTypeTC.setCellValueFactory(new PropertyValueFactory<>("reportType"));
         totalRecordsTC.setCellValueFactory(new PropertyValueFactory<>("totalRecords"));
         generatedDateTC.setCellValueFactory(new PropertyValueFactory<>("generatedDate"));
+
 
         reportList = databaseAccessor.readObject("RecruitmentReport.bin");
 
@@ -55,7 +71,7 @@ public class RecruitmentReportsViewController {
             reportList = FXCollections.observableArrayList();
         }
 
-        recrutmentReportsTV.setItems(reportList);
+        recruitmentReportsTV.setItems(reportList);
     }
 
 
@@ -64,29 +80,19 @@ public class RecruitmentReportsViewController {
 
         if (reportTypeCB.getValue() == null) {
 
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please select a report type."
-            );
-
+            AlertGenerator.showWarningAlert("Missing Information", "Please select a report type.");
             return;
         }
+        recruitmentReportsTV.setItems(reportList);
 
-        recrutmentReportsTV.setItems(reportList);
-
-        AlertGenerator.showInformationAlert(
-                "Report Generated",
-                "Recruitment report generated successfully."
-        );
+        AlertGenerator.showInformationAlert("Report Generated", "Recruitment report generated successfully.");
     }
 
-
     @javafx.fxml.FXML
-    public void BackToDashboardOA(ActionEvent actionEvent) {
+    public void backToDashboardOA(ActionEvent actionEvent) {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/EmployerDashboardView.fxml"
-        );
+                "/Employer/EmployerDashboardView.fxml");
     }
 }

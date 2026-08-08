@@ -29,6 +29,6 @@
       </TableView>
       <Text layoutX="14.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From" />
       <Text layoutX="241.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To" />
-      <PieChart fx:id="financialPieChart" layoutX="476.0" layoutY="62.0" prefHeight="166.0" prefWidth="166.0" />
+      <PieChart fx:id="financialPieChart" layoutX="435.0" layoutY="45.0" prefHeight="183.0" prefWidth="280.0" />
    </children>
 </AnchorPane>

@@ -14,7 +14,7 @@
       <ComboBox fx:id="reportTypeCombo" layoutX="16.0" layoutY="131.0" prefWidth="150.0" />
       <Text layoutX="16.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Type" />
       <Button layoutX="216.0" layoutY="131.0" mnemonicParsing="false" onAction="#onGenerateReport" text="Generate" />
-      <TableView fx:id="reportTable" layoutX="-1.0" layoutY="222.0" prefHeight="222.0" prefWidth="715.0">
+      <TableView fx:id="reportTable" layoutX="1.0" layoutY="177.0" prefHeight="222.0" prefWidth="650.0">
         <columns>
           <TableColumn fx:id="reportColumnTable" prefWidth="714.4000061273575" text="Reports" />
         </columns>
@@ -24,7 +24,7 @@
       <Text layoutX="17.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date" />
       <DatePicker fx:id="endDate" layoutX="216.0" layoutY="67.0" />
       <Text layoutX="215.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Date" />
-      <Button layoutX="589.0" layoutY="454.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
-      <PieChart fx:id="reportPieChart" layoutX="449.0" layoutY="31.0" prefHeight="169.0" prefWidth="234.0" />
+      <Button layoutX="513.0" layoutY="404.0" mnemonicParsing="false" onAction="#onBack" text="Back" />
+      <PieChart fx:id="reportPieChart" layoutX="424.0" layoutY="17.0" prefHeight="150.0" prefWidth="226.0" />
    </children>
 </AnchorPane>

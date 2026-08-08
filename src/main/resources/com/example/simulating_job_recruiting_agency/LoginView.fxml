@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<<<<<<< HEAD
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+=======
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -10,5 +17,27 @@
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="LoginViewController"
             prefHeight="400.0" prefWidth="600.0">
+>>>>>>> 85afa8617d6ca1d75827da2c5c380df0d6d12dfd
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.simulating_job_recruiting_agency.LoginViewController">
+   <children>
+      <Label layoutX="45.0" layoutY="22.0" prefHeight="81.0" prefWidth="510.0" text="Welcome,To Job Recruiting System" textFill="#8c8f3f">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="124.0" prefHeight="39.0" prefWidth="164.0" text="USERNAME:" textFill="#b7a4a4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="163.0" prefHeight="39.0" prefWidth="164.0" text="PASSWORD:" textFill="#b7a4a4">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="159.0" layoutY="131.0" prefHeight="25.0" prefWidth="211.0" />
+      <TextField fx:id="userPasswordTextField" layoutX="159.0" layoutY="170.0" prefHeight="25.0" prefWidth="211.0" />
+      <Button layoutX="159.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleLogInViewButtonOnAction" prefHeight="25.0" prefWidth="211.0" text="LOG IN" textFill="#863939" />
+   </children>
 </AnchorPane>

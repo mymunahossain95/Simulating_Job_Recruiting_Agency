@@ -36,7 +36,7 @@
          </columns>
       </TableView>
       <Line endX="-27.94140625" endY="-1.0" layoutX="142.0" layoutY="376.0" startX="-126.00000762939453" startY="-1.0" />
-      <TableView fx:id="EligibiltyRecordsTableView" layoutX="13.0" layoutY="383.0" prefHeight="113.0" prefWidth="435.0">
+      <TableView fx:id="eligibiltyRecordsTableView" layoutX="13.0" layoutY="383.0" prefHeight="113.0" prefWidth="435.0">
          <columns>
             <TableColumn fx:id="eligibiltyRecorsdCandidateIdCol1" prefWidth="92.00000286102295" text="Candidate Id" />
             <TableColumn fx:id="eligibiltyRecorsdappliedJobCol2" prefWidth="122.66665649414062" text="Applied Job" />

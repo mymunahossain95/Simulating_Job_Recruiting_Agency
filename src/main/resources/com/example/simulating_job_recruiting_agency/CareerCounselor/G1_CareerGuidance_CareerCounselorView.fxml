@@ -13,13 +13,13 @@
    <children>
       <Label layoutX="14.0" layoutY="20.0" text="CAREER GUIDANCE:" />
       <TextField fx:id="searchCandidateNameTextField" layoutX="168.0" layoutY="57.0" />
-      <TableView fx:id="candidateInformationTableView" layoutX="9.0" layoutY="120.0" prefHeight="142.0" prefWidth="519.0">
+      <TableView fx:id="candidateInfoTableView" layoutX="9.0" layoutY="120.0" prefHeight="142.0" prefWidth="519.0">
         <columns>
           <TableColumn fx:id="candidateIDCol1" prefWidth="94.0" text="Candidate ID" />
           <TableColumn fx:id="candidateNameCol2" prefWidth="97.99996948242188" text="Candidate Name" />
             <TableColumn fx:id="skillsCol3" prefWidth="97.99996948242188" text="Skills" />
             <TableColumn fx:id="experienceCol4" prefWidth="130.00002034505212" text="Experience" />
-            <TableColumn fx:id="EducationCol5" prefWidth="97.99996948242188" text="Education" />
+            <TableColumn fx:id="educationCol5" prefWidth="97.99996948242188" text="Education" />
         </columns>
       </TableView>
       <Text layoutX="32.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Candidate Name:" />

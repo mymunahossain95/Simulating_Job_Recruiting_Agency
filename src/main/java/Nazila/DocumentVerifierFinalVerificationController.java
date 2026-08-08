@@ -91,6 +91,6 @@ public class DocumentVerifierFinalVerificationController {
 
     @javafx.fxml.FXML
     public void handleGoHomeButtonOA(ActionEvent actionEvent) {
-        SceneSwitchingHelper.switchScene( actionEvent, "/Nazila/DocumentVerifierDashboard.fxml" );
+        SceneSwitchingHelper.switchScene( actionEvent, "/com.example.simulating_job_recruiting_agency/DocumentVerifier/DocumentVerifierDashboard.fxml" );
     }
 }

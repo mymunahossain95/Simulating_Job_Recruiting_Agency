@@ -13,7 +13,7 @@ public class LoginViewController {
     @javafx.fxml.FXML
     private TextField passwordTextField;
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void logInButton(ActionEvent actionEvent) {
 
         String username = userNameTextField.getText();
@@ -136,5 +136,9 @@ public class LoginViewController {
                     "Invalid username or password."
             );
         }
+    }
+
+    @javafx.fxml.FXML
+    public void loginButton(ActionEvent actionEvent) {
     }
 }

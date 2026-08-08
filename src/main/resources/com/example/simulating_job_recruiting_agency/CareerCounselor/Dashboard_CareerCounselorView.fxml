@@ -15,10 +15,11 @@
       <Button layoutX="14.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleResumeReviewButton" text="Resume Review" textFill="#5d0fef" />
       <Button layoutX="314.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleInterviewGuidanceButton" text="Interview Guidance" textFill="#600af4" />
       <Button layoutX="463.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleCandidateTrackingButton" text="CandidateTracking" textFill="#5214db" />
-      <Label layoutX="73.0" layoutY="81.0" prefHeight="110.0" prefWidth="468.0" text="Welcome to Careercounselor dashboard" textAlignment="CENTER" textFill="#ba2e7d">
+      <Label layoutX="126.0" layoutY="82.0" prefHeight="110.0" prefWidth="468.0" text="Welcome to Careercounselor " textAlignment="CENTER" textFill="#ba2e7d">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
+      <Button layoutX="463.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackToButtonOA" prefHeight="25.0" prefWidth="117.0" text="Back To Dashboard" textFill="#bc6565" />
    </children>
 </AnchorPane>

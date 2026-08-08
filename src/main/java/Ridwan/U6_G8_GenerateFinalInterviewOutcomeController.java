@@ -132,7 +132,7 @@ public class U6_G8_GenerateFinalInterviewOutcomeController {
     public void backtodashbtnOnAction(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Ridwan/InterviewCoordinatorDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/InterviewCoordinatorDashboardView.fxml"
         );
     }
 }

@@ -165,7 +165,7 @@ public class U5_G3_EvaluateCandidateAnswersController {
     public void backtodashbtnOnAction(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Ridwan/SkillAssesmentOfficerDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/SkillAssesmentOfficerDashboardView.fxml"
         );
     }
 }

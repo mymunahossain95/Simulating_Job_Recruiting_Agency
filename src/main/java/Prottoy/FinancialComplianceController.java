@@ -92,14 +92,14 @@ public class FinancialComplianceController {
     }
 
 
-    //@FXML
-    //public void onBack(ActionEvent actionEvent) throws IOException {
+    @FXML
+    public void onBack(ActionEvent actionEvent) throws IOException {
 
-      //  SceneSwitchingHelper.switchScene(
-        //        actionEvent,
-          //      "/FinanceOfficer/FinanceOfficerDashboard.fxml"
-        //);
-    //}
+        SceneSwitchingHelper.switchScene(
+               actionEvent,
+                "/FinanceOfficer/FinanceOfficerDashboard.fxml"
+        );
+    }
 
 
     public static class ComplianceRecord {

@@ -44,24 +44,12 @@ public class RecruitmentReportsViewController {
                 "Hiring Report"
         );
 
-        reportIdTC.setCellValueFactory(
-                new PropertyValueFactory<>("reportId")
-        );
+        reportIdTC.setCellValueFactory(new PropertyValueFactory<>("reportId"));
+        reportTypeTC.setCellValueFactory(new PropertyValueFactory<>("reportType"));
+        totalRecordsTC.setCellValueFactory(new PropertyValueFactory<>("totalRecords"));
+        generatedDateTC.setCellValueFactory(new PropertyValueFactory<>("generatedDate"));
 
-        reportTypeTC.setCellValueFactory(
-                new PropertyValueFactory<>("reportType")
-        );
-
-        totalRecordsTC.setCellValueFactory(
-                new PropertyValueFactory<>("totalRecords")
-        );
-
-        generatedDateTC.setCellValueFactory(
-                new PropertyValueFactory<>("generatedDate")
-        );
-
-        reportList =
-                databaseAccessor.readObject("RecruitmentReport.bin");
+        reportList = databaseAccessor.readObject("RecruitmentReport.bin");
 
         if (reportList == null) {
             reportList = FXCollections.observableArrayList();

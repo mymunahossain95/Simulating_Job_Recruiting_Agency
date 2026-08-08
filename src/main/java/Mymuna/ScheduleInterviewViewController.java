@@ -33,18 +33,26 @@ public class ScheduleInterviewViewController {
     @javafx.fxml.FXML
     public void scheduleInterviewOA(ActionEvent actionEvent) {
 
-        if (candidateIdTF.getText().isEmpty()
-                || candidateNameTF.getText().isEmpty()
-                || interviewTimeTF.getText().isEmpty()
-                || interviewLocationTF.getText().isEmpty()
-                || interviewDateDP.getValue() == null) {
-
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please fill all required fields."
-            );
-
+        if (candidateIdTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
             return;
+        }
+        if (candidateNameTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (interviewTimeTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (interviewLocationTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (interviewDateDP.getValue() == null) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+
         }
 
         String interviewId = "INT" + System.currentTimeMillis();

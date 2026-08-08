@@ -42,16 +42,21 @@ public class HiringDecisionViewController {
     @javafx.fxml.FXML
     public void saveDecisionOA(ActionEvent actionEvent) {
 
-        if (candidateIdTF.getText().isEmpty()
-                || candidateNameCB.getText().isEmpty()
-                || hiringDecisionCB.getValue() == null
-                || remarkTF.getText().isEmpty()) {
-
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please fill all required fields."
+        if (candidateIdTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter candidate ID.");
+            return;
+        }
+        if (candidateNameCB.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter candidate name."
             );
-
+            return;
+        }
+        if (hiringDecisionCB.getValue() == null) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please select a hiring decision.");
+            return;
+        }
+        if (remarkTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter a remark.");
             return;
         }
 

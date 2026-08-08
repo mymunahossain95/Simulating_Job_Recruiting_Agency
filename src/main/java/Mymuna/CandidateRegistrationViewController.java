@@ -32,41 +32,39 @@ public class CandidateRegistrationViewController {
     @javafx.fxml.FXML
     private Label statusForCreateCandidateAccountLabel;
 
-
     @javafx.fxml.FXML
     public void registerOA(ActionEvent actionEvent) {
 
-        if (nameTF.getText().isEmpty()
-                || emailTF.getText().isEmpty()
-                || phoneTF.getText().isEmpty()
-                || passwordTF.getText().isEmpty()
-                || confirmPasswordTF.getText().isEmpty()) {
-
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please fill all required fields."
-            );
-
+        if (nameTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter your name.");
+            return;
+        }
+        if (emailTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter your email.");
             return;
         }
 
+        if (phoneTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter your phone number.");
+            return;
+        }
+
+        if (passwordTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter your password.");
+            return;
+        }
+
+        if (confirmPasswordTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please confirm your password.");
+            return;
+        }
         if (!passwordTF.getText().equals(confirmPasswordTF.getText())) {
-
-            AlertGenerator.showWarningAlert(
-                    "Password Error",
-                    "Passwords do not match."
-            );
-
+            AlertGenerator.showWarningAlert("Password Error", "Passwords do not match.");
             return;
         }
 
         if (!emailTF.getText().contains("@")) {
-
-            AlertGenerator.showWarningAlert(
-                    "Invalid Email",
-                    "Please enter a valid email."
-            );
-
+            AlertGenerator.showWarningAlert("Invalid Email", "Please enter a valid email.");
             return;
         }
 
@@ -103,7 +101,6 @@ public class CandidateRegistrationViewController {
                 "Account Created Successfully"
         );
     }
-
 
     @javafx.fxml.FXML
     public void backToDashboardOA(ActionEvent actionEvent) {

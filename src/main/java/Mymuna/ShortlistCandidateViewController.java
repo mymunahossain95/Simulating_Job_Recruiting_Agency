@@ -27,14 +27,12 @@ public class ShortlistCandidateViewController {
     @javafx.fxml.FXML
     public void shortlistCandidateOA(ActionEvent actionEvent) {
 
-        if (candidateIdTF.getText().isEmpty()
-                || candidateNameTF.getText().isEmpty()) {
-
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please enter Candidate ID and Candidate Name."
-            );
-
+        if (candidateIdTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (candidateNameTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
             return;
         }
 

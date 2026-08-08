@@ -50,7 +50,6 @@ public class JobOffersViewController {
 
     private ObservableList<JobOffer> offerList;
 
-
     @javafx.fxml.FXML
     public void initialize() {
 
@@ -58,9 +57,7 @@ public class JobOffersViewController {
         companyNameTC.setCellValueFactory(new PropertyValueFactory<>("companyName"));
         positionTC.setCellValueFactory(new PropertyValueFactory<>("position"));
         responsestatusTC.setCellValueFactory(new PropertyValueFactory<>("responseStatus"));
-
-        offerList =
-                databaseAccessor.readObject("JobOffer.bin");
+        offerList = databaseAccessor.readObject("JobOffer.bin");
 
         if (offerList == null) {
             offerList = FXCollections.observableArrayList();
@@ -69,34 +66,39 @@ public class JobOffersViewController {
         jobOffersViewTV.setItems(offerList);
     }
 
-
     @javafx.fxml.FXML
     public void acceptOfferOA(ActionEvent actionEvent) {
 
-        if (companyTF.getText().isEmpty()
-                || positionTF.getText().isEmpty()
-                || salaryTF.getText().isEmpty()
-                || benefitsTF.getText().isEmpty()
-                || joiningDateTF.getText().isEmpty()) {
-
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please fill all required fields."
-            );
-
+        if (companyTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (positionTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (salaryTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (benefitsTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (joiningDateTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
             return;
         }
 
-        JobOffer jobOffer =
-                new JobOffer(
-                        "OF001",
-                        companyTF.getText(),
-                        positionTF.getText(),
-                        salaryTF.getText(),
-                        joiningDateTF.getText(),
-                        benefitsTF.getText(),
-                        "Accepted"
-                );
+        JobOffer jobOffer = new JobOffer(
+                "OF001",
+                companyTF.getText(),
+                positionTF.getText(),
+                salaryTF.getText(),
+                joiningDateTF.getText(),
+                benefitsTF.getText(),
+                "Accepted"
+        );
 
         offerList.add(jobOffer);
 
@@ -104,8 +106,6 @@ public class JobOffersViewController {
                 "JobOffer.bin",
                 offerList
         );
-
-        jobOffersViewTV.setItems(offerList);
 
         statusForJobOfferLabel.setText(
                 "Offer Accepted"
@@ -117,31 +117,29 @@ public class JobOffersViewController {
         );
     }
 
-
     @javafx.fxml.FXML
     public void rejectOfferOA(ActionEvent actionEvent) {
 
-        if (companyTF.getText().isEmpty()
-                || positionTF.getText().isEmpty()) {
-
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please enter the company and position."
-            );
-
+        if (companyTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter the company.");
             return;
         }
 
-        JobOffer jobOffer =
-                new JobOffer(
-                        "OF001",
-                        companyTF.getText(),
-                        positionTF.getText(),
-                        salaryTF.getText(),
-                        joiningDateTF.getText(),
-                        benefitsTF.getText(),
-                        "Rejected"
-                );
+        if (positionTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter the position.");
+            return;
+
+        }
+
+        JobOffer jobOffer = new JobOffer(
+                "OF001",
+                companyTF.getText(),
+                positionTF.getText(),
+                salaryTF.getText(),
+                joiningDateTF.getText(),
+                benefitsTF.getText(),
+                "Rejected"
+        );
 
         offerList.add(jobOffer);
 
@@ -149,8 +147,6 @@ public class JobOffersViewController {
                 "JobOffer.bin",
                 offerList
         );
-
-        jobOffersViewTV.setItems(offerList);
 
         statusForJobOfferLabel.setText(
                 "Offer Rejected"
@@ -161,7 +157,6 @@ public class JobOffersViewController {
                 "Job offer rejected."
         );
     }
-
 
     @javafx.fxml.FXML
     public void backToDashboardOA(ActionEvent actionEvent) {

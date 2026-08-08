@@ -12,7 +12,7 @@
       <TextField fx:id="phoneTF" layoutX="379.0" layoutY="45.0" />
       <TextField fx:id="skillsTF" layoutX="372.0" layoutY="84.0" />
       <TextField fx:id="emailTF" layoutX="90.0" layoutY="96.0" />
-      <TextField fx:id="educatonDetailTF" layoutX="372.0" layoutY="200.0" />
+      <TextField fx:id="educationDetailTF" layoutX="372.0" layoutY="200.0" />
       <TextField fx:id="workExperienceTF" layoutX="397.0" layoutY="136.0" />
       <Button layoutX="447.0" layoutY="316.0" mnemonicParsing="false" onAction="#saveOA" text="Save" />
       <Button layoutX="528.0" layoutY="316.0" mnemonicParsing="false" onAction="#editOA" text="Edit" />
@@ -31,5 +31,6 @@
       <Label layoutX="287.0" layoutY="256.0" text="Preferred Job Category" />
       <TextField fx:id="expectedSalaryTF" layoutX="114.0" layoutY="180.0" />
       <Label layoutX="19.0" layoutY="184.0" text="Expected Salary " />
+      <Button layoutX="46.0" layoutY="291.0" mnemonicParsing="false" onAction="#backToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

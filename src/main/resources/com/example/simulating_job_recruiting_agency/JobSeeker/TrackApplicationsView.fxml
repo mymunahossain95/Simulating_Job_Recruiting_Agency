@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -20,5 +21,6 @@
       <Label layoutX="238.0" layoutY="93.0" text="Submitted Applications" />
       <Label layoutX="62.0" layoutY="349.0" text="Status" />
       <Label fx:id="statusForTrackApplicationLabel" layoutX="129.0" layoutY="349.0" text="Label" />
+      <Button layoutX="457.0" layoutY="32.0" mnemonicParsing="false" onAction="#backToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

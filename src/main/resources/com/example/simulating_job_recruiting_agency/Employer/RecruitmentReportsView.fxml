@@ -14,14 +14,14 @@
       <ComboBox fx:id="reportTypeCB" layoutX="96.0" layoutY="61.0" prefWidth="150.0" />
       <Button layoutX="251.0" layoutY="144.0" mnemonicParsing="false" onAction="#generateReportOA" text="Generate Report" />
       <Label layoutX="246.0" layoutY="213.0" text="Recruitment Statistics" />
-      <TableView fx:id="recrutmentReportsTV" layoutX="52.0" layoutY="242.0" prefHeight="185.0" prefWidth="502.0">
+      <TableView fx:id="recrutmentReportsTV" layoutX="52.0" layoutY="242.0" prefHeight="185.0" prefWidth="463.0">
         <columns>
           <TableColumn fx:id="reportIdTC" prefWidth="98.0" text="Report ID" />
           <TableColumn fx:id="reportTypeTC" prefWidth="93.0" text="Report Type" />
-            <TableColumn fx:id="totalInterviewsTC" prefWidth="113.0" text="Total Interviews" />
-            <TableColumn fx:id="totalRecordsTC" prefWidth="96.0" text="Total Records" />
-            <TableColumn fx:id="generatedDateTC" prefWidth="101.0" text="Generated Date" />
+            <TableColumn fx:id="totalRecordsTC" prefWidth="144.0" text="Total Records" />
+            <TableColumn fx:id="generatedDateTC" prefWidth="127.0" text="Generated Date" />
         </columns>
       </TableView>
+      <Button layoutX="478.0" layoutY="32.0" mnemonicParsing="false" onAction="#BackToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

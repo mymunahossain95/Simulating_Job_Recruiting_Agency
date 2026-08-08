@@ -36,29 +36,12 @@ public class ViewJobVacancyViewController {
     @javafx.fxml.FXML
     public void initialize() {
 
-        jobIdTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobId")
-        );
-
-        jobTitleTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobTitle")
-        );
-
-        applicationDeadlineTC.setCellValueFactory(
-                new PropertyValueFactory<>("applicationDeadline")
-        );
-
-        jobStatusTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobStatus")
-        );
-
-        jobCategoryTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobCategory")
-        );
-
-        salaryTC.setCellValueFactory(
-                new PropertyValueFactory<>("salary")
-        );
+        jobIdTC.setCellValueFactory(new PropertyValueFactory<>("jobId"));
+        jobTitleTC.setCellValueFactory(new PropertyValueFactory<>("jobTitle"));
+        applicationDeadlineTC.setCellValueFactory(new PropertyValueFactory<>("applicationDeadline"));
+        jobStatusTC.setCellValueFactory(new PropertyValueFactory<>("jobStatus"));
+        jobCategoryTC.setCellValueFactory(new PropertyValueFactory<>("jobCategory"));
+        salaryTC.setCellValueFactory(new PropertyValueFactory<>("salary"));
 
         loadJobs();
     }

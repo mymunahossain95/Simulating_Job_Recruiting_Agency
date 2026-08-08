@@ -24,7 +24,7 @@ public class PostJobVacancyViewController {
     private TextField jobTitleTF;
 
     @javafx.fxml.FXML
-    private ComboBox jobCategoryCB;
+    private ComboBox<String> jobCategoryCB;
 
     @javafx.fxml.FXML
     private TextField jobIdTF;
@@ -59,18 +59,30 @@ public class PostJobVacancyViewController {
     @javafx.fxml.FXML
     public void publishJobOA(ActionEvent actionEvent) {
 
-        if (jobIdTF.getText().isEmpty()
-                || jobTitleTF.getText().isEmpty()
-                || salaryTF.getText().isEmpty()
-                || jobDescriptionTF.getText().isEmpty()
-                || jobCategoryCB.getValue() == null
-                || applicationDeadlineDP.getValue() == null) {
+        if (jobIdTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (jobTitleTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (salaryTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
 
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please fill all required fields."
-            );
+        if (jobDescriptionTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
+        if (jobCategoryCB.getValue() == null) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            return;
+        }
 
+        if (applicationDeadlineDP.getValue() == null) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
             return;
         }
 
@@ -79,7 +91,7 @@ public class PostJobVacancyViewController {
                 jobIdTF.getText(),
                 jobTitleTF.getText(),
                 "Company",
-                jobCategoryCB.getValue().toString(),
+                jobCategoryCB.getValue(),
                 "Not Specified",
                 salaryTF.getText(),
                 applicationDeadlineDP.getValue().toString(),

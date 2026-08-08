@@ -13,16 +13,37 @@ import utility.SceneSwitchingHelper;
 import utility.databaseAccessor;
 
 public class SearchJobsViewController {
-    @javafx.fxml.FXML private ComboBox<String> locationTF;
-    @javafx.fxml.FXML private TableColumn<Job, String> jobIdTC;
-    @javafx.fxml.FXML private TableColumn<Job, String> locationTC;
-    @javafx.fxml.FXML private TableColumn<Job, String> salaryTC;
-    @javafx.fxml.FXML private TableView<Job> searchJobTV;
-    @javafx.fxml.FXML private TableColumn<Job, String> companyTC;
-    @javafx.fxml.FXML private ComboBox<String> categoryTF;
-    @javafx.fxml.FXML private TableColumn<Job, String> deadLineTC;
-    @javafx.fxml.FXML private TableColumn<Job, String> jobTitleTC;
-    @javafx.fxml.FXML private TextField jobTitleTF;
+
+    @javafx.fxml.FXML
+    private ComboBox<String> locationTF;
+
+    @javafx.fxml.FXML
+    private TableColumn<Job, String> jobIdTC;
+
+    @javafx.fxml.FXML
+    private TableColumn<Job, String> locationTC;
+
+    @javafx.fxml.FXML
+    private TableColumn<Job, String> salaryTC;
+
+    @javafx.fxml.FXML
+    private TableView<Job> searchJobTV;
+
+    @javafx.fxml.FXML
+    private TableColumn<Job, String> companyTC;
+
+    @javafx.fxml.FXML
+    private ComboBox<String> categoryTF;
+
+    @javafx.fxml.FXML
+    private TableColumn<Job, String> deadLineTC;
+
+    @javafx.fxml.FXML
+    private TableColumn<Job, String> jobTitleTC;
+
+    @javafx.fxml.FXML
+    private TextField jobTitleTF;
+
     private ObservableList<Job> jobList;
 
     @javafx.fxml.FXML
@@ -50,6 +71,7 @@ public class SearchJobsViewController {
         locationTC.setCellValueFactory(new PropertyValueFactory<>("location"));
         salaryTC.setCellValueFactory(new PropertyValueFactory<>("salary"));
         deadLineTC.setCellValueFactory(new PropertyValueFactory<>("applicationDeadline"));
+
         jobList = databaseAccessor.readObject("Job.bin");
 
         if (jobList == null) {
@@ -59,12 +81,10 @@ public class SearchJobsViewController {
         searchJobTV.setItems(jobList);
     }
 
-
     @javafx.fxml.FXML
     public void searchOA(ActionEvent actionEvent) {
 
-        jobList =
-                databaseAccessor.readObject("Job.bin");
+        jobList = databaseAccessor.readObject("Job.bin");
 
         if (jobList == null) {
             jobList = FXCollections.observableArrayList();
@@ -72,7 +92,6 @@ public class SearchJobsViewController {
 
         searchJobTV.setItems(jobList);
     }
-
 
     @javafx.fxml.FXML
     public void backToDashboardOA(ActionEvent actionEvent) {

@@ -1,5 +1,6 @@
 package Mymuna;
 
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
@@ -39,7 +40,6 @@ public class AttendInterviewViewController {
 
     private ObservableList<Interview> interviewList;
 
-
     @javafx.fxml.FXML
     public void initialize() {
 
@@ -47,23 +47,24 @@ public class AttendInterviewViewController {
         companyNameTC.setCellValueFactory(new PropertyValueFactory<>("companyName"));
         interviewDateTC.setCellValueFactory(new PropertyValueFactory<>("interviewDate"));
         interviewTimeTC.setCellValueFactory(new PropertyValueFactory<>("interviewTime"));
+        attendanceStatusTC.setCellValueFactory(new PropertyValueFactory<>("attendanceStatus"));
+        interviewList = databaseAccessor.readObject("Interview.bin");
 
-        attendanceStatusTC.setCellValueFactory(
-                new PropertyValueFactory<>("attendanceStatus")
-        );
-
-        interviewList =
-                databaseAccessor.readObject("Interview.bin");
+        if (interviewList == null) {
+            interviewList = FXCollections.observableArrayList();
+        }
 
         attendinterviewViewTV.setItems(interviewList);
     }
 
-
     @javafx.fxml.FXML
     public void confirmAttendanceOA(ActionEvent actionEvent) {
 
-        interviewList =
-                databaseAccessor.readObject("Interview.bin");
+        interviewList = databaseAccessor.readObject("Interview.bin");
+
+        if (interviewList == null) {
+            interviewList = FXCollections.observableArrayList();
+        }
 
         attendinterviewViewTV.setItems(interviewList);
 
@@ -76,7 +77,6 @@ public class AttendInterviewViewController {
                 "Interview attendance confirmed successfully."
         );
     }
-
 
     @javafx.fxml.FXML
     public void backToDashboardOA(ActionEvent actionEvent) {

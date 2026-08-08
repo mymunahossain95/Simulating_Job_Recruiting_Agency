@@ -32,28 +32,28 @@ public class ReviewApplicationsViewController {
 
     private ObservableList<JobApplication> applicationList;
 
+
     @javafx.fxml.FXML
     public void initialize() {
 
-        applicationIdTC.setCellValueFactory(
-                new PropertyValueFactory<>("applicationId")
-        );
+        applicationIdTC.setCellValueFactory(new PropertyValueFactory<>("applicationId"));
+        candidateNameTC.setCellValueFactory(new PropertyValueFactory<>("candidateName"));
+        jobIdTC.setCellValueFactory(new PropertyValueFactory<>("jobId"));
+        jobTitleTC.setCellValueFactory(new PropertyValueFactory<>("jobTitle"));
+        applicationStatusTC.setCellValueFactory(new PropertyValueFactory<>("applicationStatus"));
 
-        candidateNameTC.setCellValueFactory(
-                new PropertyValueFactory<>("candidateName")
-        );
+        applicationList = databaseAccessor.readObject("JobApplication.bin");
 
-        jobIdTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobId")
-        );
+        if (applicationList == null) {
+            applicationList = FXCollections.observableArrayList();
+        }
 
-        jobTitleTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobTitle")
-        );
+        reviewApplicationsTV.setItems(applicationList);
+    }
 
-        applicationStatusTC.setCellValueFactory(
-                new PropertyValueFactory<>("applicationStatus")
-        );
+
+    @javafx.fxml.FXML
+    public void refreshOA(ActionEvent actionEvent) {
 
         applicationList =
                 databaseAccessor.readObject("JobApplication.bin");
@@ -65,14 +65,6 @@ public class ReviewApplicationsViewController {
         reviewApplicationsTV.setItems(applicationList);
     }
 
-    @javafx.fxml.FXML
-    public void refreshOA(ActionEvent actionEvent) {
-
-        applicationList =
-                databaseAccessor.readObject("JobApplication.bin");
-
-        reviewApplicationsTV.setItems(applicationList);
-    }
 
     @javafx.fxml.FXML
     public void backToDashboardOA(ActionEvent actionEvent) {

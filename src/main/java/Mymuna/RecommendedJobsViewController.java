@@ -28,31 +28,16 @@ public class RecommendedJobsViewController {
     private TableColumn<Job, String> applicationDeadlineTC;
 
 
-    private ObservableList<Job> jobList;
-
-
     @javafx.fxml.FXML
     public void initialize() {
 
-        jobIdTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobId")
-        );
-
-        jobTitleTC.setCellValueFactory(
-                new PropertyValueFactory<>("jobTitle")
-        );
-
-        companyNameTC.setCellValueFactory(
-                new PropertyValueFactory<>("companyName")
-        );
-
-        applicationDeadlineTC.setCellValueFactory(
-                new PropertyValueFactory<>("applicationDeadline")
-        );
+        jobIdTC.setCellValueFactory(new PropertyValueFactory<>("jobId"));
+        jobTitleTC.setCellValueFactory(new PropertyValueFactory<>("jobTitle"));
+        companyNameTC.setCellValueFactory(new PropertyValueFactory<>("companyName"));
+        applicationDeadlineTC.setCellValueFactory(new PropertyValueFactory<>("applicationDeadline"));
 
 
-        jobList =
-                databaseAccessor.readObject("Job.bin");
+        ObservableList<Job> jobList = databaseAccessor.readObject("Job.bin");
 
         if (jobList == null) {
             jobList = FXCollections.observableArrayList();

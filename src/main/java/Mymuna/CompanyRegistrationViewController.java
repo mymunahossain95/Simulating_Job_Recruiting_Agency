@@ -34,27 +34,37 @@ public class CompanyRegistrationViewController {
     @javafx.fxml.FXML
     public void createProfileOA(ActionEvent actionEvent) {
 
-        if (companyIdTF.getText().isEmpty()
-                || companyNameTF.getText().isEmpty()
-                || addressTF.getText().isEmpty()
-                || emailAddressTF.getText().isEmpty()
-                || contactNumberTF.getText().isEmpty()) {
+        if (companyIdTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter company ID.");
+            return;
+        }
+        if (companyNameTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter company name.");
+            return;
+        }
+        if (addressTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter address.");
+            return;
+        }
 
-            AlertGenerator.showWarningAlert(
-                    "Missing Information",
-                    "Please fill all required fields."
-            );
+        if (emailAddressTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter email address.");
+            return;
+        }
 
+        if (contactNumberTF.getText().isEmpty()) {
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter contact number.");
+            return;
+        }
+
+        if (!emailAddressTF.getText().contains("@")) {
+            AlertGenerator.showWarningAlert("Invalid Email", "Please enter a valid email.");
             return;
         }
 
         if (!emailAddressTF.getText().contains("@")) {
 
-            AlertGenerator.showWarningAlert(
-                    "Invalid Email",
-                    "Please enter a valid email."
-            );
-
+            AlertGenerator.showWarningAlert("Invalid Email", "Please enter a valid email.");
             return;
         }
 

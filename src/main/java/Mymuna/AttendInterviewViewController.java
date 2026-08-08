@@ -83,7 +83,7 @@ public class AttendInterviewViewController {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/JobSeekerDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/JobSeekerDashboardView.fxml"
         );
     }
 }

@@ -10,8 +10,6 @@ import utility.AlertGenerator;
 import utility.SceneSwitchingHelper;
 import utility.databaseAccessor;
 
-import java.util.ArrayList;
-
 public class CandidateRegistrationViewController {
 
     @javafx.fxml.FXML
@@ -32,6 +30,7 @@ public class CandidateRegistrationViewController {
     @javafx.fxml.FXML
     private Label statusForCreateCandidateAccountLabel;
 
+
     @javafx.fxml.FXML
     public void registerOA(ActionEvent actionEvent) {
 
@@ -39,11 +38,11 @@ public class CandidateRegistrationViewController {
             AlertGenerator.showWarningAlert("Missing Information", "Please enter your name.");
             return;
         }
+
         if (emailTF.getText().isEmpty()) {
             AlertGenerator.showWarningAlert("Missing Information", "Please enter your email.");
             return;
         }
-
         if (phoneTF.getText().isEmpty()) {
             AlertGenerator.showWarningAlert("Missing Information", "Please enter your phone number.");
             return;
@@ -58,6 +57,7 @@ public class CandidateRegistrationViewController {
             AlertGenerator.showWarningAlert("Missing Information", "Please confirm your password.");
             return;
         }
+
         if (!passwordTF.getText().equals(confirmPasswordTF.getText())) {
             AlertGenerator.showWarningAlert("Password Error", "Passwords do not match.");
             return;
@@ -68,21 +68,28 @@ public class CandidateRegistrationViewController {
             return;
         }
 
+
         Candidate candidate = new Candidate(
-                1,
+                "C001",
                 nameTF.getText(),
+                "",
+                "",
+                "",
                 emailTF.getText(),
                 phoneTF.getText(),
                 "",
-                new ArrayList<String>(),
-                ""
+                "Not Verified",
+                "",
+                0
         );
+
 
         ObservableList<Candidate> candidateList =
                 databaseAccessor.readObject("Candidate.bin");
 
         if (candidateList == null) {
-            candidateList = FXCollections.observableArrayList();
+            candidateList =
+                    FXCollections.observableArrayList();
         }
 
         candidateList.add(candidate);
@@ -91,6 +98,7 @@ public class CandidateRegistrationViewController {
                 "Candidate.bin",
                 candidateList
         );
+
 
         statusForCreateCandidateAccountLabel.setText(
                 "Account Created Successfully"
@@ -102,12 +110,13 @@ public class CandidateRegistrationViewController {
         );
     }
 
+
     @javafx.fxml.FXML
     public void backToDashboardOA(ActionEvent actionEvent) {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/JobSeekerDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/JobSeekerDashboardView.fxml"
         );
     }
 }

@@ -71,7 +71,7 @@ public class ReviewApplicationsViewController {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/EmployerDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/Employer/EmployerDashboardView.fxml"
         );
     }
 }

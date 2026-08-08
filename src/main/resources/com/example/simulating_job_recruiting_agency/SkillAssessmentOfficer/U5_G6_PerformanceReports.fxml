@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -24,5 +25,6 @@
         </columns>
       </TableView>
       <Button layoutX="15.0" layoutY="399.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="123.0" text="Back to Dashboard" />
+      <PieChart fx:id="reportPerfomancePieChart" layoutX="400.0" layoutY="5.0" prefHeight="157.0" prefWidth="262.0" />
    </children>
 </AnchorPane>

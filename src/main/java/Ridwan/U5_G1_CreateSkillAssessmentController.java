@@ -125,7 +125,7 @@ public class U5_G1_CreateSkillAssessmentController {
     public void backtodashbtnOnAction(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Ridwan/SkillAssesmentOfficerDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/SkillAssesmentOfficerDashboardView.fxml"
         );
     }
 }

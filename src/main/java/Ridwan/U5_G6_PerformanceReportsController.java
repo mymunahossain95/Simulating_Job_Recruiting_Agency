@@ -3,6 +3,7 @@ package Ridwan;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
@@ -38,14 +39,24 @@ public class U5_G6_PerformanceReportsController {
     @javafx.fxml.FXML
     private TableColumn<PerformanceReport, String> performanceColumn;
 
+    @javafx.fxml.FXML
+    private PieChart reportPerfomancePieChart;
+
     // ObservableLists for binary data and filtered display
     private ObservableList<PerformanceReport> allReportsList;
     private ObservableList<PerformanceReport> displayList;
 
     @javafx.fxml.FXML
     public void initialize() {
+        // 1. Initialize PieChart
+        reportPerfomancePieChart.getData().clear();
+        reportPerfomancePieChart.setTitle("Performance Overview");
+        reportPerfomancePieChart.getData().addAll(
+                new PieChart.Data("Passed (75%)", 75),
+                new PieChart.Data("Failed (25%)", 25)
+        );
 
-        // Populate candidate selection options
+        // 2. Populate candidate selection options
         candidateComboBox.getItems().addAll(
                 "John Doe",
                 "Jane Smith",
@@ -53,17 +64,17 @@ public class U5_G6_PerformanceReportsController {
                 "Rahim Ahmed"
         );
 
-        // Bind TableView columns to getter methods in PerformanceReport model class
+        // 3. Bind TableView columns to getter methods in PerformanceReport model class
         assessmentColumn.setCellValueFactory(new PropertyValueFactory<>("assessmentName"));
         scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
         attemptsColumn.setCellValueFactory(new PropertyValueFactory<>("attempts"));
         averageColumn.setCellValueFactory(new PropertyValueFactory<>("averageScore"));
         performanceColumn.setCellValueFactory(new PropertyValueFactory<>("performanceLevel"));
 
-        // Read performance report records from binary file
+        // 4. Read performance report records from binary file
         allReportsList = databaseAccessor.readObject("PerformanceReports.bin");
 
-        // Set up list for displayed data
+        // 5. Set up list for displayed data
         displayList = FXCollections.observableArrayList();
         performanceTable.setItems(displayList);
     }
@@ -90,8 +101,7 @@ public class U5_G6_PerformanceReportsController {
         if (!allReportsList.isEmpty()) {
             displayList.addAll(allReportsList);
         } else {
-            // Sample report records matching your exact PerformanceReport constructor signature:
-            // PerformanceReport(assessmentName, score, attempts, averageScore, performanceLevel)
+            // Sample report records
             PerformanceReport report1 = new PerformanceReport(
                     "Java Fundamentals Test",
                     88.5,
@@ -125,7 +135,7 @@ public class U5_G6_PerformanceReportsController {
     public void backtodashbtnOnAction(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Ridwan/SkillAssesmentOfficerDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/SkillAssessmentOfficer/SkillAssessmentOfficerDashboardView.fxml"
         );
     }
 }

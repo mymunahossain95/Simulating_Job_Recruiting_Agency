@@ -119,7 +119,7 @@ public class U6_G6_RecordInterviewAttendanceController {
     public void backtodashbtnOnAction(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Ridwan/InterviewCoordinatorDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/InterviewCoordinatorDashboardView.fxml"
         );
     }
 }

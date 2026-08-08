@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -44,11 +45,16 @@ public class FinancialReportsController {
     @javafx.fxml.FXML
     private TableColumn<FinancialReport, Double> totalAmountColumn;
 
+    @javafx.fxml.FXML
+    private PieChart financialPieChart;
+
     private ObservableList<FinancialReport> reportList;
+
 
     @javafx.fxml.FXML
     public void initialize() {
 
+        // Report Types
         reportTypeComboBox.getItems().addAll(
                 "Payment Report",
                 "Refund Report",
@@ -56,18 +62,26 @@ public class FinancialReportsController {
                 "Financial Summary"
         );
 
+
+        // Table Columns
         reportIdColumn.setCellValueFactory(
-                new PropertyValueFactory<>("reportId"));
+                new PropertyValueFactory<>("reportId")
+        );
 
         reportNameColumn.setCellValueFactory(
-                new PropertyValueFactory<>("reportName"));
+                new PropertyValueFactory<>("reportName")
+        );
 
         generatedDateColumn.setCellValueFactory(
-                new PropertyValueFactory<>("generatedDate"));
+                new PropertyValueFactory<>("generatedDate")
+        );
 
         totalAmountColumn.setCellValueFactory(
-                new PropertyValueFactory<>("totalAmount"));
+                new PropertyValueFactory<>("totalAmount")
+        );
 
+
+        // Load saved financial reports
         reportList =
                 databaseAccessor.readObject("FinancialReport.bin");
 
@@ -76,11 +90,45 @@ public class FinancialReportsController {
         }
 
         reportTable.setItems(reportList);
+
+
+        // Pie Chart
+        financialPieChart.getData().clear();
+
+        financialPieChart.getData().add(
+                new PieChart.Data(
+                        "Candidate Payments",
+                        50
+                )
+        );
+
+        financialPieChart.getData().add(
+                new PieChart.Data(
+                        "Refunds",
+                        20
+                )
+        );
+
+        financialPieChart.getData().add(
+                new PieChart.Data(
+                        "Transactions",
+                        20
+                )
+        );
+
+        financialPieChart.getData().add(
+                new PieChart.Data(
+                        "Other",
+                        10
+                )
+        );
     }
+
 
     @javafx.fxml.FXML
     public void onGenerateReport(ActionEvent actionEvent) {
 
+        // Validate Report Type
         if (reportTypeComboBox.getValue() == null) {
 
             AlertGenerator.showWarningAlert(
@@ -91,9 +139,16 @@ public class FinancialReportsController {
             return;
         }
 
-        LocalDate fromDate = fromDatePicker.getValue();
-        LocalDate toDate = toDatePicker.getValue();
 
+        // Get dates
+        LocalDate fromDate =
+                fromDatePicker.getValue();
+
+        LocalDate toDate =
+                toDatePicker.getValue();
+
+
+        // Validate dates
         if (fromDate == null || toDate == null) {
 
             AlertGenerator.showWarningAlert(
@@ -104,6 +159,8 @@ public class FinancialReportsController {
             return;
         }
 
+
+        // Validate date range
         if (fromDate.isAfter(toDate)) {
 
             AlertGenerator.showWarningAlert(
@@ -114,16 +171,20 @@ public class FinancialReportsController {
             return;
         }
 
+
+        // Report generated
         AlertGenerator.showInformationAlert(
                 "Report Generated",
                 "Financial report generated successfully."
         );
     }
 
+
     @javafx.fxml.FXML
     public void onDownloadReport(ActionEvent actionEvent) {
 
-        if (reportTable.getSelectionModel().getSelectedItem() == null) {
+        if (reportTable.getSelectionModel()
+                .getSelectedItem() == null) {
 
             AlertGenerator.showWarningAlert(
                     "Download Report",
@@ -133,11 +194,13 @@ public class FinancialReportsController {
             return;
         }
 
+
         AlertGenerator.showInformationAlert(
                 "Download Report",
                 "Report is available for download."
         );
     }
+
 
     @javafx.fxml.FXML
     public void onBack(ActionEvent actionEvent) throws IOException {

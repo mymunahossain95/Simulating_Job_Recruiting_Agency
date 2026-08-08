@@ -4,6 +4,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableColumn;
@@ -14,6 +15,8 @@ import nonuser.SystemReport;
 import utility.AlertGenerator;
 import utility.databaseAccessor;
 import utility.SceneSwitchingHelper;
+
+import java.io.IOException;
 
 public class ReportsController {
 
@@ -31,6 +34,9 @@ public class ReportsController {
 
     @javafx.fxml.FXML
     private DatePicker startDate;
+
+    @javafx.fxml.FXML
+    private PieChart reportPieChart;
 
     private ObservableList<SystemReport> reportList;
 
@@ -53,13 +59,37 @@ public class ReportsController {
         );
 
         // Load saved reports
-        reportList =databaseAccessor.readObject("SystemReport.bin");
+        reportList = databaseAccessor.readObject("SystemReport.bin");
 
         if (reportList == null) {
             reportList = FXCollections.observableArrayList();
         }
 
         reportTable.setItems(reportList);
+
+
+        // Pie Chart
+        reportPieChart.getData().clear();
+
+        reportPieChart.getData().add(
+                new PieChart.Data("Users", 40)
+        );
+
+        reportPieChart.getData().add(
+                new PieChart.Data("Job Categories", 25)
+        );
+
+        reportPieChart.getData().add(
+                new PieChart.Data("Registrations", 20)
+        );
+
+        reportPieChart.getData().add(
+                new PieChart.Data("Complaints", 10)
+        );
+
+        reportPieChart.getData().add(
+                new PieChart.Data("Activities", 5)
+        );
     }
 
 
@@ -77,6 +107,7 @@ public class ReportsController {
             return;
         }
 
+
         // Validate Dates
         if (startDate.getValue() == null ||
                 endDate.getValue() == null) {
@@ -89,6 +120,7 @@ public class ReportsController {
             return;
         }
 
+
         // Validate Date Range
         if (startDate.getValue().isAfter(endDate.getValue())) {
 
@@ -100,6 +132,7 @@ public class ReportsController {
             return;
         }
 
+
         // Report generation
         AlertGenerator.showInformationAlert(
                 "Report Generated",
@@ -109,7 +142,7 @@ public class ReportsController {
 
 
     @javafx.fxml.FXML
-    public void onBack(ActionEvent actionEvent) {
+    public void onBack(ActionEvent actionEvent) throws IOException {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,

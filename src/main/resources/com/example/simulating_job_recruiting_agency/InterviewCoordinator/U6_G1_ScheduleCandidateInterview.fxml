@@ -33,5 +33,6 @@
       <Text layoutX="373.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interview Date :" wrappingWidth="89.0" />
       <Text layoutX="205.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interview Schedule:" wrappingWidth="184.13671875" />
       <Label fx:id="statusLabel" layoutX="47.0" layoutY="511.0" prefHeight="17.0" prefWidth="458.0" text="Status Label:" />
+      <Button layoutX="42.0" layoutY="377.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="130.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

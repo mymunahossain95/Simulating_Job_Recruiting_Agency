@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="466.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G8_GenerateFinalInterviewOutcomeController">
+<AnchorPane prefHeight="521.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G8_GenerateFinalInterviewOutcomeController">
    <children>
       <Text layoutX="220.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Generate Final Interview Outcome" wrappingWidth="195.13671875" />
       <ComboBox fx:id="interviewComboBox" layoutX="76.0" layoutY="78.0" prefWidth="150.0" />
@@ -26,5 +26,6 @@
       <Text layoutX="13.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interview" wrappingWidth="63.13671875" />
       <Text layoutX="53.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Final Outcome :" wrappingWidth="195.13671875" />
       <Label fx:id="statusLabel" layoutX="30.0" layoutY="173.0" prefHeight="17.0" prefWidth="470.0" text="Status" />
+      <Button layoutX="18.0" layoutY="481.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="136.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

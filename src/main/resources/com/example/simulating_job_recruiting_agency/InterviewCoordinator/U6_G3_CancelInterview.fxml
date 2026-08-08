@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G3_CancelInterviewController">
+<AnchorPane prefHeight="451.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G3_CancelInterviewController">
    <children>
       <TableView fx:id="interviewTable" layoutX="14.0" layoutY="145.0" prefHeight="200.0" prefWidth="563.0">
         <columns>
@@ -23,5 +23,6 @@
       <Button layoutX="33.0" layoutY="81.0" mnemonicParsing="false" onAction="#cancelBtnOnAction" prefHeight="25.0" prefWidth="122.0" text="cancelBtn" />
       <Text layoutX="14.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interview List :" wrappingWidth="80.13671875" />
       <Label layoutX="14.0" layoutY="362.0" prefHeight="17.0" prefWidth="480.0" text="Status Label :" />
+      <Button layoutX="14.0" layoutY="403.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="144.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

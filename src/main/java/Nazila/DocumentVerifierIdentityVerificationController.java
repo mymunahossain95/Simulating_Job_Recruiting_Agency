@@ -82,7 +82,7 @@ public class DocumentVerifierIdentityVerificationController {
 
     @javafx.fxml.FXML
     public void handleVerifyDocumentButtonOA(ActionEvent actionEvent) {
-        if ( nidBirthAppostileDocumentTypeComboBox.getValue().isEmpty()) {
+        if ( nidBirthAppostileDocumentTypeComboBox.getValue()==null||nidBirthAppostileDocumentTypeComboBox.getValue().isEmpty()) {
             AlertGenerator.showWarningAlert("Missing is Selection", "Please select a document type from the dropdown.");
             return;
         }

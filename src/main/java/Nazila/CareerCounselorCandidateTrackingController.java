@@ -45,7 +45,7 @@ public class CareerCounselorCandidateTrackingController {
 
     @javafx.fxml.FXML
     public void handleSaveUpdateButtonOnAction(ActionEvent actionEvent) {
-        if(trackingList.isEmpty()){
+        if(trackingList==null||trackingList.isEmpty()){
             AlertGenerator.showWarningAlert("No Data", "There is no candidate tracking information to save.");
             return;
         }
@@ -58,7 +58,7 @@ public class CareerCounselorCandidateTrackingController {
 
     @javafx.fxml.FXML
     public void handleTrackProgressButtonOnAction(ActionEvent actionEvent) {
-        if(trackingList.isEmpty()){
+        if(trackingList==null||trackingList.isEmpty()){
             AlertGenerator.showWarningAlert("No Data", "No candidate tracking information available.");
             return;
         }
@@ -71,7 +71,7 @@ public class CareerCounselorCandidateTrackingController {
 
     @javafx.fxml.FXML
     public void handleUpdateStatusButtonOnAction(ActionEvent actionEvent) {
-        if(trackingList.isEmpty()){
+        if(trackingList==null||trackingList.isEmpty()){
             AlertGenerator.showWarningAlert("Invalid Data", "No candidate status available to update.");
             return;
         }

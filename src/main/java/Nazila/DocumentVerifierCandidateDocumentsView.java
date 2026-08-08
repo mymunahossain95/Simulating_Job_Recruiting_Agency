@@ -43,7 +43,7 @@ public class DocumentVerifierCandidateDocumentsView {
 
     @javafx.fxml.FXML
     public void candidateProfileSearchCandidateButtonOA(ActionEvent actionEvent) {
-        if (candidateSearchTextField.getText().isEmpty()) {
+        if (candidateSearchTextField.getText()==null||candidateSearchTextField.getText().isEmpty()) {
             AlertGenerator.showWarningAlert( "Missing Information", "Please enter Candidate ID or Candidate Name." );
             return;
         }for (Candidate candidate : candidateList) {
@@ -68,7 +68,7 @@ public class DocumentVerifierCandidateDocumentsView {
 
     @javafx.fxml.FXML
     public void candidateListProceedButtonOA(ActionEvent actionEvent) {
-        if (candidateSearchTextField.getText().isEmpty()) {
+        if (candidateSearchTextField.getText()==null||candidateSearchTextField.getText().isEmpty()) {
             AlertGenerator.showWarningAlert( "Missing Information", "Please enter Candidate ID or Candidate Name first." );
             return;
         } AlertGenerator.showInformationAlert( "Proceed", "Candidate document verification can now proceed." );

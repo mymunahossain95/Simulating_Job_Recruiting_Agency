@@ -11,7 +11,7 @@ public class AdminDashboardController {
     public void onManageUsers(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/ManageUserAccounts.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/ManageUserAccounts.fxml"
         );
     }
 
@@ -19,7 +19,7 @@ public class AdminDashboardController {
     public void onPendingRegistrations(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/PendingRegistrations.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/PendingRegistrations.fxml"
         );
     }
 
@@ -27,7 +27,7 @@ public class AdminDashboardController {
     public void onManageCategories(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/ManageJobCategories.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/ManageJobCategories.fxml"
         );
     }
 
@@ -35,7 +35,7 @@ public class AdminDashboardController {
     public void onReports(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/Reports.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/Reports.fxml"
         );
     }
 
@@ -43,7 +43,7 @@ public class AdminDashboardController {
     public void onComplaints(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/ComplaintManagement.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/ComplaintManagement.fxml"
         );
     }
 
@@ -51,7 +51,7 @@ public class AdminDashboardController {
     public void onSettings(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/SystemSettings.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/SystemSettings.fxml"
         );
     }
 
@@ -59,7 +59,7 @@ public class AdminDashboardController {
     public void onActivityLogs(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/ActivityLogs.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/ActivityLogs.fxml"
         );
     }
 
@@ -67,7 +67,7 @@ public class AdminDashboardController {
     public void onBackup(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Admin/BackupManagement.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/BackupManagement.fxml"
         );
     }
 
@@ -75,7 +75,7 @@ public class AdminDashboardController {
     public void onBack(ActionEvent actionEvent) throws IOException {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Common/Login.fxml"
+                "/com.example.simulating_job_recruiting_agency/commonDashboard.fxml"
         );
     }
 }

@@ -147,7 +147,7 @@ public class PendingRegistrationsController {
 
         SceneSwitchingHelper.switchScene(
                 event,
-                "/Admin/AdminDashboard.fxml"
+                "/com.example.simulating_job_recruiting_agency/Admin/AdminDashboard.fxml"
         );
     }
 }

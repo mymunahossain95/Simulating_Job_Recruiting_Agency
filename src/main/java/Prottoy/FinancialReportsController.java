@@ -207,7 +207,7 @@ public class FinancialReportsController {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/FinanceOfficer/FinanceOfficerDashboard.fxml"
+                "/com.example.simulating_job_recruiting_agency/FinanceOfficer/FinanceOfficerDashboard.fxml"
         );
     }
 }

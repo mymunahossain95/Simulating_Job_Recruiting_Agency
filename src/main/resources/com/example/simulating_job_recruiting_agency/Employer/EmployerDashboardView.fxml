@@ -15,5 +15,6 @@
       <Button layoutX="217.0" layoutY="203.0" mnemonicParsing="false" onAction="#reviewApplicationsOA" text="Review Applications" />
       <Button layoutX="211.0" layoutY="379.0" mnemonicParsing="false" onAction="#recruitmentReportsOA" text="Recruitment Reports" />
       <Label layoutX="225.0" layoutY="22.0" prefHeight="32.0" prefWidth="125.0" text="Employer Dashboard" />
+      <Button layoutX="490.0" layoutY="26.0" mnemonicParsing="false" onAction="#backON" text="Back" />
    </children>
 </AnchorPane>

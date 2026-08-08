@@ -9,55 +9,62 @@ public class EmployerDashboardViewController {
     public void reviewApplicationsOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/ReviewApplicationsView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/ReviewApplicationsView.fxml");
     }
 
     @javafx.fxml.FXML
     public void postJobVacancyOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/PostJobVacancyView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/PostJobVacancyView.fxml");
     }
 
     @javafx.fxml.FXML
     public void recruitmentReportsOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/RecruitmentReportsView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/RecruitmentReportsView.fxml");
     }
 
     @javafx.fxml.FXML
     public void scheduleInterviewOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/ScheduleInterviewView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/ScheduleInterviewView.fxml");
     }
 
     @javafx.fxml.FXML
     public void hiringDecisionOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/HiringDecisionView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/HiringDecisionView.fxml");
     }
 
     @javafx.fxml.FXML
     public void shortlistCandidatesOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/ShortlistCandidateView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/ShortlistCandidateView.fxml");
     }
 
     @javafx.fxml.FXML
     public void companyRegistrationOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/CompanyRegistrationView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/CompanyRegistrationView.fxml");
     }
 
     @javafx.fxml.FXML
     public void viewJobVacancyOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/ViewJobVacancyView.fxml");
+                "/com.example.simulating_job_recruiting_agency/Employer/ViewJobVacancyView.fxml");
+    }
+
+    @javafx.fxml.FXML
+    public void backON(ActionEvent actionEvent) {
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/com.example.simulating_job_recruiting_agency/commonDashboard.fxml");
     }
 }

@@ -9,7 +9,7 @@ public class JobSeekerDashboardViewController {
     public void viewJobOffersOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/JobOffersView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/JobOffersView.fxml"
         );
     }
 
@@ -17,7 +17,7 @@ public class JobSeekerDashboardViewController {
     public void attendInterviewOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/AttendInterviewView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/AttendInterviewView.fxml"
         );
     }
 
@@ -25,7 +25,7 @@ public class JobSeekerDashboardViewController {
     public void searchJobsOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/SearchJobsView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/SearchJobsView.fxml"
         );
     }
 
@@ -33,7 +33,7 @@ public class JobSeekerDashboardViewController {
     public void trackApplicationsOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/TrackApplicationsView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/TrackApplicationsView.fxml"
         );
     }
 
@@ -41,7 +41,7 @@ public class JobSeekerDashboardViewController {
     public void recommendedJobsOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/RecommendedJobsView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/RecommendedJobsView.fxml"
         );
     }
 
@@ -49,7 +49,7 @@ public class JobSeekerDashboardViewController {
     public void applyForJobOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/ApplyForJobView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/ApplyForJobView.fxml"
         );
     }
 
@@ -57,7 +57,7 @@ public class JobSeekerDashboardViewController {
     public void candidateProfileManagementOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/CandidateProfileManagementView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/CandidateProfileManagementView.fxml"
         );
     }
 
@@ -65,7 +65,14 @@ public class JobSeekerDashboardViewController {
     public void candidateRegistrationOA(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/JobSeeker/CandidateRegistrationView.fxml"
+                "/com.example.simulating_job_recruiting_agency/JobSeeker/CandidateRegistrationView.fxml"
         );
+    }
+
+    @javafx.fxml.FXML
+    public void backOA(ActionEvent actionEvent) {
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/com.example.simulating_job_recruiting_agency/commonDashboard.fxml");
     }
 }

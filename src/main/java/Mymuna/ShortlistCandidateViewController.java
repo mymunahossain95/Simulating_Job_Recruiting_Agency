@@ -10,8 +10,6 @@ import utility.AlertGenerator;
 import utility.SceneSwitchingHelper;
 import utility.databaseAccessor;
 
-import java.util.ArrayList;
-
 public class ShortlistCandidateViewController {
 
     @javafx.fxml.FXML
@@ -28,39 +26,31 @@ public class ShortlistCandidateViewController {
     public void shortlistCandidateOA(ActionEvent actionEvent) {
 
         if (candidateIdTF.getText().isEmpty()) {
-            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter Candidate ID.");
             return;
         }
+
         if (candidateNameTF.getText().isEmpty()) {
-            AlertGenerator.showWarningAlert("Missing Information", "Please fill all required fields.");
+            AlertGenerator.showWarningAlert("Missing Information", "Please enter Candidate Name."
+            );
             return;
         }
 
-        int candidateId;
-
-        try {
-            candidateId = Integer.parseInt(
-                    candidateIdTF.getText()
-            );
-        } catch (NumberFormatException e) {
-
-            AlertGenerator.showWarningAlert(
-                    "Invalid Candidate ID",
-                    "Candidate ID must be a number."
-            );
-
-            return;
-        }
 
         Candidate candidate = new Candidate(
-                candidateId,
+                candidateIdTF.getText(),
                 candidateNameTF.getText(),
                 "",
                 "",
                 "",
-                new ArrayList<String>(),
-                ""
+                "",
+                "",
+                "",
+                "Shortlisted",
+                "",
+                0
         );
+
 
         ObservableList<Candidate> candidateList =
                 databaseAccessor.readObject(
@@ -72,12 +62,15 @@ public class ShortlistCandidateViewController {
                     FXCollections.observableArrayList();
         }
 
+
         candidateList.add(candidate);
+
 
         databaseAccessor.writeObject(
                 "ShortlistedCandidate.bin",
                 candidateList
         );
+
 
         statusForShortlistCandidateLabel.setText(
                 "Candidate Shortlisted Successfully"
@@ -95,7 +88,7 @@ public class ShortlistCandidateViewController {
 
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Employer/EmployerDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/Employer/EmployerDashboardView.fxml"
         );
     }
 }

@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="462.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mymuna.JobSeekerDashboardViewController">
    <children>
-      <Button layoutX="217.0" layoutY="117.0" mnemonicParsing="false" onAction="#candidateRegistationOA" text="Candidate Registation" />
+      <Button layoutX="217.0" layoutY="117.0" mnemonicParsing="false" onAction="#candidateRegistrationOA" text="Candidate Registration" />
       <Button layoutX="239.0" layoutY="192.0" mnemonicParsing="false" onAction="#searchJobsOA" text="Search Jobs" />
       <Button layoutX="234.0" layoutY="263.0" mnemonicParsing="false" onAction="#applyForJobOA" text="Apply For Job" />
       <Button layoutX="227.0" layoutY="296.0" mnemonicParsing="false" onAction="#trackApplicationsOA" text="Track Applications" />

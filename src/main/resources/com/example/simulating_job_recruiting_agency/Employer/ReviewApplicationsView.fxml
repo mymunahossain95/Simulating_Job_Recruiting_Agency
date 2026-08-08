@@ -20,5 +20,6 @@
             <TableColumn fx:id="applicationStatusTC" prefWidth="124.0" text="Application Status" />
         </columns>
       </TableView>
+      <Button layoutX="459.0" layoutY="28.0" mnemonicParsing="false" onAction="#backToDashboardOA" onDragDetected="#backToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

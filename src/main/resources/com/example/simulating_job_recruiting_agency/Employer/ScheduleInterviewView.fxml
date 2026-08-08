@@ -12,7 +12,7 @@
       <TextField fx:id="interviewLocationTF" layoutX="167.0" layoutY="228.0" />
       <Label layoutX="70.0" layoutY="103.0" text="Candidate ID" />
       <Label layoutX="51.0" layoutY="188.0" text="Interview Time" />
-      <DatePicker layoutX="167.0" layoutY="275.0" />
+      <DatePicker fx:id="interviewDateDP" layoutX="167.0" layoutY="275.0" />
       <Label layoutX="66.0" layoutY="279.0" text="Interview Date" />
       <Button layoutX="446.0" layoutY="196.0" mnemonicParsing="false" onAction="#scheduleInterviewOA" text="Schedule Interview" />
       <Label layoutX="241.0" layoutY="20.0" text="SCHEDULE INTERVIEW" />
@@ -22,5 +22,6 @@
       <TextField fx:id="interviewTimeTF" layoutX="167.0" layoutY="184.0" />
       <TextField fx:id="candidateNameTF" layoutX="167.0" layoutY="138.0" />
       <Label layoutX="60.0" layoutY="142.0" text="Candidate Name" />
+      <Button layoutX="446.0" layoutY="37.0" mnemonicParsing="false" onAction="#backToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

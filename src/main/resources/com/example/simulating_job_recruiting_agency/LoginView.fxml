@@ -7,26 +7,27 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginViewController">
+<AnchorPane prefHeight="475.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginViewController">
    <children>
       <TextField layoutX="172.0" layoutY="165.0" />
       <Text layoutX="75.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="84.13671875" />
-      <Label layoutX="51.0" layoutY="156.0" prefHeight="44.0" prefWidth="149.0" text="User Name:" textFill="#e0b3b3">
+      <Label layoutX="60.0" layoutY="156.0" prefHeight="44.0" prefWidth="149.0" text="User Name:" textFill="#e0b3b3">
          <font>
-            <Font size="22.0" />
+            <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="51.0" layoutY="200.0" prefHeight="44.0" prefWidth="149.0" text="Password:" textFill="#e0b3b3">
+      <Label layoutX="60.0" layoutY="200.0" prefHeight="44.0" prefWidth="149.0" text="Password:" textFill="#e0b3b3">
          <font>
-            <Font size="22.0" />
+            <Font size="14.0" />
          </font>
       </Label>
       <TextField layoutX="172.0" layoutY="209.0" />
-      <Label layoutX="28.0" layoutY="33.0" prefHeight="99.0" prefWidth="544.0" text="Welcome,to Job Recruiting Agency" textFill="#4c48ba">
+      <Label layoutX="33.0" layoutY="14.0" prefHeight="99.0" prefWidth="544.0" text="Welcome,to Job Recruiting Agency" textFill="#4c48ba">
          <font>
             <Font size="35.0" />
          </font>
       </Label>
-      <Button layoutX="520.0" layoutY="346.0" mnemonicParsing="false" onAction="#logInButtonOA" text="Log In -&gt;" textFill="#c9a5a5" />
+      <Button layoutX="358.0" layoutY="261.0" mnemonicParsing="false" onAction="#logInButtonOA" text="Log In -&gt;" textFill="#c9a5a5" />
+      <Label layoutX="293.0" layoutY="286.0" prefHeight="25.0" prefWidth="149.0" text="Log In Button Pressed -&gt;" textFill="#c5b37f" />
    </children>
 </AnchorPane>

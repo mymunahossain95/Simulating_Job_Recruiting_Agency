@@ -36,11 +36,11 @@ public class DocumentVerificationAgeVerificationController {
             AlertGenerator.showWarningAlert("Invalid Age", "Candidate age must be greater than 0.");
             return;
 
-        } else if (Integer.parseInt(ageVerificationCandidateAgeLabel.getText()) <= 18) {
+        } else if (Integer.parseInt(ageVerificationCandidateAgeLabel.getText())<=18) {
             AlertGenerator.showWarningAlert("Invalid Age", "Candidate age must be greater than 18.");
             return;
 
-        } else if (Integer.parseInt(ageVerificationJobAgeRequirementLabel.getText()) <= 0) {
+        } else if (Integer.parseInt(ageVerificationJobAgeRequirementLabel.getText())<=0) {
             AlertGenerator.showWarningAlert("Invalid Age", "Job age requirement must be greater than 0.");
             return;
 
@@ -59,6 +59,6 @@ public class DocumentVerificationAgeVerificationController {
 
     @javafx.fxml.FXML
     public void handleGoHomeButtonOnAction(ActionEvent actionEvent) {
-        SceneSwitchingHelper.switchScene(actionEvent, "/Nazila/DocumentVerifierDashboard.fxml");
+        SceneSwitchingHelper.switchScene(actionEvent, "/com.example.simulating_job_recruiting_agency/DocumentVerifier/DocumentVerifierDashboard.fxml");
     }
 }

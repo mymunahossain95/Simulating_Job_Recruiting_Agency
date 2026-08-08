@@ -12,7 +12,14 @@ public class JobOffer implements Serializable {
     private String benefits;
     private String responseStatus;
 
-    public JobOffer(String offerId, String companyName, String position, String salary, String joiningDate, String benefits, String responseStatus) {
+    public JobOffer(String offerId,
+                    String companyName,
+                    String position,
+                    String salary,
+                    String joiningDate,
+                    String benefits,
+                    String responseStatus) {
+
         this.offerId = offerId;
         this.companyName = companyName;
         this.position = position;

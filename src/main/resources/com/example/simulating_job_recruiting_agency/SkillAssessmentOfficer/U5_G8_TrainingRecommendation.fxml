@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="361.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U5_G8_TrainingRecommendationController">
+<AnchorPane prefHeight="396.0" prefWidth="558.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U5_G8_TrainingRecommendationController">
    <children>
       <Label layoutX="198.0" layoutY="20.0" prefHeight="17.0" prefWidth="169.0" text="Recommend Training Program" />
       <ComboBox fx:id="candidateComboBox" layoutX="384.0" layoutY="64.0" prefWidth="150.0" />
@@ -23,5 +23,6 @@
       </TableView>
       <Label fx:id="statusLabel" layoutX="31.0" layoutY="328.0" prefHeight="17.0" prefWidth="341.0" text="Status Label:" />
       <Text layoutX="304.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate :" wrappingWidth="67.0" />
+      <Button layoutX="404.0" layoutY="356.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="130.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

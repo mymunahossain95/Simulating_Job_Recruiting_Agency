@@ -1,43 +1,91 @@
 package Nazila;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import nonuser.AssistanceRequest;
+import utility.AlertGenerator;
+import utility.SceneSwitchingHelper;
+import utility.databaseAccessor;
+
+import java.time.LocalDate;
 
 public class CareerCounselorAssistanceRequestController {
     @javafx.fxml.FXML
     private Label careerCRequestDetailsLabel;
     @javafx.fxml.FXML
-    private TableColumn requestTypeCol3;
+    private TableColumn<AssistanceRequest,String> requestTypeCol3;
     @javafx.fxml.FXML
-    private ComboBox requestTypeComboBox;
+    private ComboBox <String>requestTypeComboBox;
     @javafx.fxml.FXML
-    private TableColumn requestIDCol1;
+    private TableColumn<AssistanceRequest,String> requestIDCol1;
     @javafx.fxml.FXML
-    private TableColumn candidateNameCol2;
+    private TableColumn<AssistanceRequest,String> candidateNameCol2;
     @javafx.fxml.FXML
-    private TableView assistanceRequestTableView;
+    private TableView<AssistanceRequest> assistanceRequestTableView;
     @javafx.fxml.FXML
-    private TableColumn submisionDateCol4;
+    private TableColumn<AssistanceRequest, LocalDate> submisionDateCol4;
+    private ObservableList<AssistanceRequest> requestList;
+    @javafx.fxml.FXML
+    public void initialize() {
+
+        requestTypeComboBox.getItems().addAll( "Career Advice", "Job Search Assistance", "CV Assistance", "Interview Preparation");
+        requestIDCol1.setCellValueFactory(new PropertyValueFactory<>("requestId"));
+        candidateNameCol2.setCellValueFactory(new PropertyValueFactory<>("candidateName"));
+        requestTypeCol3.setCellValueFactory(new PropertyValueFactory<>("requestType"));
+        submisionDateCol4.setCellValueFactory(new PropertyValueFactory<>("submissionDate"));
+
+        requestList = databaseAccessor.readObject("AssistanceRequests.bin");
+
+        assistanceRequestTableView.setItems(requestList);
+
+    }
+
 
 
     @javafx.fxml.FXML
     public void handleassistanceReqViewRequestButtononAction(ActionEvent actionEvent) {
+        if((requestTypeComboBox.getValue() == null || requestTypeComboBox.getValue().isEmpty())){
+            AlertGenerator.showWarningAlert("Missing Information", "Please select a Request Type first");
+            return;
+        }
+        careerCRequestDetailsLabel.setText("Assistance Request Details" + "Request Type: " + requestTypeComboBox.getValue());
+        AlertGenerator.showInformationAlert("Request Loaded", "Request details loaded successfully");
     }
 
     @javafx.fxml.FXML
     public void handleassistanceReqSubmitResponseButtononAction(ActionEvent actionEvent) {
+
+        if(requestTypeComboBox.getValue() == null || requestTypeComboBox.getValue().isEmpty()){
+            AlertGenerator.showWarningAlert("Missing Information", "Select a Request Type first");
+            return;
+        }
+        databaseAccessor.writeObject("AssistanceRequests.bin", requestList);
+
+        AlertGenerator.showInformationAlert("Saved", "Response submitted successfully");
     }
-
-
 
     @javafx.fxml.FXML
     public void handleassistanceReqProcessReqButtononAction(ActionEvent actionEvent) {
+        if(assistanceRequestTableView.getItems().isEmpty()){
+            AlertGenerator.showWarningAlert("No Request", "No assistance request available");
+            return;
+        }
+        databaseAccessor.writeObject("AssistanceRequests.bin", requestList);
+        AlertGenerator.showInformationAlert("Success", "Assistance request processed successfully");
+
+
     }
 
+
     @javafx.fxml.FXML
-    public void handleassistanceReqNextButtononAction(ActionEvent actionEvent) {
+    public void handleBacktoDashboardButtononAction(ActionEvent actionEvent) {
+        SceneSwitchingHelper.switchScene(actionEvent, "/Nazila/CareerCounselorDashboard.fxml"
+        );
     }
 }

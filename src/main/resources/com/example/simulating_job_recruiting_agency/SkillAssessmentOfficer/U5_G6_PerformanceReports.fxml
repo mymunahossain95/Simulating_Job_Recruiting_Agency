@@ -14,7 +14,7 @@
       <ComboBox fx:id="candidateComboBox" layoutX="132.0" layoutY="57.0" prefWidth="150.0" />
       <Text layoutX="14.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Candidate" wrappingWidth="103.13671875" />
       <Button layoutX="14.0" layoutY="115.0" mnemonicParsing="false" onAction="#generateReportBtnOnAction" prefHeight="25.0" prefWidth="130.0" text="generateReportBtn" />
-      <TableView fx:id="performanceTable" layoutX="14.0" layoutY="174.0" prefHeight="200.0" prefWidth="647.0">
+      <TableView fx:id="performanceTable" layoutX="15.0" layoutY="172.0" prefHeight="200.0" prefWidth="647.0">
         <columns>
           <TableColumn fx:id="assessmentColumn" prefWidth="126.0" text="assessment" />
           <TableColumn fx:id="scoreColumn" prefWidth="136.0" text="score" />
@@ -23,5 +23,6 @@
             <TableColumn fx:id="performanceColumn" prefWidth="136.0" text="performance" />
         </columns>
       </TableView>
+      <Button layoutX="15.0" layoutY="399.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="123.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

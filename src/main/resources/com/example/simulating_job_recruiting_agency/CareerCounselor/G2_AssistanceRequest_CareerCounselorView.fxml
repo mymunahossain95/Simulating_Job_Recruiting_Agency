@@ -23,7 +23,7 @@
       <Button layoutX="31.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleassistanceReqViewRequestButtononAction" text="View Request" />
       <Button layoutX="141.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleassistanceReqSubmitResponseButtononAction" text="Submit Response" />
       <Button layoutX="278.0" layoutY="260.0" mnemonicParsing="false" onAction="#handleassistanceReqProcessReqButtononAction" text="Process Request" />
-      <Button layoutX="551.0" layoutY="409.0" mnemonicParsing="false" onAction="#handleassistanceReqNextButtononAction" text="Next-&gt;" />
+      <Button layoutX="509.0" layoutY="399.0" mnemonicParsing="false" onAction="#handleBacktoDashboardButtononAction" text="Home" />
       <ComboBox fx:id="requestTypeComboBox" layoutX="26.0" layoutY="211.0" prefWidth="150.0" promptText="Request Type" />
       <Line endX="25.666671752929688" endY="5.7220458984375E-6" layoutX="115.0" layoutY="31.0" startX="-100.0" />
    </children>

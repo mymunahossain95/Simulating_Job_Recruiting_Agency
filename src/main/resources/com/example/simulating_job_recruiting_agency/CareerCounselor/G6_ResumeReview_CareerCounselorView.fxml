@@ -20,7 +20,7 @@
       <Button layoutX="186.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleViewResumeButtonOnAction" text="View Resume" />
       <Button layoutX="186.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleAnalyzeResumeButtonOnAction" text="Analyze Resume" />
       <Button layoutX="189.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleSendFeedbackButtonOnAction" text="Send Feedback" />
-      <Button layoutX="534.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleNextNuttonOnAction" text="Next-&gt;" />
+      <Button layoutX="534.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleHomeButtonOnAction" text="Home" />
       <Line endX="176.0" layoutX="282.0" layoutY="266.0" startX="-244.66665649414062" />
       <Text layoutX="25.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESUME REVIEW:" />
       <Line endX="-0.224609375" endY="-3.814697265625E-6" layoutX="117.0" layoutY="38.0" startX="-100.0" />

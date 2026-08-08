@@ -9,7 +9,11 @@ public class HiringDecision implements Serializable {
     private String decision;
     private String remarks;
 
-    public HiringDecision(String candidateId, String candidateName, String decision, String remarks) {
+    public HiringDecision(String candidateId,
+                          String candidateName,
+                          String decision,
+                          String remarks) {
+
         this.candidateId = candidateId;
         this.candidateName = candidateName;
         this.decision = decision;

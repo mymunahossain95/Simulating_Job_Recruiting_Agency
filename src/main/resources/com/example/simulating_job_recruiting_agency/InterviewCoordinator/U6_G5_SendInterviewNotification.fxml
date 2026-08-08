@@ -16,5 +16,6 @@
       <Text layoutX="15.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" wrappingWidth="93.13671875" />
       <Button layoutX="376.0" layoutY="91.0" mnemonicParsing="false" onAction="#sendBtnOnAction" prefHeight="42.0" prefWidth="113.0" text="Send" />
       <Label fx:id="statusLabel" layoutX="32.0" layoutY="201.0" prefHeight="17.0" prefWidth="516.0" text="Status:" />
+      <Button layoutX="15.0" layoutY="226.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="160.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

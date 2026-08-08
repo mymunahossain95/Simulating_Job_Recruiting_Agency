@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="548.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G7_GenerateInterviewReportController">
+<AnchorPane prefHeight="575.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ridwan.U6_G7_GenerateInterviewReportController">
    <children>
       <DatePicker fx:id="fromDatePicker" layoutX="27.0" layoutY="68.0" />
       <DatePicker fx:id="toDatePicker" layoutX="27.0" layoutY="133.0" />
@@ -26,5 +26,6 @@
       <Text layoutX="27.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Date" textAlignment="CENTER" wrappingWidth="174.0" />
       <Text layoutX="36.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interview Report :" textAlignment="CENTER" wrappingWidth="107.0" />
       <Label fx:id="statusLabel" layoutX="43.0" layoutY="211.0" prefHeight="17.0" prefWidth="443.0" text="Status:" />
+      <Button layoutX="36.0" layoutY="520.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="143.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

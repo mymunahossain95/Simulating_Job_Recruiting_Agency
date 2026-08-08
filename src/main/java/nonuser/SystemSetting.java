@@ -45,6 +45,6 @@ public class SystemSetting implements Serializable {
                     ", settingType='" + settingType + '\'' +
                     ", settingValue='" + settingValue + '\'' +
                     '}';
-        }
+        //}
     }
 }

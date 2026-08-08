@@ -28,7 +28,7 @@
       <Button layoutX="360.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleViewSessionOA" text="View Session" />
       <Button layoutX="360.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleSaveSessionOA" text="Save Session" />
       <Button layoutX="360.0" layoutY="386.0" mnemonicParsing="false" onAction="#handleEndSessionOA" text="End Session" />
-      <Button layoutX="583.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleCounselingNextSessionOA" text="Next-&gt;" />
+      <Button layoutX="583.0" layoutY="444.0" mnemonicParsing="false" onAction="#handleCounselingSessionHomeButtonOA" text="Home" />
       <Line endX="25.666671752929688" endY="0.33333778381347656" layoutX="119.0" layoutY="31.0" startX="-100.0" />
       <Line endX="25.666671752929688" endY="0.33333778381347656" layoutX="111.0" layoutY="127.0" startX="-100.0" />
    </children>

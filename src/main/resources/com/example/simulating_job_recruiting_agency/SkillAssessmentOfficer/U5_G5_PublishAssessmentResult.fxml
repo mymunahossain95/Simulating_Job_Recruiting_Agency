@@ -22,5 +22,6 @@
         </columns>
       </TableView>
       <Text fx:id="statusLabel" layoutX="119.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status Label :" wrappingWidth="387.13671875" />
+      <Button layoutX="25.0" layoutY="520.0" mnemonicParsing="false" onAction="#backtodashbtnOnAction" prefHeight="26.0" prefWidth="150.0" text="Back to Dashboard" />
    </children>
 </AnchorPane>

@@ -1,71 +1,41 @@
 package User;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
-public class JobSeeker implements Serializable {
+public class JobSeeker extends User implements Serializable {
 
-    private String candidateId;
-    private String fullName;
-    private String email;
-    private String phoneNumber;
-    private String password;
+    private String resumeId;
 
-    public JobSeeker(String candidateId, String fullName, String email, String phoneNumber, String password) {
-        this.candidateId = candidateId;
-        this.fullName = fullName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.password = password;
+    public JobSeeker(String userId,
+                     String fullName,
+                     String email,
+                     String password,
+                     LocalDate dateOfBirth,
+                     String phone,
+                     String address,
+                     String status,
+                     String resumeId) {
+
+        super(userId, fullName, email, password,
+                dateOfBirth, phone, address, status);
+
+        this.resumeId = resumeId;
     }
 
-    public String getCandidateId() {
-        return candidateId;
+    public String getResumeId() {
+        return resumeId;
     }
 
-    public void setCandidateId(String candidateId) {
-        this.candidateId = candidateId;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
+    public void setResumeId(String resumeId) {
+        this.resumeId = resumeId;
     }
 
     @Override
     public String toString() {
         return "JobSeeker{" +
-                "candidateId='" + candidateId + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", password='" + password + '\'' +
+                "resumeId='" + resumeId + '\'' +
+                ", " + super.toString() +
                 '}';
     }
 }

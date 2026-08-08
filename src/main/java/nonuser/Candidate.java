@@ -4,29 +4,36 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class Candidate implements Serializable {
-    private int candidateId;
+    private String candidateId;
     private String candidateName;
-    private String email;
-    private String phoneNumber;
     private String education;
-    private ArrayList<String> skills;
-    private String experience;
+    private String skills;
+    private String experience,email,phone;
+    private String appliedJob,verificationStatus,jobRole;
+    private int age;
 
-    public Candidate(int candidateId, String candidateName, String email, String phoneNumber, String education, ArrayList<String> skills, String experience) {
+    public Candidate() {
+    }
+
+    public Candidate(String candidateId, String candidateName, String education, String skills, String experience, String email, String phone, String appliedJob, String verificationStatus, String jobRole, int age) {
         this.candidateId = candidateId;
         this.candidateName = candidateName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
         this.education = education;
         this.skills = skills;
         this.experience = experience;
+        this.email = email;
+        this.phone = phone;
+        this.appliedJob = appliedJob;
+        this.verificationStatus = verificationStatus;
+        this.jobRole = jobRole;
+        this.age = age;
     }
 
-    public int getCandidateId() {
+    public String getCandidateId() {
         return candidateId;
     }
 
-    public void setCandidateId(int candidateId) {
+    public void setCandidateId(String candidateId) {
         this.candidateId = candidateId;
     }
 
@@ -38,22 +45,6 @@ public class Candidate implements Serializable {
         this.candidateName = candidateName;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
     public String getEducation() {
         return education;
     }
@@ -62,11 +53,11 @@ public class Candidate implements Serializable {
         this.education = education;
     }
 
-    public ArrayList<String> getSkills() {
+    public String getSkills() {
         return skills;
     }
 
-    public void setSkills(ArrayList<String> skills) {
+    public void setSkills(String skills) {
         this.skills = skills;
     }
 
@@ -78,16 +69,68 @@ public class Candidate implements Serializable {
         this.experience = experience;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAppliedJob() {
+        return appliedJob;
+    }
+
+    public void setAppliedJob(String appliedJob) {
+        this.appliedJob = appliedJob;
+    }
+
+    public String getVerificationStatus() {
+        return verificationStatus;
+    }
+
+    public void setVerificationStatus(String verificationStatus) {
+        this.verificationStatus = verificationStatus;
+    }
+
+    public String getJobRole() {
+        return jobRole;
+    }
+
+    public void setJobRole(String jobRole) {
+        this.jobRole = jobRole;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     @Override
     public String toString() {
         return "Candidate{" +
-                "candidateId=" + candidateId +
+                "candidateId='" + candidateId + '\'' +
                 ", candidateName='" + candidateName + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
                 ", education='" + education + '\'' +
-                ", skills=" + skills +
+                ", skills='" + skills + '\'' +
                 ", experience='" + experience + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", appliedJob='" + appliedJob + '\'' +
+                ", verificationStatus='" + verificationStatus + '\'' +
+                ", jobRole='" + jobRole + '\'' +
+                ", age=" + age +
                 '}';
     }
 }

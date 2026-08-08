@@ -6,6 +6,7 @@ public class Resume implements Serializable {
 
     private String fullName;
     private String email;
+    private String phoneNumber;
     private String careerObjective;
     private String educationDetails;
     private String skills;
@@ -13,13 +14,19 @@ public class Resume implements Serializable {
     private String preferredJob;
     private String expectedSalary;
 
-    public Resume(String fullName, String email, String careerObjective,
-                  String educationDetails, String skills,
-                  String workExperience, String preferredJob,
+    public Resume(String fullName,
+                  String email,
+                  String phoneNumber,
+                  String careerObjective,
+                  String educationDetails,
+                  String skills,
+                  String workExperience,
+                  String preferredJob,
                   String expectedSalary) {
 
         this.fullName = fullName;
         this.email = email;
+        this.phoneNumber = phoneNumber;
         this.careerObjective = careerObjective;
         this.educationDetails = educationDetails;
         this.skills = skills;
@@ -42,6 +49,14 @@ public class Resume implements Serializable {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     public String getCareerObjective() {
@@ -97,6 +112,7 @@ public class Resume implements Serializable {
         return "Resume{" +
                 "fullName='" + fullName + '\'' +
                 ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 ", careerObjective='" + careerObjective + '\'' +
                 ", educationDetails='" + educationDetails + '\'' +
                 ", skills='" + skills + '\'' +

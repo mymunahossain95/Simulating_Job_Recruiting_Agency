@@ -1,48 +1,49 @@
 package Nazila;
 
 import javafx.event.ActionEvent;
+import utility.SceneSwitchingHelper;
 
 public class DocumentVerifierdashboardController {
     @javafx.fxml.FXML
-    public void handleJobRequirementVerificationButtonOnAction(ActionEvent actionEvent) {
-
+    public void handleJobRequirementVerificationButtonOnAction(ActionEvent actionEvent)  {
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G5_JobRequirementVerification_DocumentVerifierView.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleVerificationRequestsButtonOnAction(ActionEvent actionEvent) {
-
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G2_VerificationRequests_DocumentVerifierView.fxml");
     }
 
 
     @javafx.fxml.FXML
     public void handleEducationVerificationButtonOnAction(ActionEvent actionEvent) {
-
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G4_EducationVerification_DocumentVerifierView.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleIdentityVerificationButtonOnAction(ActionEvent actionEvent) {
-
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G6_IdentityVerification_DocumentVerifierView.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleAgeVerificationButtonOnAction(ActionEvent actionEvent) {
-
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G3_AgeVerification_DocumentVerifierView.fxml");
     }
 
     @javafx.fxml.FXML
     public void handleFinalVerificationButtonOnAction(ActionEvent actionEvent) {
-
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G7_FinalVerification_DocumentVerifierView.fxml");
     }
 
 
     @javafx.fxml.FXML
     public void handleCandidateDocumentsButtonOnAction(ActionEvent actionEvent) {
-
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G1_CandidateDocuments_DocumentVerifierView.fxml");
 
     }
 
     @javafx.fxml.FXML
     public void handleFinalReportGenerationButtonOnAction(ActionEvent actionEvent) {
-
+        SceneSwitchingHelper.switchScene(actionEvent, "/com/example/simulating_job_recruiting_agency/DocumentVerifier/G8_FinalReportGeneration_DocumentVerifierView.fxml");
     }
 }

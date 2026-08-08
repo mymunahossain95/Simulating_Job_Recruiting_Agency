@@ -21,7 +21,7 @@ public class ProcessPaymentsController {
     private TableView<Payment> approvedPaymentTable;
 
     @javafx.fxml.FXML
-    private TableColumn<Payment, String> paymentIdColumn;
+    private TableColumn<Payment,String> paymentIdColumn;
 
     @javafx.fxml.FXML
     private TableColumn<Payment, String> candidateColumn;

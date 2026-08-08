@@ -112,7 +112,7 @@ public class U6_G4_AssignInterviewPanelController {
     public void backtodashbtnOnAction(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
                 actionEvent,
-                "/Ridwan/InterviewCoordinatorDashboardView.fxml"
+                "/com.example.simulating_job_recruiting_agency/InterviewCoordinatorDashboardView.fxml"
         );
     }
 }

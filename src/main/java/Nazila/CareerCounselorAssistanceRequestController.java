@@ -50,7 +50,7 @@ public class CareerCounselorAssistanceRequestController {
 
     @javafx.fxml.FXML
     public void handleassistanceReqViewRequestButtononAction(ActionEvent actionEvent) {
-        if(requestTypeComboBox.getValue().isEmpty()){
+        if((requestTypeComboBox.getValue() == null || requestTypeComboBox.getValue().isEmpty())){
             AlertGenerator.showWarningAlert("Missing Information", "Please select a Request Type first");
             return;
         }
@@ -61,7 +61,7 @@ public class CareerCounselorAssistanceRequestController {
     @javafx.fxml.FXML
     public void handleassistanceReqSubmitResponseButtononAction(ActionEvent actionEvent) {
 
-        if(requestTypeComboBox.getValue().isEmpty()){
+        if(requestTypeComboBox.getValue() == null || requestTypeComboBox.getValue().isEmpty()){
             AlertGenerator.showWarningAlert("Missing Information", "Select a Request Type first");
             return;
         }

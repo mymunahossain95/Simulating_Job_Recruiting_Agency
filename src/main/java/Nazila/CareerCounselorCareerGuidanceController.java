@@ -51,7 +51,7 @@ public class CareerCounselorCareerGuidanceController {
 
     @javafx.fxml.FXML
     public void handleSaveGuidancecareerguideButton(ActionEvent actionEvent) {
-        if(searchCandidateNameTextField.getText().isEmpty()){
+        if(searchCandidateNameTextField.getText()==null||searchCandidateNameTextField.getText().isEmpty()){
             AlertGenerator.showWarningAlert( "Missing Information", "Enter candidate name or ID" );
             return;
         }
@@ -60,7 +60,7 @@ public class CareerCounselorCareerGuidanceController {
 
     @javafx.fxml.FXML
     public void handlecareerguideSearchButton(ActionEvent actionEvent) {
-        if(searchCandidateNameTextField.getText().isEmpty()) {
+        if(searchCandidateNameTextField.getText()==null||searchCandidateNameTextField.getText().isEmpty()) {
             AlertGenerator.showWarningAlert("Missing Information", "Enter candidate name or ID");
             return;
         }

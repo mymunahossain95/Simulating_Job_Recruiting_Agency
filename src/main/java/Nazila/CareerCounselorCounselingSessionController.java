@@ -49,49 +49,22 @@ public class CareerCounselorCounselingSessionController {
     @javafx.fxml.FXML
     public void handleSaveSessionOA(ActionEvent actionEvent) {
         if (sessionDatedatepicker.getValue().isAfter(LocalDate.now())) {
-
-            AlertGenerator.showWarningAlert(
-                    "Invalid Date",
-                    "Session date cannot be a future date"
-            );
-
+            AlertGenerator.showWarningAlert("Invalid Date", "Session date cannot be a future date");
             return;
         }
-
-        databaseAccessor.writeObject(
-                "CounselingSession.bin",
-                sessionList
-        );
-
-        AlertGenerator.showInformationAlert(
-                "Saved",
-                "Counseling session saved successfully"
-        );
+        databaseAccessor.writeObject("CounselingSession.bin", sessionList);
+        AlertGenerator.showInformationAlert("Saved", "Counseling session saved successfully");
 
     }
 
     @javafx.fxml.FXML
     public void handleViewSessionOA(ActionEvent actionEvent) {
         if (sessionDatedatepicker.getValue().isAfter(LocalDate.now())) {
-
-            AlertGenerator.showWarningAlert(
-                    "Invalid Date",
-                    "Session date cannot be a future date"
-            );
-
+            AlertGenerator.showWarningAlert("Invalid Date", "Session date cannot be a future date");
             return;
         }
-
-        careercounselPreviousGuidanceLabel.setText(
-                "Previous Guidance\n\n"
-                        + "Session Date: "
-                        + sessionDatedatepicker.getValue()
-        );
-
-        AlertGenerator.showInformationAlert(
-                "Session Loaded",
-                "Counseling session information loaded successfully"
-        );
+        careercounselPreviousGuidanceLabel.setText("Previous Guidance" + "Session Date: " + sessionDatedatepicker.getValue());
+        AlertGenerator.showInformationAlert("Session Loaded", "Counseling session information loaded successfully");
 
     }
 
@@ -99,32 +72,16 @@ public class CareerCounselorCounselingSessionController {
     public void handleEndSessionOA(ActionEvent actionEvent) {
 
         if (sessionDatedatepicker.getValue().isAfter(LocalDate.now())) {
-
-            AlertGenerator.showWarningAlert(
-                    "Invalid Date",
-                    "Session date cannot be a future date"
-            );
-
+            AlertGenerator.showWarningAlert("Invalid Date", "Session date cannot be a future date");
             return;
         }
 
-        careercounselPreviousGuidanceLabel.setText(
-                "Previous Guidance\n\n"
-                        + "Session Date: "
-                        + sessionDatedatepicker.getValue()
-        );
-
-        AlertGenerator.showInformationAlert(
-                "Session Loaded",
-                "Counseling session information loaded successfully"
-        );
+        careercounselPreviousGuidanceLabel.setText("Previous Guidance" + "Session Date: " + sessionDatedatepicker.getValue());
+        AlertGenerator.showInformationAlert("Session Loaded", "Counseling session information loaded successfully");
     }
 
     @javafx.fxml.FXML
     public void handleCounselingSessionHomeButtonOA(ActionEvent actionEvent) {
-        SceneSwitchingHelper.switchScene(
-                actionEvent,
-                "/Nazila/CareerCounselorDashboard.fxml"
-        );
+        SceneSwitchingHelper.switchScene(actionEvent, "/Nazila/CareerCounselorDashboard.fxml");
     }
 }

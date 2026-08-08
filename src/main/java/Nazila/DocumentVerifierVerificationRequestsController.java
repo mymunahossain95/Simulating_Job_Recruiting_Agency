@@ -55,7 +55,7 @@ public class DocumentVerifierVerificationRequestsController {
 
     @javafx.fxml.FXML
     public void verificationRequestViewRequestButtonOnAction(ActionEvent actionEvent) {
-        if (verificationRequestSearchForCandidateTextField.getText().isEmpty()) {
+        if (verificationRequestSearchForCandidateTextField.getText()==null||verificationRequestSearchForCandidateTextField.getText().isEmpty()) {
             AlertGenerator.showWarningAlert("Missing Name", "Please enter candidate name.");
             return;
         }

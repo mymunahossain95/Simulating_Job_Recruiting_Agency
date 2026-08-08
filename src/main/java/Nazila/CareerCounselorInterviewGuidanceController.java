@@ -21,6 +21,7 @@ public class CareerCounselorInterviewGuidanceController {
     private TableView <Candidate>candidateListTableView;
     @javafx.fxml.FXML
     private TableColumn<Candidate,String> jobRoleCol3;
+
     private ObservableList<Candidate> candidateProfileList;
 
 

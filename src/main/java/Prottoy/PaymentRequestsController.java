@@ -93,12 +93,12 @@ public class PaymentRequestsController {
         );
     }
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent actionEvent) throws IOException {
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) throws IOException {
 
-      //  SceneSwitchingHelper.switchScene(
-        //        actionEvent,
-          //      "/FinanceOfficer/FinanceOfficerDashboard.fxml"
-        //);
-    //}
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/FinanceOfficer/FinanceOfficerDashboard.fxml"
+        );
+    }
 }

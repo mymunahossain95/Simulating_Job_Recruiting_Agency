@@ -156,12 +156,11 @@ public class ManageJobCategoriesController {
     }
 
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent event) {
-
-        //SceneSwitchingHelper.switchScene(
-                //event,
-                //"/Admin/AdminDashboard.fxml"
-        //);
-    //}
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent event) {
+        SceneSwitchingHelper.switchScene(
+                event,
+                "/Admin/AdminDashboard.fxml"
+        );
+    }
 }

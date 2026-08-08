@@ -142,12 +142,12 @@ public class PendingRegistrationsController {
     }
 
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent event) {
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent event) {
 
-        //SceneSwitchingHelper.switchScene(
-                //event,
-                //"/Admin/AdminDashboard.fxml"
-        //);
-    //}
+        SceneSwitchingHelper.switchScene(
+                event,
+                "/Admin/AdminDashboard.fxml"
+        );
+    }
 }

@@ -128,12 +128,12 @@ public class ActivityLogsController {
     }
 
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent actionEvent) {
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
 
-        //SceneSwitchingHelper.switchScene(
-                //actionEvent,
-                //"/Prottoy/AdminDashboard.fxml"
-        //);
-    //}
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/Prottoy/AdminDashboard.fxml"
+        );
+    }
 }

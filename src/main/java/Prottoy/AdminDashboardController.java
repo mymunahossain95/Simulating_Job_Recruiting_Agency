@@ -71,11 +71,11 @@ public class AdminDashboardController {
         );
     }
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent actionEvent) throws IOException {
-        //SceneSwitchingHelper.switchScene(
-                //actionEvent,
-                //"/Common/Login.fxml"
-        //);
-    //}
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) throws IOException {
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/Common/Login.fxml"
+        );
+    }
 }

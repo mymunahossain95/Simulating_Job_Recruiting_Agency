@@ -73,12 +73,12 @@ public class SystemSettingsController {
     }
 
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent actionEvent) throws IOException {
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) throws IOException {
 
-        //SceneSwitchingHelper.switchScene(
-          //      actionEvent,
-            //    "/Admin/AdminDashboard.fxml"
-        //);
-    //}
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/Admin/AdminDashboard.fxml"
+        );
+    }
 }

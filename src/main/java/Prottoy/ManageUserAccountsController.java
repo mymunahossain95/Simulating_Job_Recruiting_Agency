@@ -157,12 +157,12 @@ public class ManageUserAccountsController {
     }
 
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent actionEvent) {
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
 
-        //SceneSwitchingHelper.switchScene(
-                //actionEvent,
-                //"/Admin/AdminDashboard.fxml"
-        //);
-    //}
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/Admin/AdminDashboard.fxml"
+        );
+    }
 }

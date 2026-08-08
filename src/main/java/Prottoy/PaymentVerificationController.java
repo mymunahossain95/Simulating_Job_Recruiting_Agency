@@ -78,12 +78,12 @@ public class PaymentVerificationController {
     }
 
 
-    //@javafx.fxml.FXML
-    //public void onBack(ActionEvent actionEvent) {
+    @javafx.fxml.FXML
+    public void onBack(ActionEvent actionEvent) {
 
-      //  SceneSwitchingHelper.switchScene(
-        //        actionEvent,
-          //      "/FinanceOfficer/FinanceOfficerDashboard.fxml"
-       // );
-    //}
+        SceneSwitchingHelper.switchScene(
+                actionEvent,
+                "/FinanceOfficer/FinanceOfficerDashboard.fxml"
+        );
+    }
 }

@@ -84,6 +84,6 @@ public class HiringTrendsController {
 
     @javafx.fxml.FXML
     public void homeButton(ActionEvent actionEvent) {
-        SceneSwitchingHelper.switchScene(actionEvent,"/ReportsAndAnalyticsManager/ReportAnalyticsDashBoard.fxml");
+        SceneSwitchingHelper.switchScene(actionEvent,"/com.example.simulating_job_recruiting_agency/ReportsAndAnalyticsManager/ReportAnalyticsDashBoard.fxml");
     }
 }

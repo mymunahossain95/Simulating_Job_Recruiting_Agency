@@ -100,6 +100,6 @@ public class CandidateFeedbackAnalysisController {
     @javafx.fxml.FXML
     public void homeButton(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(
-                actionEvent, "/ReportsAndAnalyticsManager/ReportAnalyticsDashboard.fxml");
+                actionEvent, "/com.example.simulating_job_recruiting_agency/ReportsAndAnalyticsManager/ReportAnalyticsDashboard.fxml");
     }
 }

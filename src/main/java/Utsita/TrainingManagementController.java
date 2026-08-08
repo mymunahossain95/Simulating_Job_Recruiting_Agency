@@ -203,7 +203,7 @@ public class TrainingManagementController {
 
         SceneSwitchingHelper.switchScene(
                 event,
-                "/TrainingCoordinator/TrainingCoordinatorDashboard.fxml"
+                "/com.example.simulating_job_recruiting_agency/TrainingCoordinator/TrainingCoordinatorDashboard.fxml"
         );
     }
 

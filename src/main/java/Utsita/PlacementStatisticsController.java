@@ -107,6 +107,7 @@ public class PlacementStatisticsController {
 
     @javafx.fxml.FXML
     public void homeButton(ActionEvent actionEvent) {
-        SceneSwitchingHelper.switchScene(actionEvent, "/ReportsAndAnalyticsManager/ReportAnalyticsDashboard.fxml");
+        SceneSwitchingHelper.switchScene(actionEvent,
+                "/com.example.simulating_job_recruiting_agency/ReportsAndAnalyticsManager/ReportAnalyticsDashboard.fxml");
     }
 }

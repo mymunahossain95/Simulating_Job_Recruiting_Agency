@@ -139,6 +139,6 @@ public class ManageTrainerAssignmentsController {
     @javafx.fxml.FXML
     public void homeButton(ActionEvent actionEvent) {
         SceneSwitchingHelper.switchScene(actionEvent,
-                "/TrainingCoordinator/TrainingCoordinatorDashboard");
+                "/com.example.simulating_job_recruiting_agency/TrainingCoordinator/TrainingCoordinatorDashboard");
     }
 }

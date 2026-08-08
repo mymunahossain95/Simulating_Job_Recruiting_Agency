@@ -21,5 +21,6 @@
       <Button layoutX="228.0" layoutY="270.0" mnemonicParsing="false" onAction="#confirmAttendanceOA" text="confirmAttendanceButton" />
       <Label fx:id="statusLabel" layoutX="52.0" layoutY="345.0" text="Status" />
       <Label fx:id="statusForScheduledInterviewLabel" layoutX="111.0" layoutY="345.0" text="Label" />
+      <Button layoutX="470.0" layoutY="320.0" mnemonicParsing="false" onAction="#backToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

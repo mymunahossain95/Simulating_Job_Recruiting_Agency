@@ -20,5 +20,6 @@
       <TextField fx:id="candidateIdTF" layoutX="140.0" layoutY="128.0" />
       <TextField fx:id="candidateNameCB" layoutX="140.0" layoutY="184.0" />
       <Label layoutX="33.0" layoutY="132.0" text="Candidate Id" />
+      <Button layoutX="472.0" layoutY="41.0" mnemonicParsing="false" onAction="#backToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

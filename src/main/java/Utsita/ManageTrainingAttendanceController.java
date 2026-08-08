@@ -60,6 +60,27 @@ public class ManageTrainingAttendanceController {
 
     @javafx.fxml.FXML
     public void markPresentButton(ActionEvent actionEvent) {
+        ManageTrainingAttendance selected =
+                attendanceTableView.getSelectionModel().getSelectedItem();
+
+        if (selected == null) {
+            AlertGenerator.showWarningAlert(
+                    "No Selection",
+                    "Please select a candidate."
+            );
+            return;
+        }
+
+        selected.setAttendance("Present");
+        selected.setStatus("Updated");
+
+        attendanceTableView.refresh();
+
+        AlertGenerator.showInformationAlert(
+                "Attendance Updated",
+                selected.getCandidateName()
+                        + " marked as Present."
+        );
     }
 
     @javafx.fxml.FXML

@@ -18,5 +18,6 @@
       <Label layoutX="32.0" layoutY="335.0" text="Status" />
       <Label layoutX="40.0" layoutY="63.0" text="Job ID" />
       <TextField fx:id="jobIdTF" layoutX="123.0" layoutY="59.0" />
+      <Button layoutX="428.0" layoutY="47.0" mnemonicParsing="false" onAction="#backToDashboardOA" text="Back To Dashboard" />
    </children>
 </AnchorPane>

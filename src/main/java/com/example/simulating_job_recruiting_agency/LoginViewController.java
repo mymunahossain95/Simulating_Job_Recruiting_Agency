@@ -9,12 +9,15 @@ public class LoginViewController {
 
     @javafx.fxml.FXML
     private TextField userNameTextField;
-
     @javafx.fxml.FXML
     private TextField passwordTextField;
 
+    @javafx.fxml.FXML
+    public void initialize() {
+    }
+
     @Deprecated
-    public void logInButton(ActionEvent actionEvent) {
+    public void handleLoginViewButtonOnAction(ActionEvent actionEvent) {
 
         String username = userNameTextField.getText();
         String password = passwordTextField.getText();
@@ -139,6 +142,6 @@ public class LoginViewController {
     }
 
     @javafx.fxml.FXML
-    public void loginButton(ActionEvent actionEvent) {
+    public void logInButton(ActionEvent actionEvent) {
     }
 }

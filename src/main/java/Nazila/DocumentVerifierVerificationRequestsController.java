@@ -90,7 +90,7 @@ public class DocumentVerifierVerificationRequestsController {
 
     @javafx.fxml.FXML
     public void verificationRequestGoBackButtonOnAction(ActionEvent actionEvent) {
-        SceneSwitchingHelper.switchScene(actionEvent, "/Nazila/DocumentVerifierDashboard.fxml"
+        SceneSwitchingHelper.switchScene(actionEvent, "/com.example.simulating_job_recruiting_agency/DocumentVerifier/DocumentVerifierDashboard.fxml"
         );
     }
 }

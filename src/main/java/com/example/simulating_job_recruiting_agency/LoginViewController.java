@@ -9,15 +9,14 @@ import utility.SceneSwitchingHelper;
 public class LoginViewController {
     @javafx.fxml.FXML
     private TextField userNameTextField;
-
     @javafx.fxml.FXML
-    private TextField userPasswordTextField;
+    private TextField passwordTextField;
 
     @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @javafx.fxml.FXML
+    @Deprecated
     public void handleLoginViewButtonOnAction(ActionEvent actionEvent) {
 
 
@@ -74,5 +73,9 @@ public class LoginViewController {
             AlertGenerator.showWarningAlert("Invalid Username", "Username must contain lowercase letters only.");
             return;
         }
+    }
+
+    @javafx.fxml.FXML
+    public void logInButton(ActionEvent actionEvent) {
     }
 }
